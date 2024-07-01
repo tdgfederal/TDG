@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
+
+.nav-main {
+  padding: 20px 0;
+  font-size: 0.85rem;
+  padding-left: 30px;
+  padding-right: 30px;
+  position: relative;
+  z-index: 100;
+}
+.nav-link {
+  color: #332f2c;
+  font-family: "Marcellus", serif;
+  margin: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.nav-link:hover {
+  font-weight: bold;
+  .bottom-arr {
+    font-weight: bold;
+  }
+}
+.nav-button {
+  background-color: transparent;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 0.85rem;
+  border-radius: 30px;
+  font-family: "Marcellus", serif;
+  border: 1px solid black;
+}
+.nav-button:hover {
+  background-color: #000000be;
+  border: none;
+  color: white;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler.custom-class .navbar-toggler-icon {
+  color: #ff0000;
+}
+
+@media (max-width: 1054px) {
+  .nav-link {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 992px) {
+  .nav-main {
+    text-align: center;
+  }
+  .nav-button {
+    margin: auto;
+  }
+}
+@media (max-width: 500px) {
+  .nav-main {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

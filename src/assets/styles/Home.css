@@ -1,0 +1,567 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+
+.text-4,
+.pics-4,
+.features-home,
+.products-home,
+.pic4-flex,
+.golf,
+.golf-sim , .rooms, .blogs{
+  font-family: "Marcellus", serif;
+}
+
+.home-caro {
+  font-family: "Marcellus", serif;
+}
+.caro-btn {
+  border: 1px solid white;
+  padding: 3px 20px;
+  border-radius: 30px;
+}
+.btn-caro-1 {
+  border: 1px solid black;
+  background-color: black;
+  color: white;
+  width: 180px;
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+.btn-caro-2 {
+  border: 1px solid black;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  width: 180px;
+  padding: 5px 8px;
+  border-radius: 20px;
+}
+.caro-text {
+  margin: 30px;
+}
+.lr-btn {
+  font-size: 1.6rem;
+}
+@media (max-width: 623px) {
+  .btn-caro-1 {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    width: 150px;
+    font-size: 0.75rem;
+    padding: 3px 0px;
+    border-radius: 20px;
+  }
+  .btn-caro-2 {
+    border: 1px solid black;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    width: 150px;
+    font-size: 0.75rem;
+    padding: 3px 0px;
+    border-radius: 20px;
+  }
+  .caro-text {
+    margin: 0;
+  }
+}
+@media (max-width: 452px) {
+  .caro-text h5 {
+    font-size: 0.85rem;
+  }
+  .caro-text p {
+    font-size: 0.65rem;
+  }
+  .btn-caro-1 {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    width: 120px;
+    font-size: 0.5rem;
+    padding: 3px 0px;
+    border-radius: 20px;
+  }
+  .btn-caro-2 {
+    border: 1px solid black;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    width: 120px;
+    font-size: 0.5rem;
+    padding: 3px 0px;
+    border-radius: 20px;
+  }
+  .caro-btn {
+    border: 1px solid white;
+    padding: 3px 15px;
+    border-radius: 15px;
+  }
+  .lr-btn {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 350px) {
+  .caro-text h5 {
+    font-size: 0.75rem;
+  }
+  .caro-text p {
+    font-size: 0.55rem;
+  }
+  .btn-caro-1 {
+    border: 1px solid black;
+    background-color: black;
+    color: white;
+    width: 80px;
+    font-size: 0.4rem;
+    padding: 3px 0px;
+    border-radius: 20px;
+  }
+  .btn-caro-2 {
+    border: 1px solid black;
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    width: 80px;
+    font-size: 0.4rem;
+    padding: 3px 0px;
+    border-radius: 20px;
+  }
+}
+
+.wwd-btn {
+  width: max-content;
+  background-color: transparent;
+  border: 1px solid #4b4b4b;
+  border-radius: 30px;
+  padding: 5px 20px;
+  font-size: 0.9rem;
+  color: #4b4b4b;
+}
+.pic1-text {
+  width: 370px;
+  font-size: 0.85rem;
+  color: #4b4b4b;
+}
+.pic2-text {
+  width: 360px;
+  font-size: 0.85rem;
+  color: #4b4b4b;
+}
+.pic1-card {
+  justify-content: end;
+}
+.pic3-card {
+  justify-content: start;
+}
+.pos-rel-pic {
+  position: relative;
+}
+.pos-abs-pic {
+  color: white;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 30px;
+  left: 25px;
+}
+@media (max-width: 1200px) {
+  .pic3-card {
+    justify-content: center;
+    margin: 50px 0;
+  }
+}
+@media (max-width: 768px) {
+  .pic1-card {
+    justify-content: center;
+    margin: 0 0 50px 0;
+  }
+}
+@media (max-width: 380px) {
+  .pics-4-row {
+    transform: scale(0.8);
+  }
+  .h-pics {
+    margin-bottom: -150px;
+  }
+}
+
+.logos-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8vw;
+  margin: 0 50px;
+  flex-wrap: wrap;
+}
+.logo-circle {
+  height: 100px;
+  width: 100px;
+  background-color: #f4f2f2;
+  border: 1px solid #cdcdcd;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.logo-circle:hover {
+  border: 2px solid black;
+}
+
+.tab {
+  display: flex;
+  justify-content: end;
+}
+.cctv {
+  display: flex;
+  align-items: end;
+}
+.tab-img {
+  height: 450px;
+}
+.cctv-img {
+  width: 390px;
+}
+.box-abs {
+  background-color: #ffffff;
+  border: 1px solid #6666668a;
+  padding: 3px 10px 8px 10px;
+  position: absolute;
+  bottom: -40px;
+  left: 100px;
+}
+@media (max-width: 1330px) {
+  .tab-img {
+    height: 400px;
+  }
+  .cctv-img {
+    height: 340px;
+  }
+}
+@media (max-width: 1170px) {
+  .tab-img {
+    height: 350px;
+  }
+  .cctv-img {
+    height: 340px;
+  }
+}
+@media (max-width: 1000px) {
+  .ph {
+    transform: scale(0.8);
+  }
+}
+@media (max-width: 768px) {
+  .ph {
+    transform: scale(1);
+  }
+  .tab {
+    justify-content: center;
+  }
+  .cctv {
+    align-items: center;
+    justify-content: center;
+    margin-top: -100px;
+  }
+}
+@media (max-width: 592px) {
+  .tab-img {
+    height: 250px;
+  }
+  .cctv {
+    margin-top: -250px;
+  }
+}
+@media (max-width: 415px) {
+  .tab-img {
+    height: 200px;
+  }
+  .cctv-img {
+    width: 280px;
+  }
+  .cctv {
+    margin-top: -250px;
+  }
+  .box-abs {
+    left: 45px;
+  }
+}
+
+.pic4-pad {
+  padding: 0 5vw;
+}
+@media (max-width: 1181px) {
+  .pic4-pad {
+    padding: 0;
+  }
+}
+
+.golf-img img {
+  width: 45vw;
+}
+.golf-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 0 100px;
+}
+@media (max-width: 1240px) {
+  .golf-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 50px;
+  }
+}
+@media (max-width: 768px) {
+  .golf-row {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 50px;
+  }
+  .golf-img img {
+    width: 400px;
+  }
+}
+@media (max-width: 430px) {
+  .golf-row {
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 20px;
+  }
+  .golf-img img {
+    width: 350px;
+  }
+}
+@media (max-width: 365px) {
+  .golf-img img {
+    width: 320px;
+  }
+}
+
+.golfb-div {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+.golfb img {
+  height: 600px;
+}
+.golfr img {
+  height: 375px;
+}
+.box-abs-2 {
+  background-color: #ffffff;
+  border: 1px solid #6666668a;
+  padding: 3px 10px 8px 10px;
+  position: absolute;
+  width: 450px;
+  padding: 20px;
+  top: 28%;
+  right: 25%;
+}
+@media (max-width: 1105px) {
+  .golfb img {
+    height: 520px;
+  }
+  .golfr img {
+    height: 325px;
+  }
+  .golfb-div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    align-items: start;
+    position: relative;
+  }
+  .box-abs-2{
+    transform: scale(0.8);
+    top: 25%;
+    right: 24.5%;
+  }
+}
+@media (max-width: 992px) {
+  .golfb img {
+    height: 520px;
+  }
+  .golfr img {
+    height: 325px;
+  }
+  .golfb-div {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    align-items: start;
+    position: relative;
+    padding-right: 150px;
+  }
+  .box-abs-2{
+    transform: scale(0.95);
+    top: 25%;
+    right: 32.5%;
+  }
+  .golfr{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+  }
+}
+@media(max-width:772px){
+    .golfb-div {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        align-items: start;
+        position: relative;
+        padding-right: 100px;
+      }
+      .box-abs-2{
+        transform: scale(0.85);
+        top: 17%;
+        right: 32.5%;
+      }
+      .golfb img {
+        height: 450px;
+      }
+}
+@media(max-width:700px){
+    .golfb-div {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        align-items: start;
+        position: relative;
+        padding-right: 30px;
+      }
+      .box-abs-2{
+        transform: scale(0.85);
+        top: 17%;
+        right: 32.5%;
+      }
+      .golfb img {
+        height: 450px;
+      }
+}
+@media(max-width:645px){
+    .golfb-div {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        align-items: start;
+        position: relative;
+        padding-right: 30px;
+      }
+      .box-abs-2{
+        transform: scale(0.85);
+        top: 17%;
+        right: 20%;
+      }
+      .golfb img {
+        height: 450px;
+      }
+}
+@media(max-width:550px){
+    .golfb-div {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        align-items: start;
+        position: relative;
+        padding-right: 30px;
+      }
+      .box-abs-2{
+        transform: scale(0.65);
+        top: 17%;
+        right: 10%;
+      }
+      .golfb img {
+        height: 400px;
+      }
+}
+@media(max-width:435px){
+    .golfb-div {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        align-items: start;
+        position: relative;
+        padding-right: 0;
+        transform: scale(0.8);
+      }
+      .box-abs-2{
+        transform: scale(0.7);
+        top: 17%;
+      }
+}
+@media(max-width:400px){
+    .golfb-div {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        align-items: start;
+        position: relative;
+        padding-right: 0;
+        transform: scale(0.8);
+        right: -20px;
+      }
+      .box-abs-2{
+        transform: scale(0.7);
+        top: 20%;
+      }
+}
+@media(max-width:363px){
+    .golfb-div {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        align-items: start;
+        position: relative;
+        padding-right: 0;
+        transform: scale(0.8);
+        right: -26px;
+      }
+      .box-abs-2{
+        transform: scale(0.7);
+        top: 20%;
+        right: 5%;
+      }
+}
+
+
+.room1{
+    background-image: url("../images/room1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.room2{
+    background-image: url("../images/room2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.room3{
+    background-image: url("../images/room3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+.blog-card{
+    width: 400px;
+}
+.blog-row{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.mid-card{
+    margin: 0 30px;
+}
+@media(max-width:430px){
+    .blog-card{
+        transform: scale(0.75);
+    }
+}
