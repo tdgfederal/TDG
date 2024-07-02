@@ -622,21 +622,21 @@ const Home = () => {
         <p style={{textAlign:'center', color:'#E6AF5D'}}>BLOGS</p>
         <h3 style={{textAlign:'center'}}>Latest articles directly from the blog</h3><br />
         <div className="blog-row">
-          <div className="my-3">
+          <div className="">
             <div className="blog-card">
               <img src={blog1} width={400} alt="" />
               <h5 className="mt-3">Lorem Ipsum is simply dummy text of the printing...</h5>
               <span style={{color:'#7C7E7C', textTransform:'uppercase', fontSize:'0.8rem'}}>April 5,2023 <span className="mx-2" style={{color:'#282866', textTransform:'capitalize'}}>Apollo Theme</span></span>
             </div>
           </div>
-          <div className="my-3 mid-card">
+          <div className=" mid-card">
             <div className="blog-card">
               <img src={blog2} width={400} alt="" />
               <h5 className="mt-3">Lorem Ipsum is simply dummy text of the printing...</h5>
               <span style={{color:'#7C7E7C', textTransform:'uppercase', fontSize:'0.8rem'}}>April 5,2023 <span className="mx-2" style={{color:'#282866', textTransform:'capitalize'}}>Apollo Theme</span></span>
             </div>
           </div>
-          <div className="my-3">
+          <div className="">
             <div className="blog-card">
               <img src={blog3} width={400} alt="" />
               <h5 className="mt-3">Lorem Ipsum is simply dummy text of the printing...</h5>

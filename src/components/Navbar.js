@@ -48,13 +48,13 @@ const Navbar = () => {
                 <a className="nav-link">Our Work</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Support</a>
+                <Link className="nav-link" to={'/support'}>Support</Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link">Career  </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Contact</a>
+                <Link className="nav-link" to={'/contact'}>Contact</Link>
               </li>
             </ul>
             <form className="d-flex" role="search">

@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
-
 .text-4,
 .pics-4,
 .features-home,
@@ -556,6 +555,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    gap: 20px;
 }
 .mid-card{
     margin: 0 30px;
@@ -564,4 +564,7 @@
     .blog-card{
         transform: scale(0.75);
     }
+    .mid-card{
+      margin: -40px 0;
+  }
 }

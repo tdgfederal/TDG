@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+.contact-section{
+    font-family: "Marcellus", serif;
+}
+.embeded-map{
+    height: 450px;
+    width: 650px;
+}
+.map-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.ta-text{
+    height: 250px;
+}
+@media(max-width:1270px){
+    .map-form{
+        transform: scale(0.8);
+    }
+}
+@media(max-width:768px){
+    .map-form{
+        transform: scale(1);
+        flex-direction: column;
+    }
+}
+@media(max-width:720px){
+    .embeded-map{
+        height: 350px;
+        width: 550px;
+    }
+    .contact-section{
+        overflow-x: hidden;
+    }
+}
+@media(max-width:600px){
+    .embeded-map{
+        height: 250px;
+        width: 450px;
+    }
+}
+@media(max-width:470px){
+    .embeded-map{
+        height: 200px;
+        width: 400px;
+    }
+}
+@media(max-width:415px){
+    .embeded-map{
+        height: 150px;
+        width: 350px;
+    }
+}
+
+
+
+.blogs-contact{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0 120px;
+}
+@media(max-width:1368px){
+    .blogs-contact{
+        padding: 0 30px;
+    }
+}
+@media(max-width:1164px){
+    .blogs-contact{
+        padding: 0 80px;
+    }
+}
+@media(max-width:896px){
+    .blogs-contact{
+        padding: 0 30px;
+    }
+}
