@@ -4,9 +4,10 @@ import "../assets/styles/Career.css";
 import { GoArrowRight } from "react-icons/go";
 import { GrLocation } from "react-icons/gr";
 import { MdAccessTime } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Career = () => {
+  const navigate = useNavigate();
   const [career, setCareer] = useState("View All");
   const options = [
     {
@@ -132,7 +133,7 @@ const Career = () => {
                   </div>
                 </div>
               </div>
-              <div className="right-post">
+              <div className="right-post" onClick={()=>navigate('/job', {state: {message: e}})}>
                 <button className="career-btn-filter-2">
                   APPLY <GoArrowRight />
                 </button>

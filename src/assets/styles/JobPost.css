@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+.job-post-section{
+    font-family: "Marcellus", serif;
+}
+.job-post-each{
+    display: flex;
+    padding: 50px;
+    gap: 10px;
+}
+.left-job-post-each{
+    border-right: 1px solid #9D9D9D;
+    padding-right: 10px;
+}
+.right-job-post-each{
+    width: 1300px;
+}
+.embeded-map-2{
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+}
+.job-apply-main{
+    /* text-align: center;/ */
+    margin: auto;
+}
+.btn-pos-1{
+    display: none;
+}
+@media(max-width:768px){
+    .job-post-each{
+        flex-direction: column;
+        gap: 0;
+    }
+    .left-job-post-each{
+        border:none;
+    }
+    .right-job-post-each{
+        width: 100%;
+    }
+    .btn-pos-1{
+        display: block;
+    }
+    .btn-pos-2{
+        display: none;
+    }
+}
+@media(max-width:415px){
+    .job-post-each{
+        padding: 20px;
+    }
+}

@@ -9,6 +9,8 @@ import Contact from "./pages/Contact";
 import Support from "./pages/Support";
 import Blog from "./pages/Blog";
 import Career from "./pages/Career";
+import JobPost from "./pages/JobPost";
+import Schedule from "./pages/Schedule";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
         <Route path="/support" element={<Support />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/career" element={<Career />} />
+        <Route path="/job" element={<JobPost />} />
+        <Route path="/consultation" element={<Schedule />} />
       </Routes>
       <Footer/>
     </div>

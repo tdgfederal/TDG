@@ -3,10 +3,11 @@ import "../assets/styles/Navbar.css";
 import { GoArrowUpRight } from "react-icons/go";
 import logo from "../assets/images/logo.png";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { IoIosArrowDown } from "react-icons/io";
 
 const Navbar = () => {
+  const nav = useNavigate();
   return (
     <div>
       <nav className="nav-main navbar navbar-expand-lg">
@@ -41,24 +42,30 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/services"}>
-                  Services <IoIosArrowDown className="bottom-arr"/>
+                  Services <IoIosArrowDown className="bottom-arr" />
                 </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link">Our Work</a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={'/support'}>Support</Link>
+                <Link className="nav-link" to={"/support"}>
+                  Support
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link">Career  </a>
+                <Link className="nav-link" to={"/career"}>
+                  Career{" "}
+                </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={'/contact'}>Contact</Link>
+                <Link className="nav-link" to={"/contact"}>
+                  Contact
+                </Link>
               </li>
             </ul>
             <form className="d-flex" role="search">
-              <button className="nav-button btn" type="submit">
+              <button className="nav-button btn" type="submit" onClick={()=>nav('/consultation')}>
                 SCHEDULE A CALL
               </button>
             </form>
