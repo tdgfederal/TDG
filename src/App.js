@@ -11,6 +11,9 @@ import Blog from "./pages/Blog";
 import Career from "./pages/Career";
 import JobPost from "./pages/JobPost";
 import Schedule from "./pages/Schedule";
+import Product from "./pages/Product";
+import Golf from "./pages/Golf";
+import Products from "./pages/Products";
 
 function App() {
   return (
@@ -25,6 +28,9 @@ function App() {
         <Route path="/career" element={<Career />} />
         <Route path="/job" element={<JobPost />} />
         <Route path="/consultation" element={<Schedule />} />
+        <Route path="/product1" element={<Product />} />
+        <Route path="/product2" element={<Products />} />
+        <Route path="/golf" element={<Golf />} />
       </Routes>
       <Footer/>
     </div>

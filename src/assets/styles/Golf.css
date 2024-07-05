@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
+
+.golf-section {
+  font-family: "Marcellus", serif;
+}
+.wall-prod-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/glf.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  color: white;
+  padding: 200px;
+}
+@media(max-width:780px){
+    .wall-prod-1 {
+        padding: 200px 100px;
+      }
+}
+@media(max-width:600px){
+    .wall-prod-1 {
+        padding: 200px 50px;
+      }
+}
