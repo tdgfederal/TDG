@@ -1,10 +1,35 @@
-import React from "react";
+import React, { useState } from "react";
 import "../assets/styles/Contact.css";
 import blog1 from "../assets/images/blog1.png";
 import blog2 from "../assets/images/blog2.png";
 import blog3 from "../assets/images/blog3.png";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    fname: "",
+    lname: "",
+    email: "",
+    comment: "",
+  });
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name] : e.target.value
+    })
+  }
+  const handleSubmit = async(e) => {
+    try {
+      const response = await fetch("http://localhost:5000/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+    } catch (error) {
+      alert("Failed! Try again.")
+    }
+  }
   return (
     <div className="contact-section">
       <div className="about-black">CONTACT</div>
@@ -60,19 +85,23 @@ const Contact = () => {
           <div className="about-signup">
             <br />
             <br />
-            <div className="form-about-su mt-3">
+            <form className="form-about-su mt-3" onSubmit={handleSubmit}>
               <div className="flname">
                 <input
                   className="flname-text"
                   type="text"
                   placeholder="First Name"
                   style={{ border: "1px solid #C8C2C2" }}
+                  name="fname"
+                  onChange={(e)=>handleChange(e)}
                 />
                 <input
                   className="flname-text"
                   type="text"
                   placeholder="Last Name"
                   style={{ border: "1px solid #C8C2C2" }}
+                  name="lname"
+                  onChange={(e)=>handleChange(e)}
                 />
               </div>
               <input
@@ -80,18 +109,22 @@ const Contact = () => {
                 style={{ width: "100%", border: "1px solid #C8C2C2" }}
                 type="email"
                 placeholder="Email Address"
+                name="email"
+                onChange={(e)=>handleChange(e)}
               />
               <textarea
                 className="flname-text mt-1 mb-3 ta-text"
                 style={{ width: "100%", border: "1px solid #C8C2C2" }}
                 type="text"
                 placeholder="Comment"
+                name="comment"
+                onChange={(e)=>handleChange(e)}
               />
               <br />
               <button className="btn-send-ab-su" style={{ width: "100%" }}>
                 Send
               </button>
-            </div>
+            </form>
             <br />
             <br />
             <br />
@@ -107,9 +140,17 @@ const Contact = () => {
         </h3>
         <br />
         <div className="blogs-contact">
-          <div className="card mx-auto" style={{ width: "23rem", borderRadius:'0', border:'none' }}>
-            <img src={blog1} className="card-img-top" style={{borderRadius:'0'}} alt="..." />
-            <div className="card-body" style={{ padding:'20px 0'}}>
+          <div
+            className="card mx-auto"
+            style={{ width: "23rem", borderRadius: "0", border: "none" }}
+          >
+            <img
+              src={blog1}
+              className="card-img-top"
+              style={{ borderRadius: "0" }}
+              alt="..."
+            />
+            <div className="card-body" style={{ padding: "20px 0" }}>
               <h5 className="card-title">
                 Product guides - How much a wall curtain cos...
               </h5>
@@ -138,9 +179,17 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="card mx-auto" style={{ width: "23rem", borderRadius:'0', border:'none' }}>
-            <img src={blog1} className="card-img-top" style={{borderRadius:'0'}} alt="..." />
-            <div className="card-body" style={{ padding:'20px 0'}}>
+          <div
+            className="card mx-auto"
+            style={{ width: "23rem", borderRadius: "0", border: "none" }}
+          >
+            <img
+              src={blog1}
+              className="card-img-top"
+              style={{ borderRadius: "0" }}
+              alt="..."
+            />
+            <div className="card-body" style={{ padding: "20px 0" }}>
               <h5 className="card-title">
                 Product guides - How much a wall curtain cos...
               </h5>
@@ -169,9 +218,17 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="card mx-auto" style={{ width: "23rem", borderRadius:'0', border:'none' }}>
-            <img src={blog1} className="card-img-top" style={{borderRadius:'0'}} alt="..." />
-            <div className="card-body" style={{ padding:'20px 0'}}>
+          <div
+            className="card mx-auto"
+            style={{ width: "23rem", borderRadius: "0", border: "none" }}
+          >
+            <img
+              src={blog1}
+              className="card-img-top"
+              style={{ borderRadius: "0" }}
+              alt="..."
+            />
+            <div className="card-body" style={{ padding: "20px 0" }}>
               <h5 className="card-title">
                 Product guides - How much a wall curtain cos...
               </h5>
@@ -200,9 +257,17 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="card mx-auto" style={{ width: "23rem", borderRadius:'0', border:'none' }}>
-            <img src={blog1} className="card-img-top" style={{borderRadius:'0'}} alt="..." />
-            <div className="card-body" style={{ padding:'20px 0'}}>
+          <div
+            className="card mx-auto"
+            style={{ width: "23rem", borderRadius: "0", border: "none" }}
+          >
+            <img
+              src={blog1}
+              className="card-img-top"
+              style={{ borderRadius: "0" }}
+              alt="..."
+            />
+            <div className="card-body" style={{ padding: "20px 0" }}>
               <h5 className="card-title">
                 Product guides - How much a wall curtain cos...
               </h5>
@@ -231,9 +296,17 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="card mx-auto" style={{ width: "23rem", borderRadius:'0', border:'none' }}>
-            <img src={blog1} className="card-img-top" style={{borderRadius:'0'}} alt="..." />
-            <div className="card-body" style={{ padding:'20px 0'}}>
+          <div
+            className="card mx-auto"
+            style={{ width: "23rem", borderRadius: "0", border: "none" }}
+          >
+            <img
+              src={blog1}
+              className="card-img-top"
+              style={{ borderRadius: "0" }}
+              alt="..."
+            />
+            <div className="card-body" style={{ padding: "20px 0" }}>
               <h5 className="card-title">
                 Product guides - How much a wall curtain cos...
               </h5>
@@ -262,9 +335,17 @@ const Contact = () => {
               </p>
             </div>
           </div>
-          <div className="card mx-auto" style={{ width: "23rem", borderRadius:'0', border:'none' }}>
-            <img src={blog1} className="card-img-top" style={{borderRadius:'0'}} alt="..." />
-            <div className="card-body" style={{ padding:'20px 0'}}>
+          <div
+            className="card mx-auto"
+            style={{ width: "23rem", borderRadius: "0", border: "none" }}
+          >
+            <img
+              src={blog1}
+              className="card-img-top"
+              style={{ borderRadius: "0" }}
+              alt="..."
+            />
+            <div className="card-body" style={{ padding: "20px 0" }}>
               <h5 className="card-title">
                 Product guides - How much a wall curtain cos...
               </h5>

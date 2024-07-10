@@ -1,8 +1,46 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "../assets/styles/Schedule.css";
+import axios from "axios";
 
 const Schedule = () => {
-    const [c, setC] = useState(false);
+  const [c, setC] = useState(false);
+  const [formData, setFormData] = useState({
+    fname: "",
+    lname: "",
+    phone: "",
+    email: "",
+    dob: "",
+    mode: "",
+    reason: "",
+    question: "",
+    hear: "",
+    comment: "",
+  });
+  const handleChange = (e) => {
+    if (e.target.name === "mode") {
+      setFormData({
+        mode: e.target.value,
+      });
+    }
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+  const handleSubmit = async (e) => {
+    try {
+      const response = await fetch("http://localhost:5000/api/consult", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+    } catch (error) {
+      alert("Failed! Try again.")
+    }
+  };
+  console.log(formData);
   return (
     <div className="schedule-section" style={{ color: "white" }}>
       <div className="sch row" style={{ margin: "0" }}>
@@ -74,24 +112,60 @@ const Schedule = () => {
           </p>
         </div>
         <div className="right-sch col-lg-6">
-          <form action="" className="form-sch">
+          <form action="" className="form-sch" onSubmit={handleSubmit}>
             <div className="d-flex" style={{ gap: "10px" }}>
-              <input type="text" placeholder="Full Name" />
-              <input type="text" placeholder="Last Name" />
+              <input
+                name="fname"
+                onChange={(e) => handleChange(e)}
+                type="text"
+                placeholder="Full Name"
+              />
+              <input
+                name="lname"
+                onChange={(e) => handleChange(e)}
+                type="text"
+                placeholder="Last Name"
+              />
             </div>
-            <input type="number" placeholder="+1 | Enter your mobile number" />
+            <input
+              name="phone"
+              onChange={(e) => handleChange(e)}
+              type="number"
+              placeholder="+1 | Enter your mobile number"
+            />
             <br />
-            <input type="date" placeholder="Preferred Consultation Date" />
+            <input
+              name="email"
+              onChange={(e) => handleChange(e)}
+              type="email"
+              placeholder="Enter your Email"
+            />
             <br />
-            <input type="time" placeholder="Preferred Consultation Time" />
+            <input
+              name="dob"
+              onChange={(e) => handleChange(e)}
+              type="date"
+              placeholder="Preferred Consultation Date"
+            />
             <br />
-            <label className="mt-1" htmlFor="">Mode of Consultation</label>
+            <input
+              name="time"
+              onChange={(e) => handleChange(e)}
+              type="time"
+              placeholder="Preferred Consultation Time"
+            />
+            <br />
+            <label className="mt-1" htmlFor="">
+              Mode of Consultation
+            </label>
             <br />
             <div className="d-flex align-items-center mt-2">
               <input
                 type="checkbox"
-                name="mode"
                 style={{ width: "max-content" }}
+                name="mode"
+                value={"In-Person"}
+                onChange={(e) => handleChange(e)}
               />
               <label htmlFor="" className="mx-2">
                 In-Person
@@ -100,8 +174,10 @@ const Schedule = () => {
             <div className="d-flex align-items-center mt-2 mb-1">
               <input
                 type="checkbox"
-                name="mode"
                 style={{ width: "max-content" }}
+                name="mode"
+                value={"Virtual (via Zoom, Skype, etc.)"}
+                onChange={(e) => handleChange(e)}
               />
               <label htmlFor="" className="mx-2">
                 Virtual (via Zoom, Skype, etc.)
@@ -110,28 +186,56 @@ const Schedule = () => {
             <textarea
               type="text"
               placeholder="Please provide a brief description of the reason for your consultation"
-              style={{width:"100%", height:'70px', padding:'5px 10px', borderRadius:'5px'}}
+              style={{
+                width: "100%",
+                height: "70px",
+                padding: "5px 10px",
+                borderRadius: "5px",
+              }}
+              name="reason"
+              onChange={(e) => handleChange(e)}
             />
             <br />
             <textarea
               type="text"
               placeholder="Specific questions or topics you would like to cover"
-              style={{width:"100%", height:'50px', padding:'5px 10px', borderRadius:'5px'}}
+              style={{
+                width: "100%",
+                height: "50px",
+                padding: "5px 10px",
+                borderRadius: "5px",
+              }}
+              name="question"
+              onChange={(e) => handleChange(e)}
             />
             <br />
-            <select name="about" onChange={(e)=>setC(true)} style={{color:c?"black":"grey"}}>
+            <select
+              onChange={(e) => {
+                setC(true);
+                handleChange(e);
+              }}
+              style={{ color: c ? "black" : "grey" }}
+              name="hear"
+            >
               <option value="" disabled selected>
                 How did you hear about us?
               </option>
-              <option value="saab">Saab</option>
-              <option value="fiat">Fiat</option>
-              <option value="audi">Audi</option>
+              <option value="Linkedin">Linkedin</option>
+              <option value="Whatsapp">Whatsapp</option>
+              <option value="Advertisement">Advertisement</option>
             </select>
             <br />
             <textarea
               type="text"
               placeholder="Any additional comments or requirements"
-              style={{width:"100%", height:'50px', padding:'5px 10px', borderRadius:'5px'}}
+              style={{
+                width: "100%",
+                height: "50px",
+                padding: "5px 10px",
+                borderRadius: "5px",
+              }}
+              name="comment"
+              onChange={(e) => handleChange(e)}
             />
             <br />
             <div className="d-flex align-items-center mt-2">

@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../assets/styles/Blog.css";
 import blog1 from "../assets/images/blog1.png";
 import blog2 from "../assets/images/blog2.png";
 import blog3 from "../assets/images/blog3.png";
 import { Link } from "react-router-dom";
 import { GoArrowRight } from "react-icons/go";
+import axios from "axios";
 
 const Blog = () => {
+  const [blog, setBlog] = useState([]);
   const posts = [
     {
       img: blog1,
@@ -97,9 +99,9 @@ const Blog = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const indexOfLastPost = postPerPage * currentPage;
   const indexOfFirstPost = indexOfLastPost - postPerPage;
-  const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
+  const currentPosts = blog?blog.slice(indexOfFirstPost, indexOfLastPost):null;
   const pageNumbers = [];
-  for (let i = 1; i <= Math.ceil(posts.length / postPerPage); i++) {
+  for (let i = 1; i <= Math.ceil(blog.length / postPerPage); i++) {
     pageNumbers.push(i);
   }
   const handleNext = () => {
@@ -107,6 +109,21 @@ const Blog = () => {
       setCurrentPage(currentPage+1);
     }
   }
+  useEffect(() => {
+    axios
+      .get("http://localhost:5000/getBlogs")
+      .then((blogs) => setBlog(blogs.data))
+      .catch((error) => console.log(error));
+  }, []);
+
+  const formatDate = (dateString) => {
+    const date = new Date(dateString);
+    const options = { year: 'numeric', month: 'long', day: 'numeric' };
+    const formattedDate = new Intl.DateTimeFormat('en-US', options).format(date);
+
+    const [month, day, year] = formattedDate.split(' ');
+    return `${month.toUpperCase()} ${day.replace(',', '')}, ${year}`;
+  };
 
   return (
     <div>
@@ -121,13 +138,14 @@ const Blog = () => {
             style={{ width: "23rem", borderRadius: "0", border: "none" }}
           >
             <img
-              src={e.img}
+              src={`http://localhost:5000/public/images/`+e.img}
               className="card-img-top"
+              height={220}
               style={{ borderRadius: "0" }}
               alt="..."
             />
             <div className="card-body" style={{ padding: "20px 0" }}>
-              <h5 className="card-title">{e.topic}</h5>
+              <h5 className="card-title">{e.title}</h5>
               <span
                 style={{
                   color: "#7C7E7C",
@@ -135,19 +153,19 @@ const Blog = () => {
                   fontSize: "0.8rem",
                 }}
               >
-                {e.date}{" "}
+                {formatDate(e.date)}
                 <span
                   className="mx-2"
                   style={{ color: "#282866", textTransform: "capitalize" }}
                 >
-                  {e.location}
+                  {e.author}
                 </span>
               </span>
               <p
                 className="card-text mt-2"
                 style={{ fontSize: "0.85rem", color: "rgba(0, 0, 0, 0.65)" }}
               >
-                {e.para}
+                {e.description}
               </p>
             </div>
           </div>
