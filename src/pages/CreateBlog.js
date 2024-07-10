@@ -34,7 +34,7 @@ const CreateBlog = () => {
     data.append("description", formData.description);
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/createBlog",
+        "https://tdg-backend-n1sm.onrender.com/api/createBlog",
         data,
         {
           headers: { "Content-Type": "multipart/form-data" },

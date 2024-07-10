@@ -111,7 +111,7 @@ const Blog = () => {
   }
   useEffect(() => {
     axios
-      .get("http://localhost:5000/getBlogs")
+      .get("https://tdg-backend-n1sm.onrender.com/getBlogs")
       .then((blogs) => setBlog(blogs.data))
       .catch((error) => console.log(error));
   }, []);

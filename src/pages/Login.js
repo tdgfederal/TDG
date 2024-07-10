@@ -17,7 +17,7 @@ const Login = () => {
   };
   useEffect(() => {
     axios
-      .get("http://localhost:5000/login")
+      .get("https://tdg-backend-n1sm.onrender.com/login")
       .then((blogs) => setLogin(blogs.data))
       .catch((error) => console.log(error));
   }, []);

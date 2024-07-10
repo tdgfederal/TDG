@@ -28,14 +28,16 @@ const Schedule = () => {
     });
   };
   const handleSubmit = async (e) => {
+    e.preventDefault();
     try {
-      const response = await fetch("http://localhost:5000/api/consult", {
+      const response = await fetch("https://tdg-backend-n1sm.onrender.com/api/consult", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
       });
+      window.location.reload();
     } catch (error) {
       alert("Failed! Try again.")
     }
