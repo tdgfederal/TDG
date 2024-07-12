@@ -28,7 +28,7 @@ const Login = () => {
     login.map((e) => {
       if (e.email === formData.email && e.password === formData.password) {
         localStorage.setItem("loggedIn", true);
-        nav("/");
+        window.location.href = '/create';
       }
     });
   };

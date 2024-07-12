@@ -138,7 +138,7 @@ const Blog = () => {
             style={{ width: "23rem", borderRadius: "0", border: "none" }}
           >
             <img
-              src={`http://localhost:5000/public/images/`+e.img}
+              src={`https://tdg-backend-n1sm.onrender.com/public/images/`+e.img}
               className="card-img-top"
               height={220}
               style={{ borderRadius: "0" }}

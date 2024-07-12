@@ -95,14 +95,14 @@ const Navbar = () => {
                           textTransform: "uppercase",
                           cursor: "pointer"
                         }}
-                        onClick={()=>nav('/product/Entertainment_&_Lifestyle')}
+                        onClick={()=>{setSer(!ser); nav('/product/Entertainment_&_Lifestyle');}}
                       >
                         Entertainment & Lifestyle
                       </p>
                       <ul style={{ listStyle: "none", lineHeight: "30px" }}>
                         <li>Home theaters</li>
                         <li>Multi & whole home audio</li>
-                        <li onClick={()=>nav('/product/golf-simulation')} style={{cursor:'pointer'}}>Golf Simulation</li>
+                        <li onClick={()=>{setSer(!ser); nav('/product/golf-simulation');}} style={{cursor:'pointer'}}>Golf Simulation</li>
                         <li>Gaming</li>
                         <li>Speakers</li>
                         <li>Relaxing Outdoors</li>
@@ -145,7 +145,7 @@ const Navbar = () => {
                           textTransform: "uppercase",
                           cursor: "pointer"
                         }}
-                        onClick={()=>nav('/product/Lighting')}
+                        onClick={()=>{setSer(!ser); nav('/product/Lighting');}}
                       >
                         Lighting
                       </p>
