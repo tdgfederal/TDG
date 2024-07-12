@@ -56,7 +56,7 @@ const Navbar = () => {
                 </Link>
               </li>
               <li
-                className="nav-item"
+                className="nav-item nav-ser-main"
                 style={{ position: "relative" }}
                 ref={containerRef}
               >
@@ -93,16 +93,27 @@ const Navbar = () => {
                         style={{
                           fontWeight: "600",
                           textTransform: "uppercase",
-                          cursor: "pointer"
+                          cursor: "pointer",
                         }}
-                        onClick={()=>{setSer(!ser); nav('/product/Entertainment_&_Lifestyle');}}
+                        onClick={() => {
+                          setSer(!ser);
+                          nav("/product/Entertainment_&_Lifestyle");
+                        }}
                       >
                         Entertainment & Lifestyle
                       </p>
                       <ul style={{ listStyle: "none", lineHeight: "30px" }}>
                         <li>Home theaters</li>
                         <li>Multi & whole home audio</li>
-                        <li onClick={()=>{setSer(!ser); nav('/product/golf-simulation');}} style={{cursor:'pointer'}}>Golf Simulation</li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav("/product/golf-simulation");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Golf Simulation
+                        </li>
                         <li>Gaming</li>
                         <li>Speakers</li>
                         <li>Relaxing Outdoors</li>
@@ -143,9 +154,12 @@ const Navbar = () => {
                         style={{
                           fontWeight: "600",
                           textTransform: "uppercase",
-                          cursor: "pointer"
+                          cursor: "pointer",
                         }}
-                        onClick={()=>{setSer(!ser); nav('/product/Lighting');}}
+                        onClick={() => {
+                          setSer(!ser);
+                          nav("/product/Lighting");
+                        }}
                       >
                         Lighting
                       </p>
@@ -158,8 +172,188 @@ const Navbar = () => {
                   </div>
                 </div>
               </li>
+              <li className="nav-item dropdown ser-dropdown">
+                <a
+                  className="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Services
+                </a>
+                <ul className="dropdown-menu" style={{ fontSize: "0.85rem", textAlign:'center' }}>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to={""}
+                      style={{
+                        fontWeight: "600",
+                        textTransform: "uppercase",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      HOME CONTROL
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Control4
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      RTI
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      URC
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Entertainment_&_Lifestyle"}
+                      style={{
+                        fontWeight: "600",
+                        textTransform: "uppercase",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      Entertainment & Lifestyle
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Home theaters
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Multi & whole home audio
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/golf-simulation"}
+                    >
+                      Golf Simulation
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Gaming
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Speakers
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Relaxing Outdoors
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to={""}
+                      style={{
+                        fontWeight: "600",
+                        textTransform: "uppercase",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      Comfort
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Climate Control
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Motorization
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to={""}
+                      style={{
+                        fontWeight: "600",
+                        textTransform: "uppercase",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      Security & Surveillance
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Cameras
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Monitoring
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Entry Services
+                    </Link>
+                  </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Lighting"}
+                      style={{
+                        fontWeight: "600",
+                        textTransform: "uppercase",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      Lighting
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Smart Lighting
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Fixtures
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to={""}>
+                      Keypads
+                    </Link>
+                  </li>
+                </ul>
+              </li>
               <li className="nav-item">
-                <Link className="nav-link" to={'/blog'}>BLOGS</Link>
+                <Link className="nav-link" to={"/blog"}>
+                  BLOGS
+                </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to={"/support"}>

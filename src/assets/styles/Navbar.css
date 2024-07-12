@@ -26,30 +26,15 @@
   display: flex;
   gap: 60px;
 }
-@media(max-width:992px){
-  .nav-ser{
-    width: max-content;
-    padding: 30px;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 10000;
-    background-color: white;
-    top: 30px;
-  }
+.ser-dropdown{
+  display: none;
 }
-@media(max-width:550px){
-  .nav-ser{
-    width: max-content;
-    padding: 30px;
-    border-radius: 20px;
-    position: absolute;
-    z-index: 10000;
-    background-color: white;
-    top: 30px;
+@media(max-width:992px){
+  .nav-ser-main{
+    display: none;
   }
-  .nav-ser-ser{
-    flex-direction: column;
-    gap: 40px;
+  .ser-dropdown{
+    display: block;
   }
 }
 .nav-link {
