@@ -24,10 +24,11 @@ import person from "../assets/images/person.png";
 import blog1 from "../assets/images/blog1.png";
 import blog2 from "../assets/images/blog2.png";
 import blog3 from "../assets/images/blog3.png";
-
+import { useNavigate } from "react-router-dom";
 const Home = () => {
+  const nav = useNavigate();
   return (
-    <div style={{overflow:'hidden'}}>
+    <div style={{ overflow: "hidden" }}>
       <div className="home-caro">
         <div id="carouselExampleCaptions" className="carousel slide">
           <div className="carousel-indicators">
@@ -61,12 +62,17 @@ const Home = () => {
                   Experience the Future of Living with Our Cutting-Edge Smart
                   Systems and Lifestyle Solutions
                 </p>
-                <button className="btn-caro-1">
+                <button
+                  className="btn-caro-1"
+                  onClick={() => nav("/consultation")}
+                >
                   SCHEDULE A CALL <GoArrowRight />
                 </button>
-                <button className="btn-caro-2 mx-2">
-                  EXPLORE <GoArrowRight />
-                </button>
+                <a href="#section-2">
+                  <button className="btn-caro-2 mx-2">
+                    EXPLORE <GoArrowRight />
+                  </button>
+                </a>
               </div>
             </div>
             <div className="carousel-item">
@@ -80,9 +86,11 @@ const Home = () => {
                 <button className="btn-caro-1">
                   SCHEDULE A CALL <GoArrowRight />
                 </button>
-                <button className="btn-caro-2 mx-2">
-                  EXPLORE <GoArrowRight />
-                </button>
+                <a href="#section-2">
+                  <button className="btn-caro-2 mx-2">
+                    EXPLORE <GoArrowRight />
+                  </button>
+                </a>
               </div>
             </div>
             <div className="carousel-item">
@@ -125,26 +133,36 @@ const Home = () => {
           </button>
         </div>
       </div>
-      <div className="text-4">
-        <div className="row my-5" style={{ margin: "0" }}>
-          <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-            <h5>Lorem Ipsum is simply</h5>
-            <p style={{ color: "#A7A9AB" }}>Lorem Ipsum is simply dummy text</p>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-            <h5>Lorem Ipsum is simply</h5>
-            <p style={{ color: "#A7A9AB" }}>Lorem Ipsum is simply dummy text</p>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-            <h5>Lorem Ipsum is simply</h5>
-            <p style={{ color: "#A7A9AB" }}>Lorem Ipsum is simply dummy text</p>
-          </div>
-          <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-            <h5>Lorem Ipsum is simply</h5>
-            <p style={{ color: "#A7A9AB" }}>Lorem Ipsum is simply dummy text</p>
+      <section id="section-2">
+        <div className="text-4">
+          <div className="row my-5" style={{ margin: "0" }}>
+            <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
+              <h5>Lorem Ipsum is simply</h5>
+              <p style={{ color: "#A7A9AB" }}>
+                Lorem Ipsum is simply dummy text
+              </p>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
+              <h5>Lorem Ipsum is simply</h5>
+              <p style={{ color: "#A7A9AB" }}>
+                Lorem Ipsum is simply dummy text
+              </p>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
+              <h5>Lorem Ipsum is simply</h5>
+              <p style={{ color: "#A7A9AB" }}>
+                Lorem Ipsum is simply dummy text
+              </p>
+            </div>
+            <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
+              <h5>Lorem Ipsum is simply</h5>
+              <p style={{ color: "#A7A9AB" }}>
+                Lorem Ipsum is simply dummy text
+              </p>
+            </div>
           </div>
         </div>
-      </div>
+      </section>
       <div className="pics-4">
         <h3 className="h-pics" style={{ textAlign: "center" }}>
           Lorem Ipsum is simply
@@ -619,32 +637,86 @@ const Home = () => {
       <br />
       <br />
       <div className="blogs">
-        <p style={{textAlign:'center', color:'#E6AF5D'}}>BLOGS</p>
-        <h3 style={{textAlign:'center'}}>Latest articles directly from the blog</h3><br />
+        <p style={{ textAlign: "center", color: "#E6AF5D" }}>BLOGS</p>
+        <h3 style={{ textAlign: "center" }}>
+          Latest articles directly from the blog
+        </h3>
+        <br />
         <div className="blog-row">
           <div className="">
             <div className="blog-card">
               <img src={blog1} width={400} alt="" />
-              <h5 className="mt-3">Lorem Ipsum is simply dummy text of the printing...</h5>
-              <span style={{color:'#7C7E7C', textTransform:'uppercase', fontSize:'0.8rem'}}>April 5,2023 <span className="mx-2" style={{color:'#282866', textTransform:'capitalize'}}>Apollo Theme</span></span>
+              <h5 className="mt-3">
+                Lorem Ipsum is simply dummy text of the printing...
+              </h5>
+              <span
+                style={{
+                  color: "#7C7E7C",
+                  textTransform: "uppercase",
+                  fontSize: "0.8rem",
+                }}
+              >
+                April 5,2023{" "}
+                <span
+                  className="mx-2"
+                  style={{ color: "#282866", textTransform: "capitalize" }}
+                >
+                  Apollo Theme
+                </span>
+              </span>
             </div>
           </div>
           <div className=" mid-card">
             <div className="blog-card">
               <img src={blog2} width={400} alt="" />
-              <h5 className="mt-3">Lorem Ipsum is simply dummy text of the printing...</h5>
-              <span style={{color:'#7C7E7C', textTransform:'uppercase', fontSize:'0.8rem'}}>April 5,2023 <span className="mx-2" style={{color:'#282866', textTransform:'capitalize'}}>Apollo Theme</span></span>
+              <h5 className="mt-3">
+                Lorem Ipsum is simply dummy text of the printing...
+              </h5>
+              <span
+                style={{
+                  color: "#7C7E7C",
+                  textTransform: "uppercase",
+                  fontSize: "0.8rem",
+                }}
+              >
+                April 5,2023{" "}
+                <span
+                  className="mx-2"
+                  style={{ color: "#282866", textTransform: "capitalize" }}
+                >
+                  Apollo Theme
+                </span>
+              </span>
             </div>
           </div>
           <div className="">
             <div className="blog-card">
               <img src={blog3} width={400} alt="" />
-              <h5 className="mt-3">Lorem Ipsum is simply dummy text of the printing...</h5>
-              <span style={{color:'#7C7E7C', textTransform:'uppercase', fontSize:'0.8rem'}}>April 5,2023 <span className="mx-2" style={{color:'#282866', textTransform:'capitalize'}}>Apollo Theme</span></span>
+              <h5 className="mt-3">
+                Lorem Ipsum is simply dummy text of the printing...
+              </h5>
+              <span
+                style={{
+                  color: "#7C7E7C",
+                  textTransform: "uppercase",
+                  fontSize: "0.8rem",
+                }}
+              >
+                April 5,2023{" "}
+                <span
+                  className="mx-2"
+                  style={{ color: "#282866", textTransform: "capitalize" }}
+                >
+                  Apollo Theme
+                </span>
+              </span>
             </div>
           </div>
         </div>
-      </div><br /><br /><br />
+      </div>
+      <br />
+      <br />
+      <br />
     </div>
   );
 };
