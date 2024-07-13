@@ -48,3 +48,39 @@
         padding: 30px;
     }
 }
+
+.sch-modal{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.878);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    z-index: 9999999;
+    top: 0;
+}
+.modal-in{
+    text-align: center;
+    padding: 100px;
+    border-radius: 15px;
+    color: black;
+    background-color: white;
+    position: relative;
+}
+.clandly{
+    color: rgb(29, 107, 234);
+    font-weight: 600;
+}
+.cross{
+    font-weight: 900;
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 25px;
+}
+.cross:hover{
+    color: red;
+}

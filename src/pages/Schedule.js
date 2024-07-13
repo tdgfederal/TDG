@@ -4,6 +4,7 @@ import axios from "axios";
 
 const Schedule = () => {
   const [c, setC] = useState(false);
+  const [submit, setSubmit] = useState(false);
   const [formData, setFormData] = useState({
     fname: "",
     lname: "",
@@ -30,21 +31,38 @@ const Schedule = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("https://tdg-backend-n1sm.onrender.com/api/consult", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-      window.location.reload();
+      const response = await fetch(
+        "https://tdg-backend-n1sm.onrender.com/api/consult",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      setSubmit(true);
     } catch (error) {
-      alert("Failed! Try again.")
+      alert("Failed! Try again.");
     }
   };
   console.log(formData);
   return (
     <div className="schedule-section" style={{ color: "white" }}>
+      {submit && <div className="sch-modal">
+        <div className="modal-in">
+          <div className="cross" onClick={()=>{setSubmit(false); window.location.reload();}}>X</div>
+          <h1>Form Submitted Successfully</h1>
+          <p>
+            Click on the below link to schedule a meet with{" "}
+            <span className="clandly" style={{ fontSize: "1.3rem" }}>
+              Calendly
+            </span>
+            !
+          </p>
+          <a href="https://calendly.com/ddiallo-itecintegrator">Click Here!</a>
+        </div>
+      </div>}
       <div className="sch row" style={{ margin: "0" }}>
         <div className="left-sch col-lg-6" style={{ position: "relative" }}>
           <div className="top-job-post d-flex align-items-center"></div>
