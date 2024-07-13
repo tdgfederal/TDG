@@ -1,18 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
 .about-black {
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
   text-align: center;
   background-color: black;
   color: white;
   padding: 20px;
 }
 .about-black-below {
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
   padding: 50px 0;
 }
 .side-by-side {
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,7 +20,7 @@
   padding: 0 50px;
 }
 .side-by-side-left-o {
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -68,7 +68,7 @@
 }
 
 .partners {
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
 }
 .parts {
   display: flex;
@@ -92,7 +92,7 @@
 
 
 .about-signup{
-    font-family: "Marcellus", serif;
+    font-family: Helvetica;
 }
 .form-about-su{
     width: max-content;

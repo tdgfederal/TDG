@@ -7,11 +7,11 @@
 .pic4-flex,
 .golf,
 .golf-sim , .rooms, .blogs{
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
 }
 
 .home-caro {
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
 }
 .caro-btn {
   border: 1px solid white;
@@ -22,7 +22,7 @@
   border: 1px solid black;
   background-color: black;
   color: white;
-  width: 180px;
+  width: 190px;
   padding: 5px 8px;
   border-radius: 20px;
 }

@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Marcellus&display=swap');
 
 .navbar-section{
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
 }
 .nav-main {
   padding: 20px 0;
@@ -10,7 +10,7 @@
   padding-right: 30px;
   position: relative;
   z-index: 100;
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
 }
 .nav-ser{
   width: max-content;
@@ -39,7 +39,7 @@
 }
 .nav-link {
   color: #332f2c;
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
   margin: 0 10px;
   text-transform: uppercase;
   cursor: pointer;
@@ -56,7 +56,7 @@
   color: rgb(0, 0, 0);
   font-size: 0.85rem;
   border-radius: 30px;
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
   border: 1px solid black;
 }
 .nav-button:hover {

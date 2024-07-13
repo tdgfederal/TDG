@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
 .career-section{
-    font-family: "Marcellus", serif;
+    font-family: Helvetica;
 }
 .career-img {
-  font-family: "Marcellus", serif;
+  font-family: Helvetica;
   height: 100vh;
   background-image: url("../images/career.png");
   background-repeat: no-repeat;
@@ -23,7 +23,7 @@
 }
 .filters{
     padding: 50px 20px 30px 80px;
-    font-family: "Marcellus", serif;
+    font-family: Helvetica;
 }
 .career-btn-filter{
     background-color: rgb(255, 255, 255);

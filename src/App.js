@@ -19,7 +19,7 @@ import Login from "./pages/Login";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" id="App">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />

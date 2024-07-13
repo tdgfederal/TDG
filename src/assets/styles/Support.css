@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
 .support-section{
-    font-family: "Marcellus", serif;
+    font-family: Helvetica;
 }
 .support-cards{
     display: flex;

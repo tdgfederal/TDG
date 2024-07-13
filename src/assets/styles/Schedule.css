@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
 .schedule-section{
-    font-family: "Marcellus", serif;
+    font-family: Helvetica;
     background-image: url("../images/sch.png");
     background-position: center;
     background-size: cover;
