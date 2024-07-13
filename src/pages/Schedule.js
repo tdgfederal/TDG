@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../assets/styles/Schedule.css";
 import axios from "axios";
+import { GoArrowUpRight } from "react-icons/go";
 
 const Schedule = () => {
   const [c, setC] = useState(false);
@@ -49,20 +50,29 @@ const Schedule = () => {
   console.log(formData);
   return (
     <div className="schedule-section" style={{ color: "white" }}>
-      {submit && <div className="sch-modal">
-        <div className="modal-in">
-          <div className="cross" onClick={()=>{setSubmit(false); window.location.reload();}}>X</div>
-          <h1>Form Submitted Successfully</h1>
-          <p>
-            Click on the below link to schedule a meet with{" "}
-            <span className="clandly" style={{ fontSize: "1.3rem" }}>
-              Calendly
-            </span>
-            !
-          </p>
-          <a href="https://calendly.com/ddiallo-itecintegrator">Click Here!</a>
+      {submit && (
+        <div className="sch-modal">
+          <div className="modal-in">
+            <div
+              className="cross"
+              onClick={() => {
+                setSubmit(false);
+                window.location.reload();
+              }}
+            >
+              X
+            </div>
+            <h1>Form Submitted Successfully!</h1>
+            <p>Please book the meeting </p>
+            <a href="https://calendly.com/ddiallo-itecintegrator">
+              <button className="nav-button btn" type="submit">
+                GO TO CALENDLY{" "}
+                <GoArrowUpRight style={{ transform: "rotate(45deg)" }} />
+              </button>
+            </a>
+          </div>
         </div>
-      </div>}
+      )}
       <div className="sch row" style={{ margin: "0" }}>
         <div className="left-sch col-lg-6" style={{ position: "relative" }}>
           <div className="top-job-post d-flex align-items-center"></div>
