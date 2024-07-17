@@ -40,6 +40,11 @@
     padding: 7px 0;
     border: none;
 }
+.required:after {
+    content:" *";
+    color: red;
+    font-size: 1.5rem;
+  }
 @media(max-width:500px){
     .sch{
         padding: 70px 20px;

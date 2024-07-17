@@ -143,50 +143,67 @@ const Schedule = () => {
         </div>
         <div className="right-sch col-lg-6">
           <form action="" className="form-sch" onSubmit={handleSubmit}>
-            <div className="d-flex" style={{ gap: "10px" }}>
+            <div className="d-flex" style={{ gap: "5px" }}>
+              <label className="required"></label>
               <input
                 name="fname"
                 onChange={(e) => handleChange(e)}
                 type="text"
                 placeholder="Full Name"
+                required
               />
+              <label className="required"></label>
               <input
                 name="lname"
                 onChange={(e) => handleChange(e)}
                 type="text"
                 placeholder="Last Name"
+                required
               />
             </div>
-            <input
-              name="phone"
-              onChange={(e) => handleChange(e)}
-              type="number"
-              placeholder="+1 | Enter your mobile number"
-            />
-            <br />
-            <input
-              name="email"
-              onChange={(e) => handleChange(e)}
-              type="email"
-              placeholder="Enter your Email"
-            />
-            <br />
-            <input
-              name="dob"
-              onChange={(e) => handleChange(e)}
-              type="date"
-              placeholder="Preferred Consultation Date"
-            />
-            <br />
-            <input
-              name="time"
-              onChange={(e) => handleChange(e)}
-              type="time"
-              placeholder="Preferred Consultation Time"
-            />
-            <br />
+            <div className="d-flex" style={{ gap: "5px" }}>
+              <label className="required"></label>
+              <input
+                name="phone"
+                onChange={(e) => handleChange(e)}
+                type="number"
+                placeholder="+1 | Enter your mobile number"
+                required
+              />
+            </div>
+            <div className="d-flex" style={{ gap: "5px" }}>
+              <label className="required"></label>
+              <input
+                name="email"
+                onChange={(e) => handleChange(e)}
+                type="email"
+                placeholder="Enter your Email"
+                required
+              />
+            </div>
+            <div className="d-flex" style={{ gap: "5px" }}>
+              <label className="required"></label>
+              <input
+                name="dob"
+                onChange={(e) => handleChange(e)}
+                type="date"
+                placeholder="Preferred Consultation Date"
+                required
+              />
+            </div>
+            <div className="d-flex" style={{ gap: "5px" }}>
+              <label className="required"></label>
+              <input
+                name="time"
+                onChange={(e) => handleChange(e)}
+                type="time"
+                placeholder="Preferred Consultation Time"
+                required
+              />
+            </div>
             <label className="mt-1" htmlFor="">
-              Mode of Consultation
+              Mode of Consultation{" "}
+              <span style={{ color: "red", fontSize: "1.5rem" }}>*</span>
             </label>
             <br />
             <div className="d-flex align-items-center mt-2">
@@ -213,51 +230,60 @@ const Schedule = () => {
                 Virtual (via Zoom, Skype, etc.)
               </label>
             </div>
+            <div className="d-flex mb-2" style={{ gap: "5px" }}>
+              <label className="required"></label>
+              <textarea
+                type="text"
+                placeholder="Please provide a brief description of the reason for your consultation"
+                style={{
+                  width: "100%",
+                  height: "70px",
+                  padding: "5px 10px",
+                  borderRadius: "5px",
+                }}
+                name="reason"
+                onChange={(e) => handleChange(e)}
+                required
+              />
+            </div>
+            <div className="d-flex" style={{ gap: "5px" }}>
+              <label className="required"></label>
+              <textarea
+                type="text"
+                placeholder="Specific questions or topics you would like to cover"
+                style={{
+                  width: "100%",
+                  height: "50px",
+                  padding: "5px 10px",
+                  borderRadius: "5px",
+                }}
+                name="question"
+                onChange={(e) => handleChange(e)}
+                required
+              />
+            </div>
+            <div className="d-flex" style={{ gap: "5px" }}>
+              <label className="required"></label>
+              <select
+                onChange={(e) => {
+                  setC(true);
+                  handleChange(e);
+                }}
+                style={{ color: c ? "black" : "grey" }}
+                name="hear"
+                required
+              >
+                <option value="" disabled selected>
+                  How did you hear about us?
+                </option>
+                <option value="Linkedin">Linkedin</option>
+                <option value="Whatsapp">Whatsapp</option>
+                <option value="Advertisement">Advertisement</option>
+              </select>
+            </div>
             <textarea
               type="text"
-              placeholder="Please provide a brief description of the reason for your consultation"
-              style={{
-                width: "100%",
-                height: "70px",
-                padding: "5px 10px",
-                borderRadius: "5px",
-              }}
-              name="reason"
-              onChange={(e) => handleChange(e)}
-            />
-            <br />
-            <textarea
-              type="text"
-              placeholder="Specific questions or topics you would like to cover"
-              style={{
-                width: "100%",
-                height: "50px",
-                padding: "5px 10px",
-                borderRadius: "5px",
-              }}
-              name="question"
-              onChange={(e) => handleChange(e)}
-            />
-            <br />
-            <select
-              onChange={(e) => {
-                setC(true);
-                handleChange(e);
-              }}
-              style={{ color: c ? "black" : "grey" }}
-              name="hear"
-            >
-              <option value="" disabled selected>
-                How did you hear about us?
-              </option>
-              <option value="Linkedin">Linkedin</option>
-              <option value="Whatsapp">Whatsapp</option>
-              <option value="Advertisement">Advertisement</option>
-            </select>
-            <br />
-            <textarea
-              type="text"
-              placeholder="Any additional comments or requirements"
+              placeholder="Any additional comments or requirements (optional)"
               style={{
                 width: "100%",
                 height: "50px",

@@ -22,17 +22,17 @@
   padding: 20px 80px;
   overflow-x: scroll;
 }
-::-webkit-scrollbar {
+.prod-list::-webkit-scrollbar {
   width: 0px;
   height: 8px;
 }
 
-::-webkit-scrollbar-thumb {
+.prod-list::-webkit-scrollbar-thumb {
   background: rgba(40, 40, 102, 0.09);
   border-radius: 20px;
 }
 
-::-webkit-scrollbar-thumb:hover {
+.prod-list::-webkit-scrollbar-thumb:hover {
   background: rgba(40, 40, 102, 0.09);
 }
 .prods-img {

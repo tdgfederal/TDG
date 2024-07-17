@@ -28,7 +28,7 @@ import { useNavigate } from "react-router-dom";
 const Home = () => {
   const nav = useNavigate();
   return (
-    <div style={{ overflow: "hidden" }}>
+    <div>
       <div className="home-caro">
         <div id="carouselExampleCaptions" className="carousel slide">
           <div className="carousel-indicators">
