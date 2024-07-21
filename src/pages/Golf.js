@@ -8,8 +8,10 @@ import bulb from "../assets/images/z2.png";
 import sun from "../assets/images/z1.png";
 import rem from "../assets/images/z3.png";
 import { GoArrowRight } from "react-icons/go";
+import { useNavigate } from "react-router-dom";
 
 const Golf = () => {
+  const nav = useNavigate();
   const [career, setCareer] = useState("Protective Case");
   const options = [
     {
@@ -150,10 +152,15 @@ const Golf = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1">SCHEDULE A CALL</button>
-                <button className="btn-caro-2-1 mx-2">
-                  GET A QUOTE <GoArrowRight />
+                <button
+                  className="btn-caro-1-1"
+                  onClick={() => nav("/consultation")}
+                >
+                  SCHEDULE A CALL
                 </button>
+                {/* <button className="btn-caro-2-1 mx-2">
+                  GET A QUOTE <GoArrowRight />
+                </button> */}
               </div>
             </div>
           </div>
@@ -220,10 +227,15 @@ const Golf = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1">SCHEDULE A CALL</button>
-                <button className="btn-caro-2-1 mx-2">
-                  GET A QUOTE <GoArrowRight />
+                <button
+                  className="btn-caro-1-1"
+                  onClick={() => nav("/consultation")}
+                >
+                  SCHEDULE A CALL
                 </button>
+                {/* <button className="btn-caro-2-1 mx-2">
+                  GET A QUOTE <GoArrowRight />
+                </button> */}
               </div>
             </div>
           </div>
@@ -290,10 +302,15 @@ const Golf = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1">SCHEDULE A CALL</button>
-                <button className="btn-caro-2-1 mx-2">
-                  GET A QUOTE <GoArrowRight />
+                <button
+                  className="btn-caro-1-1"
+                  onClick={() => nav("/consultation")}
+                >
+                  SCHEDULE A CALL
                 </button>
+                {/* <button className="btn-caro-2-1 mx-2">
+                  GET A QUOTE <GoArrowRight />
+                </button> */}
               </div>
             </div>
           </div>

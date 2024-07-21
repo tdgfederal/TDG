@@ -95,7 +95,7 @@ const Blog = () => {
       para: "Curtain prices vary based on material, size, design, brand, and retailer. Luxurious materials like silk or velvet are pricier, while standard options like polyest...",
     },
   ];
-  const [postPerPage, setPostPerPage] = useState(6);
+  const [postPerPage, setPostPerPage] = useState(0);
   const [currentPage, setCurrentPage] = useState(1);
   const indexOfLastPost = postPerPage * currentPage;
   const indexOfFirstPost = indexOfLastPost - postPerPage;
@@ -131,7 +131,7 @@ const Blog = () => {
       <br />
       <br />
       <div className="blogs-contact">
-        {currentPosts.map((e, i) => (
+        {currentPosts.length!==0?currentPosts.map((e, i) => (
           <div
             key={i}
             className="card mx-auto"
@@ -169,7 +169,7 @@ const Blog = () => {
               </p>
             </div>
           </div>
-        ))}
+        )):<h1 style={{textAlign:'center', margin:'auto'}}>No Blogs Found!</h1>}
       </div>
       <nav className="pagination-num d-flex justify-content-center mt-3">
         <ul className="pagination">

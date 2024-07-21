@@ -12,8 +12,10 @@ import w1 from "../assets/images/x1.png";
 import w2 from "../assets/images/x2.png";
 import w3 from "../assets/images/x3.png";
 import w4 from "../assets/images/x4.png";
+import { useNavigate } from "react-router-dom";
 
 const Products = () => {
+  const nav = useNavigate();
   const [career, setCareer] = useState("Smart Lighting");
   const options = [
     {
@@ -148,10 +150,10 @@ const Products = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1">SCHEDULE A CALL</button>
-                <button className="btn-caro-2-1 mx-2">
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
+                {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -218,10 +220,10 @@ const Products = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1">SCHEDULE A CALL</button>
-                <button className="btn-caro-2-1 mx-2">
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
+                {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -288,10 +290,10 @@ const Products = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1">SCHEDULE A CALL</button>
-                <button className="btn-caro-2-1 mx-2">
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
+                {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>

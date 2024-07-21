@@ -18,8 +18,10 @@ import w1 from "../assets/images/w1.png";
 import w2 from "../assets/images/w2.png";
 import w3 from "../assets/images/w3.png";
 import w4 from "../assets/images/w4.png";
+import { useNavigate } from "react-router-dom";
 
 const Product = () => {
+  const nav = useNavigate();
   const [career, setCareer] = useState("Home theaters");
   const options = [
     {
@@ -215,10 +217,10 @@ const Product = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1">SCHEDULE A CALL</button>
-                <button className="btn-caro-2-1 mx-2">
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
+                {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -285,10 +287,10 @@ const Product = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1">SCHEDULE A CALL</button>
-                <button className="btn-caro-2-1 mx-2">
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
+                {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -355,10 +357,10 @@ const Product = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1">SCHEDULE A CALL</button>
-                <button className="btn-caro-2-1 mx-2">
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
+                {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
-                </button>
+                </button> */}
               </div>
             </div>
           </div>
@@ -370,9 +372,9 @@ const Product = () => {
         <p
           style={{ textAlign: "center", color: "#757575", fontSize: "1.1rem" }}
         >
-          Lorem Ipsum is simply
+          Our Products
         </p>
-        <h4 style={{ textAlign: "center" }}>Lorem Ipsum is simply</h4>
+        <h4 style={{ textAlign: "center" }}>Speakers</h4>
         <br />
         <div className="row-blog-prod">
           <div className="mx-auto" style={{ textAlign: "center" }}>
@@ -384,8 +386,8 @@ const Product = () => {
               Loudspeakers
             </div>
             <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
-              Every loudspeaker that Bowers & Wilkins makes is engineered using
-              cutting edge tech
+              Bring your sound to a new level of excellence with our premium
+              loudspeakers here at TDG Home.
             </div>
           </div>
           <div className="mx-auto" style={{ textAlign: "center" }}>
@@ -397,8 +399,8 @@ const Product = () => {
               Subwoofers
             </div>
             <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
-              Our collection of complementary active subwoofers combine sound
-              acoustics, plentiful
+              Feel the bass as never felt before with TDG Home's
+              high-performance subwoofers.
             </div>
           </div>
           <div className="mx-auto" style={{ textAlign: "center" }}>
@@ -410,8 +412,8 @@ const Product = () => {
               Home Theater
             </div>
             <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
-              Our Integrated Solutions speakers will make the most of your
-              theater's acoustics. Every roo
+              Bring your living room into the world of cinema with home theater
+              systems from TDG Home.
             </div>
           </div>
           <div className="mx-auto" style={{ textAlign: "center" }}>
@@ -423,8 +425,8 @@ const Product = () => {
               In-Wall & In-Ceiling
             </div>
             <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
-              Bowers & Wilkins' range of Integrated Solutions speakers delivers
-              our world-famous s
+              TDG Home in-wall and in-ceiling speakers provide sleek,
+              unobtrusive audio to every corner of your room.
             </div>
           </div>
         </div>
