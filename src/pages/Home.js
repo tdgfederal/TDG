@@ -52,6 +52,12 @@ const Home = () => {
               data-bs-slide-to="2"
               aria-label="Slide 3"
             ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="3"
+              aria-label="Slide 4"
+            ></button>
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
@@ -109,6 +115,22 @@ const Home = () => {
                 </button>
               </div>
             </div>
+            <div className="carousel-item">
+              <img src={caro} className="d-block w-100" alt="..." />
+              <div className="carousel-caption caro-text">
+                <h5>Transform Your Home with TDG Smart</h5>
+                <p>
+                  Experience the Future of Living with Our Cutting-Edge Smart
+                  Systems and Lifestyle Solutions
+                </p>
+                <button className="btn-caro-1">
+                  SCHEDULE A CALL <GoArrowRight />
+                </button>
+                <button className="btn-caro-2 mx-2">
+                  EXPLORE <GoArrowRight />
+                </button>
+              </div>
+            </div>
           </div>
           <button
             className="carousel-control-prev"
@@ -137,27 +159,31 @@ const Home = () => {
         <div className="text-4">
           <div className="row my-5" style={{ margin: "0" }}>
             <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-              <h5>Lorem Ipsum is simply</h5>
+              <h5>Cutting-Edge Technology</h5>
               <p style={{ color: "#A7A9AB" }}>
-                Lorem Ipsum is simply dummy text
+                We provide the latest smart home appliances to enhance your
+                living experience.
               </p>
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-              <h5>Lorem Ipsum is simply</h5>
+              <h5>Expert Installation</h5>
               <p style={{ color: "#A7A9AB" }}>
-                Lorem Ipsum is simply dummy text
+                Our talented integrators, designers, engineers, and programmers
+                ensure flawless installation and integration.
               </p>
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-              <h5>Lorem Ipsum is simply</h5>
+              <h5>Customized Solutions</h5>
               <p style={{ color: "#A7A9AB" }}>
-                Lorem Ipsum is simply dummy text
+                We tailor smart home systems to fit your unique lifestyle, from
+                smart kitchens to automated home theaters.
               </p>
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-              <h5>Lorem Ipsum is simply</h5>
+              <h5>Ongoing Support</h5>
               <p style={{ color: "#A7A9AB" }}>
-                Lorem Ipsum is simply dummy text
+                We offer continuous support and maintenance to keep your systems
+                up-to-date and functioning seamlessly.
               </p>
             </div>
           </div>
@@ -165,7 +191,7 @@ const Home = () => {
       </section>
       <div className="pics-4">
         <h3 className="h-pics" style={{ textAlign: "center" }}>
-          Lorem Ipsum is simply
+          Get Started Today
         </h3>
         <br />
         <div className="row pics-4-row" style={{ margin: "0" }}>
@@ -173,21 +199,23 @@ const Home = () => {
             <div>
               <div className="pos-rel-pic">
                 <img src={pic1} alt="" height={220} />
-                <p className="pos-abs-pic">Lorem Ipsum is simply</p>
+                {/* <p className="pos-abs-pic">Lorem Ipsum is simply</p> */}
               </div>
               <p
                 className="pic1-text mt-3"
                 style={{ textAlign: "justify", color: "#4B4B4B" }}
               >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s.
+                Personalize your life and bring your house to a whole advanced
+                level with our smart appliances. It could be the lights,
+                security, or even your home theater, and everything is
+                controlled by your fingertips. Advanced technology turns your
+                abode into a plush, seamlessly integrated, cooperatingly high on
+                functionality space. Go easy on down the road of convenience to
+                sophisticated living with devices designed for everyday
+                functionality. Experience the future of an American home through
+                our top-of-the-line smart solution
               </p>
-              <button className="wwd-btn">
+              <button className="wwd-btn" onClick={()=>nav('/support')}>
                 WHAT WE DO <GoArrowRight style={{ fontSize: "1rem" }} />
               </button>
             </div>
@@ -199,7 +227,7 @@ const Home = () => {
             <div>
               <div className="pos-rel-pic">
                 <img src={pic2} alt="" height={450} />
-                <p className="pos-abs-pic">Lorem Ipsum is simply</p>
+                {/* <p className="pos-abs-pic">Lorem Ipsum is simply</p> */}
               </div>
             </div>
           </div>
@@ -209,17 +237,18 @@ const Home = () => {
                 className="pic2-text"
                 style={{ textAlign: "justify", color: "##4B4B4B" }}
               >
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book. It has
-                survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged. It was
-                popularised in the 1960s.
+                Want to catch the big game outside or get your listening room
+                ready for a crazy day unwinding? We've got you covered. Bring
+                your home to the next level with incomparable audio and video
+                solutions for fun family time, personal relaxation, or
+                everything in between. TDG provides the best smart home products
+                to take your free and "me" time to the next level of ease.
+                Experience top-of-the-line entertainment at home and change the
+                face of your living space today.
               </p>
               <div className="pos-rel-pic">
                 <img src={pic3} alt="" height={275} />
-                <p className="pos-abs-pic">Lorem Ipsum is simply</p>
+                {/* <p className="pos-abs-pic">Lorem Ipsum is simply</p> */}
               </div>
             </div>
           </div>
@@ -229,10 +258,10 @@ const Home = () => {
       <br />
       <div className="features-home">
         <h6 style={{ color: "#757575", textAlign: "center" }}>
-          Lorem Ipsum is simply
+          Smart Home Applications
         </h6>
         <h3 className="" style={{ textAlign: "center" }}>
-          Lorem Ipsum is simply
+          Our Technology
         </h3>
         <br />
         <div className="logos-circle">
@@ -242,7 +271,7 @@ const Home = () => {
             </div>
             <p className="mt-2">Home Control</p>
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center" }} onClick={()=>nav('/product/Entertainment_&_Lifestyle')}>
             <div className="logo-circle mx-auto">
               <img src={l2} height={45} alt="" />
             </div>
@@ -254,13 +283,13 @@ const Home = () => {
             </div>
             <p className="mt-2">Comfort</p>
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center" }} onClick={()=>nav('/service')}>
             <div className="logo-circle mx-auto">
               <img src={l4} height={45} alt="" />
             </div>
             <p className="mt-2">Security & Surveillance</p>
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center" }} onClick={()=>nav('/product/Lighting')}>
             <div className="logo-circle mx-auto">
               <img src={l5} height={45} alt="" />
             </div>
@@ -279,8 +308,8 @@ const Home = () => {
           >
             <div style={{ textAlign: "center" }}>
               <img className="tab-img" src={tab} alt="" />
-              <h6 className="mt-3">Lorem Ipsum is simply</h6>
-              <button className="wwd-btn" style={{ color: "black" }}>
+              <h6 className="mt-3">Secuity System</h6>
+              <button className="wwd-btn" style={{ color: "black" }} onClick={()=>nav('/service')}>
                 CHECK PRODUCTS{" "}
                 <GoArrowRight style={{ fontSize: "1rem", color: "black" }} />
               </button>
@@ -293,8 +322,8 @@ const Home = () => {
             <div style={{ position: "relative" }}>
               <img className="cctv-img" src={cctv} alt="" />
               <div className="box-abs" style={{ textAlign: "center" }}>
-                <h6 className="mt-3">Lorem Ipsum is simply</h6>
-                <button className="wwd-btn" style={{ color: "black" }}>
+                <h6 className="mt-3">Smart Home Surveillance</h6>
+                <button className="wwd-btn" style={{ color: "black" }} onClick={()=>nav('/service')}>
                   VIEW PRODUCTS{" "}
                   <GoArrowRight style={{ fontSize: "1rem", color: "black" }} />
                 </button>
@@ -372,7 +401,7 @@ const Home = () => {
             >
               Lorem Ipsum is simply
             </p>
-            <h3>Lorem Ipsum is simply dummy</h3>
+            <h3>Golf Simulation</h3>
             <p
               style={{
                 textAlign: "justify",
@@ -380,18 +409,9 @@ const Home = () => {
                 fontSize: "0.9rem",
               }}
             >
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
+              Transform your outdoor spaces into vibrant hubs of music and entertainment, or convert your spare rooms into a world-class indoor golf escape. Whether you seek to seamlessly integrate the outdoors with your indoor spaces or create indoor environments that rival the outdoors, TDG cater to your vision. Our solutions redefine home living by harmonizing advanced technology with unparalleled comfort, delivering an exceptional experience tailored to your lifestyle.
             </p>
-            <button className="wwd-btn" style={{ color: "black" }}>
+            <button className="wwd-btn" style={{ color: "black" }} onClick={()=>nav('/product/golf-simulation')}>
               VIEW THE CATALOGUE{" "}
               <GoArrowRight style={{ fontSize: "1rem", color: "black" }} />
             </button>
@@ -408,15 +428,13 @@ const Home = () => {
               <div>
                 <div className="box-abs-2">
                   <h2>Learn more about Golf Simulation</h2>
-                  <p className="mt-3" style={{ color: "#969696" }}>
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer.
+                  <p className="mt-3" style={{ color: "#969696", fontSize:'0.9rem' }}>
+                  An indoor golf simulator simply brings the golf course right into your living room. You'll have a virtual golf course indoors where you can practice, no matter the weather, and play anytime. It's very entertaining to have effectively lifelike graphics and ball-tracking abilities, which will help you develop your swing as you have fun playing with friends and family. This way, you will get a feel of the excitement attached to golf without having to move out from your home very convenient.
                   </p>
                   <button
                     className="wwd-btn"
                     style={{ color: "black", padding: "5px 30px" }}
+                    onClick={()=>nav('/product/golf-simulation')}
                   >
                     EARLY ACCESS{" "}
                     <GoArrowRight
@@ -561,7 +579,7 @@ const Home = () => {
             style={{ height: "450px" }}
           >
             <div>
-              <p style={{ color: "white" }}>Lorem Ipsum</p>
+              {/* <p style={{ color: "white" }}>Lorem Ipsum</p> */}
               <h5
                 className="mb-4"
                 style={{
@@ -586,7 +604,7 @@ const Home = () => {
             style={{ height: "450px" }}
           >
             <div>
-              <p style={{ color: "white" }}>Lorem Ipsum</p>
+              {/* <p style={{ color: "white" }}>Lorem Ipsum</p> */}
               <h5
                 className="mb-4"
                 style={{
@@ -611,7 +629,7 @@ const Home = () => {
             style={{ height: "450px" }}
           >
             <div>
-              <p style={{ color: "white" }}>Lorem Ipsum</p>
+              {/* <p style={{ color: "white" }}>Lorem Ipsum</p> */}
               <h5
                 className="mb-4"
                 style={{

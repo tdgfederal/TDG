@@ -16,6 +16,7 @@ import Golf from "./pages/Golf";
 import Products from "./pages/Products";
 import CreateBlog from "./pages/CreateBlog";
 import Login from "./pages/Login";
+import Service from "./pages/Service";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
         <Route path="/product/golf-simulation" element={<Golf />} />
         <Route path="/create" element={localStorage.getItem('loggedIn')?<CreateBlog />:<Navigate to='/login'/>} />
         <Route path="/login" element={<Login />} />
+        <Route path="/service" element={<Service />} />
       </Routes>
       <Footer/>
     </div>
