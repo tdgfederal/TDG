@@ -63,7 +63,7 @@ const Home = () => {
             <div className="carousel-item active">
               <img src={caro} className="d-block w-100" alt="..." />
               <div className="carousel-caption caro-text">
-                <h5>Transform Your Home with TDG Smart</h5>
+                <h5>Elevate Your Living: Smart Homes, Smarter Life</h5>
                 <p>
                   Experience the Future of Living with Our Cutting-Edge Smart
                   Systems and Lifestyle Solutions
@@ -84,7 +84,7 @@ const Home = () => {
             <div className="carousel-item">
               <img src={caro} className="d-block w-100" alt="..." />
               <div className="carousel-caption caro-text">
-                <h5>Transform Your Home with TDG Smart</h5>
+                <h5>Smart Homes, Crafted for You</h5>
                 <p>
                   Experience the Future of Living with Our Cutting-Edge Smart
                   Systems and Lifestyle Solutions
@@ -102,7 +102,7 @@ const Home = () => {
             <div className="carousel-item">
               <img src={caro} className="d-block w-100" alt="..." />
               <div className="carousel-caption caro-text">
-                <h5>Transform Your Home with TDG Smart</h5>
+                <h5>Experience the Difference with Smart Home Appliances</h5>
                 <p>
                   Experience the Future of Living with Our Cutting-Edge Smart
                   Systems and Lifestyle Solutions
@@ -118,7 +118,7 @@ const Home = () => {
             <div className="carousel-item">
               <img src={caro} className="d-block w-100" alt="..." />
               <div className="carousel-caption caro-text">
-                <h5>Transform Your Home with TDG Smart</h5>
+                <h5>Revolutionize Your Space with Smart Home Appliances</h5>
                 <p>
                   Experience the Future of Living with Our Cutting-Edge Smart
                   Systems and Lifestyle Solutions
@@ -654,7 +654,7 @@ const Home = () => {
       <br />
       <br />
       <br />
-      <div className="blogs">
+      {/* <div className="blogs">
         <p style={{ textAlign: "center", color: "#E6AF5D" }}>BLOGS</p>
         <h3 style={{ textAlign: "center" }}>
           Latest articles directly from the blog
@@ -731,7 +731,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <br />
       <br />
       <br />
