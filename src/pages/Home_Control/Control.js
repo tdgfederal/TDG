@@ -1,47 +1,41 @@
 import React, { useState } from "react";
-import "../assets/styles/Product.css";
-import pr1 from "../assets/images/pr1.png";
-import pr2 from "../assets/images/pr2.png";
-import pr3 from "../assets/images/pr3.png";
-import pr4 from "../assets/images/pr4.png";
-import pr5 from "../assets/images/pr5.png";
-import pr6 from "../assets/images/pr6.png";
-import g0 from "../assets/images/g0.png";
-import g1 from "../assets/images/g1.png";
-import g2 from "../assets/images/g2.png";
-import g3 from "../assets/images/g3.png";
-import bulb from "../assets/images/bulb.png";
-import sun from "../assets/images/sun.png";
-import rem from "../assets/images/rem.png";
+import "../../assets/styles/Product.css";
+import pr1 from "../../assets/images/pr1.png";
+import pr2 from "../../assets/images/pr2.png";
+import pr3 from "../../assets/images/pr3.png";
+import pr4 from "../../assets/images/pr4.png";
+import pr5 from "../../assets/images/pr5.png";
+import pr6 from "../../assets/images/pr6.png";
+import g0 from "../../assets/images/g0.png";
+import g1 from "../../assets/images/g1.png";
+import g2 from "../../assets/images/g2.png";
+import g3 from "../../assets/images/g3.png";
+import bulb from "../../assets/images/bulb.png";
+import sun from "../../assets/images/sun.png";
+import rem from "../../assets/images/rem.png";
 import { GoArrowRight } from "react-icons/go";
-import w1 from "../assets/images/w1.png";
-import w2 from "../assets/images/w2.png";
-import w3 from "../assets/images/w3.png";
-import w4 from "../assets/images/w4.png";
+import w1 from "../../assets/images/w1.png";
+import w2 from "../../assets/images/w2.png";
+import w3 from "../../assets/images/w3.png";
+import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
 
-const Product = () => {
+const Control = () => {
   const nav = useNavigate();
-  const [career, setCareer] = useState("Home theaters");
+  const [career, setCareer] = useState("Control4");
   const options = [
     {
-      name: "Home theaters",
+      name: "Control4",
+      nav: "/product/home_control/control4"
     },
     {
-      name: "Multi & whole home audio",
+      name: "RTI",
+      nav: "/product/home_control/RTI"
     },
     {
-      name: "Golf Simulation",
-    },
-    {
-      name: "Gaming",
-    },
-    {
-      name: "Speakers",
-    },
-    {
-      name: "Relaxing Outdoors",
-    },
+      name: "URC",
+      nav: "/product/home_control/URC"
+    }
   ];
   const prodList = [
     {
@@ -97,14 +91,14 @@ const Product = () => {
     <div className="product-section">
       <div className="wall-prod">
         <div>
-          <h1>Products</h1>
-          <h4>Entertainment & Lifestyle</h4>
+          <h1>Control4</h1>
+          <h4>Home Control</h4>
         </div>
       </div>
       <div className="filters">
         {options.map((e, i) => (
           <button
-            onClick={() => setCareer(e.name)}
+            onClick={() => {setCareer(e.name); nav(e.nav)}}
             key={i}
             className="career-btn-filter py-2"
             style={{
@@ -435,4 +429,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default Control;

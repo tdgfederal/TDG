@@ -1,53 +1,116 @@
 import React, { useState } from "react";
-import "../assets/styles/Golf.css";
-import g0 from "../assets/images/g5.png";
-import g1 from "../assets/images/g6.png";
-import g2 from "../assets/images/g7.png";
-import g3 from "../assets/images/g8.png";
-import bulb from "../assets/images/z2.png";
-import sun from "../assets/images/z1.png";
-import rem from "../assets/images/z3.png";
+import "../../assets/styles/Product.css";
+import pr1 from "../../assets/images/pr1.png";
+import pr2 from "../../assets/images/pr2.png";
+import pr3 from "../../assets/images/pr3.png";
+import pr4 from "../../assets/images/pr4.png";
+import pr5 from "../../assets/images/pr5.png";
+import pr6 from "../../assets/images/pr6.png";
+import g0 from "../../assets/images/g0.png";
+import g1 from "../../assets/images/g1.png";
+import g2 from "../../assets/images/g2.png";
+import g3 from "../../assets/images/g3.png";
+import bulb from "../../assets/images/bulb.png";
+import sun from "../../assets/images/sun.png";
+import rem from "../../assets/images/rem.png";
 import { GoArrowRight } from "react-icons/go";
+import w1 from "../../assets/images/w1.png";
+import w2 from "../../assets/images/w2.png";
+import w3 from "../../assets/images/w3.png";
+import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
 
-const Golf = () => {
+const Speakers = () => {
   const nav = useNavigate();
-  const [career, setCareer] = useState("Protective Case");
+  const [career, setCareer] = useState("Speakers");
   const options = [
     {
-      name: "Protective Case",
+      name: "Home theaters",
+      nav: "/product/Entertainment_&_Lifestyle/home-theatre"
     },
     {
-      name: "Cameras",
+      name: "Multi & whole home audio",
+      nav: "/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
     },
     {
-      name: "Mat",
+      name: "Golf Simulation",
+      nav: "/product/Entertainment_&_Lifestyle/golf-simulation"
     },
     {
-      name: "Mat Base",
+      name: "Gaming",
+      nav:"/product/Entertainment_&_Lifestyle/gaming"
     },
     {
-      name: "Launch Monitor Alignment Stand",
+      name: "Speakers",
+      nav:"/product/Entertainment_&_Lifestyle/speakers"
     },
     {
-      name: "Floor Mounted Projector Enclosure",
+      name: "Relaxing Outdoors",
+      nav:"/product/Entertainment_&_Lifestyle/relaxing-outdoors"
+    },
+  ];
+  const prodList = [
+    {
+      img: pr1,
+      txt: "Bowers & Wilkins",
+    },
+    {
+      img: pr2,
+      txt: "Wisdom",
+    },
+    {
+      img: pr3,
+      txt: "Sonance",
+    },
+    {
+      img: pr4,
+      txt: "Totem",
+    },
+    {
+      img: pr5,
+      txt: "Leon",
+    },
+    {
+      img: pr6,
+      txt: "Triad",
+    },
+    {
+      img: pr1,
+      txt: "Bowers & Wilkins",
+    },
+    {
+      img: pr2,
+      txt: "Wisdom",
+    },
+    {
+      img: pr3,
+      txt: "Sonance",
+    },
+    {
+      img: pr4,
+      txt: "Totem",
+    },
+    {
+      img: pr5,
+      txt: "Leon",
+    },
+    {
+      img: pr6,
+      txt: "Triad",
     },
   ];
   return (
-    <div className="golf-section">
-      <div className="wall-prod-1">
+    <div className="product-section">
+      <div className="wall-prod">
         <div>
-          <h1>GOLF SIMULATION</h1>
-          <h5>
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s.
-          </h5>
+          <h1>Speakers</h1>
+          <h4>Entertainment & Lifestyle</h4>
         </div>
       </div>
       <div className="filters">
         {options.map((e, i) => (
           <button
-            onClick={() => setCareer(e.name)}
+            onClick={() => {setCareer(e.name); nav(e.nav)}}
             key={i}
             className="career-btn-filter py-2"
             style={{
@@ -57,6 +120,14 @@ const Golf = () => {
           >
             {e.name}
           </button>
+        ))}
+      </div>
+      <div className="prod-list">
+        {prodList.map((e, i) => (
+          <div className="prods-img" style={{ textAlign: "center" }} key={i}>
+            <img src={e.img} alt="" />
+            <div>{e.txt}</div>
+          </div>
         ))}
       </div>
       <div id="carouselExampleIndicators" className="carousel slide">
@@ -107,7 +178,7 @@ const Golf = () => {
                 </div>
               </div>
               <div className="caro-right col-lg-6">
-                <h4>Protective Case</h4>
+                <h4>Bowers & Wilkins</h4>
                 <p>
                   Lorem Ipsum has been the industry's standard dummy text ever
                   since the 1500s. Lorem Ipsum has been the industry's standard
@@ -152,12 +223,7 @@ const Golf = () => {
                     </p>
                   </div>
                 </div>
-                <button
-                  className="btn-caro-1-1"
-                  onClick={() => nav("/consultation")}
-                >
-                  SCHEDULE A CALL
-                </button>
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
@@ -182,7 +248,7 @@ const Golf = () => {
                 </div>
               </div>
               <div className="caro-right col-lg-6">
-                <h4>Protective Case</h4>
+                <h4>Bowers & Wilkins</h4>
                 <p>
                   Lorem Ipsum has been the industry's standard dummy text ever
                   since the 1500s. Lorem Ipsum has been the industry's standard
@@ -227,12 +293,7 @@ const Golf = () => {
                     </p>
                   </div>
                 </div>
-                <button
-                  className="btn-caro-1-1"
-                  onClick={() => nav("/consultation")}
-                >
-                  SCHEDULE A CALL
-                </button>
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
@@ -257,7 +318,7 @@ const Golf = () => {
                 </div>
               </div>
               <div className="caro-right col-lg-6">
-                <h4>Protective Case</h4>
+                <h4>Bowers & Wilkins</h4>
                 <p>
                   Lorem Ipsum has been the industry's standard dummy text ever
                   since the 1500s. Lorem Ipsum has been the industry's standard
@@ -302,12 +363,7 @@ const Golf = () => {
                     </p>
                   </div>
                 </div>
-                <button
-                  className="btn-caro-1-1"
-                  onClick={() => nav("/consultation")}
-                >
-                  SCHEDULE A CALL
-                </button>
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
@@ -316,8 +372,73 @@ const Golf = () => {
           </div>
         </div>
       </div>
+      <br />
+      <br />
+      <div className="caro-blogs">
+        <p
+          style={{ textAlign: "center", color: "#757575", fontSize: "1.1rem" }}
+        >
+          Our Products
+        </p>
+        <h4 style={{ textAlign: "center" }}>Speakers</h4>
+        <br />
+        <div className="row-blog-prod">
+          <div className="mx-auto" style={{ textAlign: "center" }}>
+            <img src={w1} height={300} alt="" />
+            <div
+              className="my-3"
+              style={{ fontSize: "0.9rem", fontWeight: "600" }}
+            >
+              Loudspeakers
+            </div>
+            <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
+              Bring your sound to a new level of excellence with our premium
+              loudspeakers here at TDG Home.
+            </div>
+          </div>
+          <div className="mx-auto" style={{ textAlign: "center" }}>
+            <img src={w2} height={300} alt="" />
+            <div
+              className="my-3"
+              style={{ fontSize: "0.9rem", fontWeight: "600" }}
+            >
+              Subwoofers
+            </div>
+            <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
+              Feel the bass as never felt before with TDG Home's
+              high-performance subwoofers.
+            </div>
+          </div>
+          <div className="mx-auto" style={{ textAlign: "center" }}>
+            <img src={w3} height={300} alt="" />
+            <div
+              className="my-3"
+              style={{ fontSize: "0.9rem", fontWeight: "600" }}
+            >
+              Home Theater
+            </div>
+            <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
+              Bring your living room into the world of cinema with home theater
+              systems from TDG Home.
+            </div>
+          </div>
+          <div className="mx-auto" style={{ textAlign: "center" }}>
+            <img src={w4} height={300} alt="" />
+            <div
+              className="my-3"
+              style={{ fontSize: "0.9rem", fontWeight: "600" }}
+            >
+              In-Wall & In-Ceiling
+            </div>
+            <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
+              TDG Home in-wall and in-ceiling speakers provide sleek,
+              unobtrusive audio to every corner of your room.
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Golf;
+export default Speakers;

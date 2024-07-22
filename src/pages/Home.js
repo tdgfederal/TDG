@@ -265,7 +265,7 @@ const Home = () => {
         </h3>
         <br />
         <div className="logos-circle">
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center" }} onClick={()=>nav('/product/home_control/control4')}>
             <div className="logo-circle mx-auto">
               <img src={l1} height={45} alt="" />
             </div>
@@ -277,13 +277,13 @@ const Home = () => {
             </div>
             <p className="mt-2">Entertainment & Lifestyle</p>
           </div>
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "center" }} onClick={()=>nav('/product/comfort/climate-control')}>
             <div className="logo-circle mx-auto">
               <img src={l3} height={45} alt="" />
             </div>
             <p className="mt-2">Comfort</p>
           </div>
-          <div style={{ textAlign: "center" }} onClick={()=>nav('/service')}>
+          <div style={{ textAlign: "center" }} onClick={()=>nav('/product/Secuity_&_Surveillance/cameras')}>
             <div className="logo-circle mx-auto">
               <img src={l4} height={45} alt="" />
             </div>

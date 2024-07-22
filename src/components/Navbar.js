@@ -83,9 +83,33 @@ const Navbar = () => {
                         HOME CONTROL
                       </p>
                       <ul style={{ listStyle: "none", lineHeight: "30px" }}>
-                        <li>Control4</li>
-                        <li>RTI</li>
-                        <li>URC</li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav("/product/home_control/control4");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Control4
+                        </li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav("/product/home_control/RTI");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          RTI
+                        </li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav("/product/home_control/URC");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          URC
+                        </li>
                       </ul>
                       <br />
                       <p
@@ -103,20 +127,68 @@ const Navbar = () => {
                         Entertainment & Lifestyle
                       </p>
                       <ul style={{ listStyle: "none", lineHeight: "30px" }}>
-                        <li>Home theaters</li>
-                        <li>Multi & whole home audio</li>
                         <li
                           onClick={() => {
                             setSer(!ser);
-                            nav("/product/golf-simulation");
+                            nav(
+                              "/product/Entertainment_&_Lifestyle/home-theatre"
+                            );
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Home theaters
+                        </li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav(
+                              "/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
+                            );
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Multi & whole home audio
+                        </li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav(
+                              "/product/Entertainment_&_Lifestyle/golf-simulation"
+                            );
                           }}
                           style={{ cursor: "pointer" }}
                         >
                           Golf Simulation
                         </li>
-                        <li>Gaming</li>
-                        <li>Speakers</li>
-                        <li>Relaxing Outdoors</li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav("/product/Entertainment_&_Lifestyle/gaming");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Gaming
+                        </li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav("/product/Entertainment_&_Lifestyle/speakers");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Speakers
+                        </li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav(
+                              "/product/Entertainment_&_Lifestyle/relaxing-outdoors"
+                            );
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Relaxing Outdoors
+                        </li>
                       </ul>
                     </div>
                     <div className="right-nav-ser">
@@ -130,8 +202,24 @@ const Navbar = () => {
                         Comfort
                       </p>
                       <ul style={{ listStyle: "none", lineHeight: "30px" }}>
-                        <li>Climate Control</li>
-                        <li>Motorization</li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav("/product/comfort/climate-control");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Climate Control
+                        </li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav("/product/comfort/motorization");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Motorization
+                        </li>
                       </ul>
                       <br />
                       <p
@@ -144,9 +232,35 @@ const Navbar = () => {
                         Security & Surveillance
                       </p>
                       <ul style={{ listStyle: "none", lineHeight: "30px" }}>
-                        <li>Cameras</li>
-                        <li>Monitoring</li>
-                        <li>Entry Services</li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav("/product/Secuity_&_Surveillance/cameras");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Cameras
+                        </li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav("/product/Secuity_&_Surveillance/monitoring");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Monitoring
+                        </li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
+                            nav(
+                              "/product/Secuity_&_Surveillance/entry-services"
+                            );
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Entry Services
+                        </li>
                       </ul>
                       <br />
                       <p
@@ -164,9 +278,21 @@ const Navbar = () => {
                         Lighting
                       </p>
                       <ul style={{ listStyle: "none", lineHeight: "30px" }}>
-                        <li>Smart Lighting</li>
-                        <li>Fixtures</li>
-                        <li>Keypads</li>
+                        <li onClick={() => {
+                            setSer(!ser);
+                            nav("/product/Lighting/smart-lighting");
+                          }}
+                          style={{ cursor: "pointer" }}>Smart Lighting</li>
+                        <li onClick={() => {
+                            setSer(!ser);
+                            nav("/product/Lighting/fixtures");
+                          }}
+                          style={{ cursor: "pointer" }}>Fixtures</li>
+                        <li onClick={() => {
+                            setSer(!ser);
+                            nav("/product/Lighting/keypads");
+                          }}
+                          style={{ cursor: "pointer" }}>Keypads</li>
                       </ul>
                     </div>
                   </div>
@@ -182,7 +308,10 @@ const Navbar = () => {
                 >
                   Services
                 </a>
-                <ul className="dropdown-menu" style={{ fontSize: "0.85rem", textAlign:'center' }}>
+                <ul
+                  className="dropdown-menu"
+                  style={{ fontSize: "0.85rem", textAlign: "center" }}
+                >
                   <li>
                     <Link
                       className="dropdown-item"
