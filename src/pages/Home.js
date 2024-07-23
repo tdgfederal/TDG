@@ -215,7 +215,7 @@ const Home = () => {
                 functionality. Experience the future of an American home through
                 our top-of-the-line smart solution
               </p>
-              <button className="wwd-btn" onClick={()=>nav('/support')}>
+              <button className="wwd-btn" onClick={() => nav("/support")}>
                 WHAT WE DO <GoArrowRight style={{ fontSize: "1rem" }} />
               </button>
             </div>
@@ -265,31 +265,46 @@ const Home = () => {
         </h3>
         <br />
         <div className="logos-circle">
-          <div style={{ textAlign: "center" }} onClick={()=>nav('/product/home_control/control4')}>
+          <div
+            style={{ textAlign: "center" }}
+            onClick={() => nav("/product/home_control/control4")}
+          >
             <div className="logo-circle mx-auto">
               <img src={l1} height={45} alt="" />
             </div>
             <p className="mt-2">Home Control</p>
           </div>
-          <div style={{ textAlign: "center" }} onClick={()=>nav('/product/Entertainment_&_Lifestyle')}>
+          <div
+            style={{ textAlign: "center" }}
+            onClick={() => nav("/product/Entertainment_&_Lifestyle")}
+          >
             <div className="logo-circle mx-auto">
               <img src={l2} height={45} alt="" />
             </div>
             <p className="mt-2">Entertainment & Lifestyle</p>
           </div>
-          <div style={{ textAlign: "center" }} onClick={()=>nav('/product/comfort/climate-control')}>
+          <div
+            style={{ textAlign: "center" }}
+            onClick={() => nav("/product/comfort/climate-control")}
+          >
             <div className="logo-circle mx-auto">
               <img src={l3} height={45} alt="" />
             </div>
             <p className="mt-2">Comfort</p>
           </div>
-          <div style={{ textAlign: "center" }} onClick={()=>nav('/product/Secuity_&_Surveillance/cameras')}>
+          <div
+            style={{ textAlign: "center" }}
+            onClick={() => nav("/product/Secuity_&_Surveillance/cameras")}
+          >
             <div className="logo-circle mx-auto">
               <img src={l4} height={45} alt="" />
             </div>
             <p className="mt-2">Security & Surveillance</p>
           </div>
-          <div style={{ textAlign: "center" }} onClick={()=>nav('/product/Lighting')}>
+          <div
+            style={{ textAlign: "center" }}
+            onClick={() => nav("/product/Lighting")}
+          >
             <div className="logo-circle mx-auto">
               <img src={l5} height={45} alt="" />
             </div>
@@ -309,7 +324,11 @@ const Home = () => {
             <div style={{ textAlign: "center" }}>
               <img className="tab-img" src={tab} alt="" />
               <h6 className="mt-3">Secuity System</h6>
-              <button className="wwd-btn" style={{ color: "black" }} onClick={()=>nav('/service')}>
+              <button
+                className="wwd-btn"
+                style={{ color: "black" }}
+                onClick={() => nav("/service")}
+              >
                 CHECK PRODUCTS{" "}
                 <GoArrowRight style={{ fontSize: "1rem", color: "black" }} />
               </button>
@@ -323,7 +342,11 @@ const Home = () => {
               <img className="cctv-img" src={cctv} alt="" />
               <div className="box-abs" style={{ textAlign: "center" }}>
                 <h6 className="mt-3">Smart Home Surveillance</h6>
-                <button className="wwd-btn" style={{ color: "black" }} onClick={()=>nav('/service')}>
+                <button
+                  className="wwd-btn"
+                  style={{ color: "black" }}
+                  onClick={() => nav("/service")}
+                >
                   VIEW PRODUCTS{" "}
                   <GoArrowRight style={{ fontSize: "1rem", color: "black" }} />
                 </button>
@@ -399,7 +422,7 @@ const Home = () => {
                 fontWeight: "600",
               }}
             >
-              Lorem Ipsum is simply
+              Learn more about Golf Simulation
             </p>
             <h3>Golf Simulation</h3>
             <p
@@ -409,9 +432,22 @@ const Home = () => {
                 fontSize: "0.9rem",
               }}
             >
-              Transform your outdoor spaces into vibrant hubs of music and entertainment, or convert your spare rooms into a world-class indoor golf escape. Whether you seek to seamlessly integrate the outdoors with your indoor spaces or create indoor environments that rival the outdoors, TDG cater to your vision. Our solutions redefine home living by harmonizing advanced technology with unparalleled comfort, delivering an exceptional experience tailored to your lifestyle.
+              Transform your outdoor spaces into vibrant hubs of music and
+              entertainment, or convert your spare rooms into a world-class
+              indoor golf escape. Whether you seek to seamlessly integrate the
+              outdoors with your indoor spaces or create indoor environments
+              that rival the outdoors, TDG cater to your vision. Our solutions
+              redefine home living by harmonizing advanced technology with
+              unparalleled comfort, delivering an exceptional experience
+              tailored to your lifestyle.
             </p>
-            <button className="wwd-btn" style={{ color: "black" }} onClick={()=>nav('/product/golf-simulation')}>
+            <button
+              className="wwd-btn"
+              style={{ color: "black" }}
+              onClick={() =>
+                nav("/product/Entertainment_&_Lifestyle/golf-simulation")
+              }
+            >
               VIEW THE CATALOGUE{" "}
               <GoArrowRight style={{ fontSize: "1rem", color: "black" }} />
             </button>
@@ -428,19 +464,36 @@ const Home = () => {
               <div>
                 <div className="box-abs-2">
                   <h2>Learn more about Golf Simulation</h2>
-                  <p className="mt-3" style={{ color: "#969696", fontSize:'0.9rem' }}>
-                  An indoor golf simulator simply brings the golf course right into your living room. You'll have a virtual golf course indoors where you can practice, no matter the weather, and play anytime. It's very entertaining to have effectively lifelike graphics and ball-tracking abilities, which will help you develop your swing as you have fun playing with friends and family. This way, you will get a feel of the excitement attached to golf without having to move out from your home very convenient.
+                  <p
+                    className="mt-3"
+                    style={{ color: "#969696", fontSize: "0.9rem" }}
+                  >
+                    An indoor golf simulator simply brings the golf course right
+                    into your living room. You'll have a virtual golf course
+                    indoors where you can practice, no matter the weather, and
+                    play anytime. It's very entertaining to have effectively
+                    lifelike graphics and ball-tracking abilities, which will
+                    help you develop your swing as you have fun playing with
+                    friends and family. This way, you will get a feel of the
+                    excitement attached to golf without having to move out from
+                    your home very convenient.
                   </p>
-                  <button
+                  {/* <button
                     className="wwd-btn"
                     style={{ color: "black", padding: "5px 30px" }}
-                    onClick={()=>nav('/product/golf-simulation')}
+                    onClick={() => nav("/product/golf-simulation")}
                   >
                     EARLY ACCESS{" "}
                     <GoArrowRight
                       style={{ fontSize: "1rem", color: "black" }}
                     />
-                  </button>
+                  </button> */}
+                  <p className="mt-2">
+                    Golf Simulation
+                  </p>
+                  <p style={{marginTop:"-15px"}}>
+                    Virtual Screen for Golfing
+                  </p>
                 </div>
               </div>
             </div>
@@ -448,10 +501,6 @@ const Home = () => {
           <div className="col-lg-5 golfr">
             <div style={{ width: "max-content" }}>
               <img src={golfr} alt="" />
-              <p className="mt-2" style={{ textAlign: "center" }}>
-                Lorem Ipsum
-              </p>
-              <p style={{ textAlign: "center" }}>Lorem Ipsum is simply</p>
             </div>
           </div>
         </div>
@@ -593,6 +642,7 @@ const Home = () => {
               <button
                 className="wwd-btn"
                 style={{ color: "white", border: "1px solid white" }}
+                onClick={()=>nav('/product/Entertainment_&_Lifestyle/relaxing-outdoors')}
               >
                 LEARN MORE{" "}
                 <GoArrowRight style={{ fontSize: "1rem", color: "white" }} />
@@ -618,6 +668,7 @@ const Home = () => {
               <button
                 className="wwd-btn"
                 style={{ color: "white", border: "1px solid white" }}
+                onClick={()=>nav('/product/Entertainment_&_Lifestyle/gaming')}
               >
                 LEARN MORE{" "}
                 <GoArrowRight style={{ fontSize: "1rem", color: "white" }} />
@@ -643,6 +694,7 @@ const Home = () => {
               <button
                 className="wwd-btn"
                 style={{ color: "white", border: "1px solid white" }}
+                onClick={()=>nav('/product/Entertainment_&_Lifestyle/home-theatre')}
               >
                 LEARN MORE{" "}
                 <GoArrowRight style={{ fontSize: "1rem", color: "white" }} />

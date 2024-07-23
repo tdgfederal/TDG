@@ -278,21 +278,33 @@ const Navbar = () => {
                         Lighting
                       </p>
                       <ul style={{ listStyle: "none", lineHeight: "30px" }}>
-                        <li onClick={() => {
+                        <li
+                          onClick={() => {
                             setSer(!ser);
                             nav("/product/Lighting/smart-lighting");
                           }}
-                          style={{ cursor: "pointer" }}>Smart Lighting</li>
-                        <li onClick={() => {
+                          style={{ cursor: "pointer" }}
+                        >
+                          Smart Lighting
+                        </li>
+                        <li
+                          onClick={() => {
                             setSer(!ser);
                             nav("/product/Lighting/fixtures");
                           }}
-                          style={{ cursor: "pointer" }}>Fixtures</li>
-                        <li onClick={() => {
+                          style={{ cursor: "pointer" }}
+                        >
+                          Fixtures
+                        </li>
+                        <li
+                          onClick={() => {
                             setSer(!ser);
                             nav("/product/Lighting/keypads");
                           }}
-                          style={{ cursor: "pointer" }}>Keypads</li>
+                          style={{ cursor: "pointer" }}
+                        >
+                          Keypads
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -326,17 +338,26 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/home_control/control4"}
+                    >
                       Control4
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/home_control/RTI"}
+                    >
                       RTI
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/home_control/URC"}
+                    >
                       URC
                     </Link>
                   </li>
@@ -357,35 +378,54 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Entertainment_&_Lifestyle/home-theatre"}
+                    >
                       Home theaters
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={
+                        "/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
+                      }
+                    >
                       Multi & whole home audio
                     </Link>
                   </li>
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={"/product/golf-simulation"}
+                      to={"/product/Entertainment_&_Lifestyle/golf-simulation"}
                     >
                       Golf Simulation
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Entertainment_&_Lifestyle/gaming"}
+                    >
                       Gaming
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Entertainment_&_Lifestyle/speakers"}
+                    >
                       Speakers
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={
+                        "/product/Entertainment_&_Lifestyle/relaxing-outdoors"
+                      }
+                    >
                       Relaxing Outdoors
                     </Link>
                   </li>
@@ -395,7 +435,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={""}
+                      to={"/product/comfort/climate-control"}
                       style={{
                         fontWeight: "600",
                         textTransform: "uppercase",
@@ -406,12 +446,18 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/comfort/climate-control"}
+                    >
                       Climate Control
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/comfort/motorization"}
+                    >
                       Motorization
                     </Link>
                   </li>
@@ -421,7 +467,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={""}
+                      to={"/product/Secuity_&_Surveillance/cameras"}
                       style={{
                         fontWeight: "600",
                         textTransform: "uppercase",
@@ -432,17 +478,26 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Secuity_&_Surveillance/cameras"}
+                    >
                       Cameras
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Secuity_&_Surveillance/monitoring"}
+                    >
                       Monitoring
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Secuity_&_Surveillance/entry-services"}
+                    >
                       Entry Services
                     </Link>
                   </li>
@@ -452,7 +507,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={"/product/Lighting"}
+                      to={"/product/Lighting/smart-lighting"}
                       style={{
                         fontWeight: "600",
                         textTransform: "uppercase",
@@ -463,17 +518,26 @@ const Navbar = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Lighting/smart-lighting"}
+                    >
                       Smart Lighting
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Lighting/fixtures"}
+                    >
                       Fixtures
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to={""}>
+                    <Link
+                      className="dropdown-item"
+                      to={"/product/Lighting/keypads"}
+                    >
                       Keypads
                     </Link>
                   </li>

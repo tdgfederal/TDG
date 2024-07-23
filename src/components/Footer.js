@@ -108,24 +108,35 @@ const Footer = () => {
                 style={{ padding: "50px" }}
               >
                 <p style={{ fontSize: "1.1rem" }}>Services</p>
-                <p style={{ fontSize: "0.85rem", cursor: "pointer" }}>
+                <p
+                  style={{ fontSize: "0.85rem", cursor: "pointer" }}
+                  onClick={() => nav("/product/home_control/control4")}
+                >
                   Home Control
                 </p>
                 <p
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() => nav("/product/Entertainment_&_Lifestyle")}
+                  onClick={() =>
+                    nav("/product/Entertainment_&_Lifestyle/home-theatre")
+                  }
                 >
                   Entertainment and Lifestyle
                 </p>
-                <p style={{ fontSize: "0.85rem", cursor: "pointer" }}>
+                <p
+                  style={{ fontSize: "0.85rem", cursor: "pointer" }}
+                  onClick={() => nav("/product/comfort/climate-control")}
+                >
                   Comfort
                 </p>
-                <p style={{ fontSize: "0.85rem", cursor: "pointer" }}>
+                <p
+                  style={{ fontSize: "0.85rem", cursor: "pointer" }}
+                  onClick={() => nav("/product/Secuity_&_Surveillance/cameras")}
+                >
                   Secuity and Surveillance
                 </p>
                 <p
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() => nav("/product/Lighting")}
+                  onClick={() => nav("/product/Lighting/smart-lighting")}
                 >
                   Lighting
                 </p>
@@ -137,31 +148,37 @@ const Footer = () => {
                 <p style={{ fontSize: "1.1rem" }}>Our Product</p>
                 <p
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() => nav("/product/golf-simulation")}
+                  onClick={() =>
+                    nav("/product/Entertainment_&_Lifestyle/golf-simulation")
+                  }
                 >
                   Golf Simulation
                 </p>
                 <p
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() => nav("/product/Entertainment_&_Lifestyle")}
+                  onClick={() =>
+                    nav("/product/Entertainment_&_Lifestyle/speakers")
+                  }
                 >
                   Speakers
                 </p>
                 <p
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() => nav("/product/Entertainment_&_Lifestyle")}
+                  onClick={() =>
+                    nav("/product/Entertainment_&_Lifestyle/relaxing-outdoors")
+                  }
                 >
                   Relaxing Outdoors
                 </p>
                 <p
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() => nav("/product/Entertainment_&_Lifestyle")}
+                  onClick={() => nav("/product/home_control/control4")}
                 >
                   Control4
                 </p>
                 <p
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() => nav("/product/Entertainment_&_Lifestyle")}
+                  onClick={() => nav("/product/comfort/climate-control")}
                 >
                   Climate Control
                 </p>
