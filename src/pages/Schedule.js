@@ -260,9 +260,9 @@ const Schedule = () => {
                 <option value="" disabled selected>
                   Specific questions or topics you would like to cover
                 </option>
-                <option value="Linkedin">Option1</option>
-                <option value="Whatsapp">Option2</option>
-                <option value="Advertisement">Option3</option>
+                <option value="Option1">Option1</option>
+                <option value="Option2">Option2</option>
+                <option value="Option3">Option3</option>
               </select>
             </div>
             {/* <div className="d-flex" style={{ gap: "5px" }}>
