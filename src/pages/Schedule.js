@@ -11,8 +11,8 @@ const Schedule = () => {
     lname: "",
     phone: "",
     email: "",
-    dob: "",
-    mode: "",
+    // dob: "",
+    // mode: "",
     reason: "",
     question: "",
     hear: "",
@@ -181,7 +181,7 @@ const Schedule = () => {
                 required
               />
             </div>
-            <div className="d-flex" style={{ gap: "5px" }}>
+            {/* <div className="d-flex" style={{ gap: "5px" }}>
               <label className="required"></label>
               <input
                 name="dob"
@@ -217,8 +217,8 @@ const Schedule = () => {
               <label htmlFor="" className="mx-2">
                 In-Person
               </label>
-            </div>
-            <div className="d-flex align-items-center mt-2 mb-1">
+            </div> */}
+            {/* <div className="d-flex align-items-center mt-2 mb-1">
               <input
                 type="checkbox"
                 style={{ width: "max-content" }}
@@ -229,7 +229,7 @@ const Schedule = () => {
               <label htmlFor="" className="mx-2">
                 Virtual (via Zoom, Skype, etc.)
               </label>
-            </div>
+            </div> */}
             <div className="d-flex mb-2" style={{ gap: "5px" }}>
               <label className="required"></label>
               <textarea
@@ -248,6 +248,25 @@ const Schedule = () => {
             </div>
             <div className="d-flex" style={{ gap: "5px" }}>
               <label className="required"></label>
+              <select
+                onChange={(e) => {
+                  setC(true);
+                  handleChange(e);
+                }}
+                style={{ color: c ? "black" : "grey" }}
+                name="question"
+                required
+              >
+                <option value="" disabled selected>
+                  Specific questions or topics you would like to cover
+                </option>
+                <option value="Linkedin">Option1</option>
+                <option value="Whatsapp">Option2</option>
+                <option value="Advertisement">Option3</option>
+              </select>
+            </div>
+            {/* <div className="d-flex" style={{ gap: "5px" }}>
+              <label className="required"></label>
               <textarea
                 type="text"
                 placeholder="Specific questions or topics you would like to cover"
@@ -261,7 +280,7 @@ const Schedule = () => {
                 onChange={(e) => handleChange(e)}
                 required
               />
-            </div>
+            </div> */}
             <div className="d-flex" style={{ gap: "5px" }}>
               <label className="required"></label>
               <select
