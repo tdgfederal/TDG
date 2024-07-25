@@ -570,7 +570,7 @@ const Navbar = () => {
                 type="submit"
                 onClick={() => nav("/consultation")}
               >
-                SCHEDULE A CALL
+                REQUEST A QUOTE
               </button>
             </form>
           </div>

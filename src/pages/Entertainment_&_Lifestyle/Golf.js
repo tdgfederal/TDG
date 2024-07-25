@@ -182,7 +182,7 @@ const Golf = () => {
                   className="btn-caro-1-1"
                   onClick={() => nav("/consultation")}
                 >
-                  SCHEDULE A CALL
+                  REQUEST A QUOTE
                 </button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
@@ -257,7 +257,7 @@ const Golf = () => {
                   className="btn-caro-1-1"
                   onClick={() => nav("/consultation")}
                 >
-                  SCHEDULE A CALL
+                  REQUEST A QUOTE
                 </button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
@@ -332,7 +332,7 @@ const Golf = () => {
                   className="btn-caro-1-1"
                   onClick={() => nav("/consultation")}
                 >
-                  SCHEDULE A CALL
+                  REQUEST A QUOTE
                 </button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />

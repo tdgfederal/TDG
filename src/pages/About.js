@@ -159,7 +159,7 @@ const About = () => {
               worry-free.
             </div>
           </div>
-          <button className="wwd-btn" onClick={()=>nav("/consultation")}>SCHEDULE A CALL</button>
+          <button className="wwd-btn" onClick={()=>nav("/consultation")}>REQUEST A QUOTE</button>
         </div>
       </div>
       <br />

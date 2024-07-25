@@ -207,7 +207,7 @@ const Climate = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
@@ -277,7 +277,7 @@ const Climate = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
@@ -347,7 +347,7 @@ const Climate = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>SCHEDULE A CALL</button>
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
