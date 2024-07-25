@@ -1,90 +1,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Marcellus&display=swap");
 
-.schedule-section{
-    font-family: Helvetica;
-    background-image: url("../images/sch.png");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+.schedule-section {
+  font-family: Helvetica;
+  background-image: url("../images/sch.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.sch{
-    padding: 70px 50px;
+.sch {
+  padding: 70px 50px;
 }
-.form-sch{
-    border-radius: 30px;
-    background-color: white;
-    color: black;
-    padding: 40px;
+.form-sch {
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+  padding: 40px;
 }
 .form-sch input {
-    width: 100%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #838080;
-    margin: 8px 0;
-    outline: none;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #838080;
+  margin: 8px 0;
+  outline: none;
 }
 .form-sch select {
-    width: 100%;
-    padding: 5px 10px;
-    border-radius: 5px;
-    border: 1px solid #838080;
-    margin: 8px 0;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #838080;
+  margin: 8px 0;
 }
 .form-sch button {
-    width: 100%;
-    color: white;
-    background-color: black;
-    outline: none;
-    border-radius: 6px;
-    padding: 7px 0;
-    border: none;
+  width: 100%;
+  color: white;
+  background-color: black;
+  outline: none;
+  border-radius: 6px;
+  padding: 7px 0;
+  border: none;
 }
 .required:after {
-    content:" *";
-    color: red;
-    font-size: 1.5rem;
+  content: " *";
+  color: red;
+  font-size: 1.5rem;
+}
+.required{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+@media (max-width: 500px) {
+  .sch {
+    padding: 70px 20px;
   }
-@media(max-width:500px){
-    .sch{
-        padding: 70px 20px;
-    }
-    .form-sch{
-        padding: 30px;
-    }
+  .form-sch {
+    padding: 30px;
+  }
 }
 
-.sch-modal{
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.878);
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999999;
-    top: 0;
+.sch-modal {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.878);
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999999;
+  top: 0;
 }
-.modal-in{
-    text-align: center;
-    padding: 100px;
-    border-radius: 15px;
-    color: black;
-    background-color: white;
-    position: relative;
+.modal-in {
+  text-align: center;
+  padding: 100px;
+  border-radius: 15px;
+  color: black;
+  background-color: white;
+  position: relative;
 }
-.clandly{
-    color: rgb(29, 107, 234);
-    font-weight: 600;
+.clandly {
+  color: rgb(29, 107, 234);
+  font-weight: 600;
 }
-.cross{
-    font-weight: 900;
-    font-size: 1.5rem;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 25px;
+.cross {
+  font-weight: 900;
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 25px;
 }
-.cross:hover{
-    color: red;
+.cross:hover {
+  color: red;
 }

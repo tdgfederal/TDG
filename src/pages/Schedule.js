@@ -47,7 +47,6 @@ const Schedule = () => {
       alert("Failed! Try again.");
     }
   };
-  console.log(formData);
   return (
     <div className="schedule-section" style={{ color: "white" }}>
       {submit && (
@@ -144,24 +143,31 @@ const Schedule = () => {
         <div className="right-sch col-lg-6">
           <form action="" className="form-sch" onSubmit={handleSubmit}>
             <div className="d-flex" style={{ gap: "5px" }}>
-              <label className="required"></label>
-              <input
-                name="fname"
-                onChange={(e) => handleChange(e)}
-                type="text"
-                placeholder="Full Name"
-                required
-              />
-              <label className="required"></label>
-              <input
-                name="lname"
-                onChange={(e) => handleChange(e)}
-                type="text"
-                placeholder="Last Name"
-                required
-              />
+              <div style={{ position: "relative", width: "100%" }}>
+                <label className="required"></label>
+                <input
+                  name="fname"
+                  onChange={(e) => handleChange(e)}
+                  type="text"
+                  placeholder="Full Name"
+                  required
+                />
+              </div>
+              <div style={{ position: "relative", width: "100%" }}>
+                <label className="required"></label>
+                <input
+                  name="lname"
+                  onChange={(e) => handleChange(e)}
+                  type="text"
+                  placeholder="Last Name"
+                  required
+                />
+              </div>
             </div>
-            <div className="d-flex" style={{ gap: "5px" }}>
+            <div
+              className="d-flex"
+              style={{ gap: "5px", position: "relative", width: "100%" }}
+            >
               <label className="required"></label>
               <input
                 name="phone"
@@ -171,7 +177,10 @@ const Schedule = () => {
                 required
               />
             </div>
-            <div className="d-flex" style={{ gap: "5px" }}>
+            <div
+              className="d-flex"
+              style={{ gap: "5px", position: "relative", width: "100%" }}
+            >
               <label className="required"></label>
               <input
                 name="email"
@@ -230,8 +239,11 @@ const Schedule = () => {
                 Virtual (via Zoom, Skype, etc.)
               </label>
             </div> */}
-            <div className="d-flex mb-2" style={{ gap: "5px" }}>
-              <label className="required"></label>
+            <div
+              className="d-flex mb-2"
+              style={{ gap: "5px", position: "relative", width: "100%" }}
+            >
+              <label className="required" style={{top:"1px"}}></label>
               <textarea
                 type="text"
                 placeholder="Please provide a brief description of the reason for your consultation"
@@ -246,8 +258,11 @@ const Schedule = () => {
                 required
               />
             </div>
-            <div className="d-flex" style={{ gap: "5px" }}>
-              <label className="required"></label>
+            <div
+              className="d-flex"
+              style={{ gap: "5px", position: "relative", width: "100%" }}
+            >
+              <label className="required" style={{right:"20px"}}></label>
               <select
                 onChange={(e) => {
                   setC(true);
@@ -281,8 +296,11 @@ const Schedule = () => {
                 required
               />
             </div> */}
-            <div className="d-flex" style={{ gap: "5px" }}>
-              <label className="required"></label>
+            <div
+              className="d-flex"
+              style={{ gap: "5px", position: "relative", width: "100%" }}
+            >
+              <label className="required" style={{right:"20px"}}></label>
               <select
                 onChange={(e) => {
                   setC(true);
