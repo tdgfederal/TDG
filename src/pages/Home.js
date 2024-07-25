@@ -25,6 +25,10 @@ import blog1 from "../assets/images/blog1.png";
 import blog2 from "../assets/images/blog2.png";
 import blog3 from "../assets/images/blog3.png";
 import { useNavigate } from "react-router-dom";
+import c1 from "../assets/videos/c1.mp4";
+import c2 from "../assets/videos/c2.mp4";
+import c3 from "../assets/videos/c3.mp4";
+
 const Home = () => {
   const nav = useNavigate();
   return (
@@ -61,7 +65,10 @@ const Home = () => {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src={caro} className="d-block w-100" alt="..." />
+              {/* <img src={caro} className="d-block w-100" alt="..." /> */}
+              <video className="d-block w-100" autoplay=" true">
+                <source src={c1} type="video/mp4" />
+              </video>
               <div className="carousel-caption caro-text">
                 <h5>Elevate Your Living: Smart Homes, Smarter Life</h5>
                 <p>
@@ -72,17 +79,22 @@ const Home = () => {
                   className="btn-caro-1"
                   onClick={() => nav("/consultation")}
                 >
-                  SCHEDULE A CALL <GoArrowRight />
+                  REQUEST A QUOTE <GoArrowRight />
                 </button>
                 <a href="#section-2">
-                  <button className="btn-caro-2 mx-2">
+                  <button
+                    className="btn-caro-2 mx-2"
+                    style={{ background: "white" }}
+                  >
                     EXPLORE <GoArrowRight />
                   </button>
                 </a>
               </div>
             </div>
             <div className="carousel-item">
-              <img src={caro} className="d-block w-100" alt="..." />
+              <video className="d-block w-100" autoplay=" true">
+                <source src={c2} type="video/mp4" />
+              </video>
               <div className="carousel-caption caro-text">
                 <h5>Smart Homes, Crafted for You</h5>
                 <p>
@@ -90,17 +102,22 @@ const Home = () => {
                   Systems and Lifestyle Solutions
                 </p>
                 <button className="btn-caro-1">
-                  SCHEDULE A CALL <GoArrowRight />
+                  REQUEST A QUOTE <GoArrowRight />
                 </button>
                 <a href="#section-2">
-                  <button className="btn-caro-2 mx-2">
+                  <button
+                    className="btn-caro-2 mx-2"
+                    style={{ background: "white" }}
+                  >
                     EXPLORE <GoArrowRight />
                   </button>
                 </a>
               </div>
             </div>
             <div className="carousel-item">
-              <img src={caro} className="d-block w-100" alt="..." />
+              <video className="d-block w-100" autoplay=" true">
+                <source src={c3} type="video/mp4" />
+              </video>
               <div className="carousel-caption caro-text">
                 <h5>Experience the Difference with Smart Home Appliances</h5>
                 <p>
@@ -108,14 +125,17 @@ const Home = () => {
                   Systems and Lifestyle Solutions
                 </p>
                 <button className="btn-caro-1">
-                  SCHEDULE A CALL <GoArrowRight />
+                  REQUEST A QUOTE <GoArrowRight />
                 </button>
-                <button className="btn-caro-2 mx-2">
+                <button
+                  className="btn-caro-2 mx-2"
+                  style={{ background: "white" }}
+                >
                   EXPLORE <GoArrowRight />
                 </button>
               </div>
             </div>
-            <div className="carousel-item">
+            {/* <div className="carousel-item">
               <img src={caro} className="d-block w-100" alt="..." />
               <div className="carousel-caption caro-text">
                 <h5>Revolutionize Your Space with Smart Home Appliances</h5>
@@ -124,13 +144,13 @@ const Home = () => {
                   Systems and Lifestyle Solutions
                 </p>
                 <button className="btn-caro-1">
-                  SCHEDULE A CALL <GoArrowRight />
+                  REQUEST A QUOTE <GoArrowRight />
                 </button>
                 <button className="btn-caro-2 mx-2">
                   EXPLORE <GoArrowRight />
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
           <button
             className="carousel-control-prev"
@@ -488,10 +508,8 @@ const Home = () => {
                       style={{ fontSize: "1rem", color: "black" }}
                     />
                   </button> */}
-                  <p className="mt-2">
-                    Golf Simulation
-                  </p>
-                  <p style={{marginTop:"-15px"}}>
+                  <p className="mt-2">Golf Simulation</p>
+                  <p style={{ marginTop: "-15px" }}>
                     Virtual Screen for Golfing
                   </p>
                 </div>
@@ -642,7 +660,9 @@ const Home = () => {
               <button
                 className="wwd-btn"
                 style={{ color: "white", border: "1px solid white" }}
-                onClick={()=>nav('/product/Entertainment_&_Lifestyle/relaxing-outdoors')}
+                onClick={() =>
+                  nav("/product/Entertainment_&_Lifestyle/relaxing-outdoors")
+                }
               >
                 LEARN MORE{" "}
                 <GoArrowRight style={{ fontSize: "1rem", color: "white" }} />
@@ -668,7 +688,7 @@ const Home = () => {
               <button
                 className="wwd-btn"
                 style={{ color: "white", border: "1px solid white" }}
-                onClick={()=>nav('/product/Entertainment_&_Lifestyle/gaming')}
+                onClick={() => nav("/product/Entertainment_&_Lifestyle/gaming")}
               >
                 LEARN MORE{" "}
                 <GoArrowRight style={{ fontSize: "1rem", color: "white" }} />
@@ -694,7 +714,9 @@ const Home = () => {
               <button
                 className="wwd-btn"
                 style={{ color: "white", border: "1px solid white" }}
-                onClick={()=>nav('/product/Entertainment_&_Lifestyle/home-theatre')}
+                onClick={() =>
+                  nav("/product/Entertainment_&_Lifestyle/home-theatre")
+                }
               >
                 LEARN MORE{" "}
                 <GoArrowRight style={{ fontSize: "1rem", color: "white" }} />
