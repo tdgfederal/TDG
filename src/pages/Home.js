@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import "../assets/styles/Home.css";
 import caro from "../assets/images/caro.png";
 import { GoArrowRight } from "react-icons/go";
@@ -35,9 +35,32 @@ const Home = () => {
     const videos = document.querySelectorAll('.carousel-item video');
     videos.forEach(video => {
       video.muted = true;
-      video.play();
+      video.playsInline = true;
     });
+
+    const playVideos = () => {
+      videos.forEach(video => {
+        video.play().catch(error => {
+          console.log('Error attempting to play', error);
+        });
+      });
+    };
+
+    // Play the first video immediately
+    if (videos.length > 0) {
+      videos[0].play().catch(error => {
+        console.log('Error attempting to play the first video', error);
+      });
+    }
+
+    // Add event listener to play videos on user interaction
+    document.addEventListener('click', playVideos);
+
+    return () => {
+      document.removeEventListener('click', playVideos);
+    };
   }, []);
+
   return (
     <div>
       <div className="home-caro">
