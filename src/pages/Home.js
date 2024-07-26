@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import "../assets/styles/Home.css";
 import caro from "../assets/images/caro.png";
 import { GoArrowRight } from "react-icons/go";
@@ -31,6 +31,13 @@ import c3 from "../assets/videos/c3.mp4";
 
 const Home = () => {
   const nav = useNavigate();
+  useEffect(() => {
+    const videos = document.querySelectorAll('.carousel-item video');
+    videos.forEach(video => {
+      video.muted = true;
+      video.play();
+    });
+  }, []);
   return (
     <div>
       <div className="home-caro">
@@ -66,7 +73,7 @@ const Home = () => {
           <div className="carousel-inner">
             <div className="carousel-item active">
               {/* <img src={caro} className="d-block w-100" alt="..." /> */}
-              <video className="d-block w-100" autoplay=" true">
+              <video className="d-block w-100" autoplay muted>
                 <source src={c1} type="video/mp4" />
               </video>
               <div className="carousel-caption caro-text">
@@ -92,7 +99,7 @@ const Home = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <video className="d-block w-100" autoplay=" true">
+              <video className="d-block w-100" autoplay muted>
                 <source src={c2} type="video/mp4" />
               </video>
               <div className="carousel-caption caro-text">
@@ -115,7 +122,7 @@ const Home = () => {
               </div>
             </div>
             <div className="carousel-item">
-              <video className="d-block w-100" autoplay=" true">
+              <video className="d-block w-100" autoplay muted>
                 <source src={c3} type="video/mp4" />
               </video>
               <div className="carousel-caption caro-text">
@@ -135,22 +142,6 @@ const Home = () => {
                 </button>
               </div>
             </div>
-            {/* <div className="carousel-item">
-              <img src={caro} className="d-block w-100" alt="..." />
-              <div className="carousel-caption caro-text">
-                <h5>Revolutionize Your Space with Smart Home Appliances</h5>
-                <p>
-                  Experience the Future of Living with Our Cutting-Edge Smart
-                  Systems and Lifestyle Solutions
-                </p>
-                <button className="btn-caro-1">
-                  REQUEST A QUOTE <GoArrowRight />
-                </button>
-                <button className="btn-caro-2 mx-2">
-                  EXPLORE <GoArrowRight />
-                </button>
-              </div>
-            </div> */}
           </div>
           <button
             className="carousel-control-prev"
@@ -175,6 +166,7 @@ const Home = () => {
           </button>
         </div>
       </div>
+
       <section id="section-2">
         <div className="text-4">
           <div className="row my-5" style={{ margin: "0" }}>
