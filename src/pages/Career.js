@@ -71,10 +71,10 @@ const Career = () => {
     pageNumbers.push(i);
   }
   const handleNext = () => {
-    if(pageNumbers.includes(currentPage+1)) {
-      setCurrentPage(currentPage+1);
+    if (pageNumbers.includes(currentPage + 1)) {
+      setCurrentPage(currentPage + 1);
     }
-  }
+  };
 
   return (
     <div className="career-section">
@@ -85,26 +85,30 @@ const Career = () => {
             Shape the Future of Smart Living with Innovative and Passionate
             Professionals
           </p>
-          <button className="btn-caro-1-2">
-            EXPLORE <GoArrowRight />
-          </button>
+          <a href="#filters">
+            <button className="btn-caro-1-2">
+              EXPLORE <GoArrowRight />
+            </button>
+          </a>
         </div>
       </div>
-      <div className="filters">
-        {options.map((e, i) => (
-          <button
-            onClick={() => setCareer(e.name)}
-            key={i}
-            className="career-btn-filter"
-            style={{
-              background: e.name === career ? "black" : "white",
-              color: e.name === career ? "white" : "black",
-            }}
-          >
-            {e.name}
-          </button>
-        ))}
-      </div>
+      <section id="filters">
+        <div className="filters">
+          {options.map((e, i) => (
+            <button
+              onClick={() => setCareer(e.name)}
+              key={i}
+              className="career-btn-filter"
+              style={{
+                background: e.name === career ? "black" : "white",
+                color: e.name === career ? "white" : "black",
+              }}
+            >
+              {e.name}
+            </button>
+          ))}
+        </div>
+      </section>
       <div className="job-posts">
         {currentjob
           .filter((e) => {
@@ -133,7 +137,10 @@ const Career = () => {
                   </div>
                 </div>
               </div>
-              <div className="right-post" onClick={()=>navigate('/job', {state: {message: e}})}>
+              <div
+                className="right-post"
+                onClick={() => navigate("/job", { state: { message: e } })}
+              >
                 <button className="career-btn-filter-2">
                   APPLY <GoArrowRight />
                 </button>
@@ -144,13 +151,31 @@ const Career = () => {
       <nav className="pagination-num d-flex justify-content-center my-3">
         <ul className="pagination">
           {pageNumbers.map((e) => (
-            <Link style={{textDecoration:'none', color:'black'}} key={e} className="page-item">
-              <a className="p-2 fs-5" style={{textDecoration:'none', color:'black', border:'none', borderBottom:e===currentPage?"3px solid black":"none"}} onClick={()=>setCurrentPage(e)} href="">
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              key={e}
+              className="page-item"
+            >
+              <a
+                className="p-2 fs-5"
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  border: "none",
+                  borderBottom: e === currentPage ? "3px solid black" : "none",
+                }}
+                onClick={() => setCurrentPage(e)}
+                href=""
+              >
                 {e}
               </a>
             </Link>
           ))}
-          <GoArrowRight className="mt-1 mx-2 fs-5" onClick={handleNext} style={{cursor:'pointer'}}/>
+          <GoArrowRight
+            className="mt-1 mx-2 fs-5"
+            onClick={handleNext}
+            style={{ cursor: "pointer" }}
+          />
         </ul>
       </nav>
     </div>

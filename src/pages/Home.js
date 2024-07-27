@@ -32,37 +32,37 @@ import c3 from "../assets/videos/c3.mp4";
 const Home = () => {
   const nav = useNavigate();
   useEffect(() => {
-    const videos = document.querySelectorAll('.carousel-item video');
-    videos.forEach(video => {
+    const videos = document.querySelectorAll(".carousel-item video");
+    videos.forEach((video) => {
       video.muted = true;
       video.playsInline = true;
     });
 
     const playVideos = () => {
-      videos.forEach(video => {
-        video.play().catch(error => {
-          console.log('Error attempting to play', error);
+      videos.forEach((video) => {
+        video.play().catch((error) => {
+          console.log("Error attempting to play", error);
         });
       });
     };
 
     // Play the first video immediately
     if (videos.length > 0) {
-      videos[0].play().catch(error => {
-        console.log('Error attempting to play the first video', error);
+      videos[0].play().catch((error) => {
+        console.log("Error attempting to play the first video", error);
       });
     }
 
     // Add event listener to play videos on user interaction
-    document.addEventListener('click', playVideos);
+    document.addEventListener("click", playVideos);
 
     return () => {
-      document.removeEventListener('click', playVideos);
+      document.removeEventListener("click", playVideos);
     };
   }, []);
 
   return (
-    <div>
+    <div style={{ overflowX: "hidden" }}>
       <div className="home-caro">
         <div id="carouselExampleCaptions" className="carousel slide">
           <div className="carousel-indicators">
@@ -229,11 +229,11 @@ const Home = () => {
           Get Started Today
         </h3>
         <br />
-        <div className="row pics-4-row" style={{ margin: "0" }}>
-          <div className="col-xl-4 col-lg-6 col-md-6 d-flex pic1-card" sty>
-            <div>
+        <div className="row pics-4-row">
+          <div className="col-xl-4 col-lg-6 col-md-6 d-flex pic1-card">
+            <div style={{ marginTop: "3px" }}>
               <div className="pos-rel-pic">
-                <img src={pic1} alt="" height={220} />
+                <img src={pic1} alt="" height={223} />
                 {/* <p className="pos-abs-pic">Lorem Ipsum is simply</p> */}
               </div>
               <p
@@ -260,13 +260,13 @@ const Home = () => {
             sty
           >
             <div>
-              <div className="pos-rel-pic">
-                <img src={pic2} alt="" height={450} />
+              <div className="pos-rel-pic" style={{ marginTop: "3px" }}>
+                <img src={pic2} alt="" height={471} />
                 {/* <p className="pos-abs-pic">Lorem Ipsum is simply</p> */}
               </div>
             </div>
           </div>
-          <div className="col-xl-4 col-lg-6 col-md-6 d-flex align-items-end pic3-card mx-auto">
+          <div className="col-xl-4 col-lg-6 col-md-6 d-flex pic3-card mx-auto">
             <div>
               <p
                 className="pic2-text"
@@ -351,9 +351,9 @@ const Home = () => {
       <br />
       <br />
       <div className="products-home">
-        <div className="row ph" style={{ margin: "0" }}>
+        <div className="ph">
           <div
-            className="col-lg-7 col-md-7 tab mx-auto"
+            className="tab"
             style={{ height: "530px" }}
           >
             <div style={{ textAlign: "center" }}>
@@ -362,7 +362,7 @@ const Home = () => {
               <button
                 className="wwd-btn"
                 style={{ color: "black" }}
-                onClick={() => nav("/service")}
+                onClick={() => nav("/product/Secuity_&_Surveillance")}
               >
                 CHECK PRODUCTS{" "}
                 <GoArrowRight style={{ fontSize: "1rem", color: "black" }} />
@@ -370,17 +370,17 @@ const Home = () => {
             </div>
           </div>
           <div
-            className="col-lg-5 col-md-5 cctv mx-auto"
+            className="cctv"
             style={{ height: "500px" }}
           >
-            <div style={{ position: "relative" }}>
+            <div>
               <img className="cctv-img" src={cctv} alt="" />
               <div className="box-abs" style={{ textAlign: "center" }}>
                 <h6 className="mt-3">Smart Home Surveillance</h6>
                 <button
                   className="wwd-btn"
                   style={{ color: "black" }}
-                  onClick={() => nav("/service")}
+                  onClick={() => nav("/product/Secuity_&_Surveillance")}
                 >
                   VIEW PRODUCTS{" "}
                   <GoArrowRight style={{ fontSize: "1rem", color: "black" }} />

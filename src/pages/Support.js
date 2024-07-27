@@ -7,7 +7,7 @@ const Support = () => {
   const nav = useNavigate();
   return (
     <div className="support-section">
-      <div className="about-black">SUPPORT</div>
+      {/* <div className="about-black">SUPPORT</div> */}
       <div className="support-part">
         <div>
           <h3
@@ -20,7 +20,7 @@ const Support = () => {
             Our Team is Here to Ensure Your Smart Systems Run Smoothly and
             Efficiently
           </p>
-          <div style={{ margin: "auto", textAlign: "center" }}>
+          {/* <div style={{ margin: "auto", textAlign: "center" }}>
             <button
               className="wwd-btn"
               style={{ textTransform: "uppercase" }}
@@ -28,7 +28,7 @@ const Support = () => {
             >
               Contact Support Now
             </button>
-          </div>
+          </div> */}
           <div className="support-cards">
             <div className="cards-logo mx-auto">
               <div>

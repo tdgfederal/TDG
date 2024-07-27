@@ -20,34 +20,22 @@ import w3 from "../../assets/images/w3.png";
 import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
 
-const Product = () => {
+const HomeProduct = () => {
   const nav = useNavigate();
   const [career, setCareer] = useState("");
   const options = [
     {
-      name: "Home theaters",
-      nav: "/product/Entertainment_&_Lifestyle/home-theatre"
+      name: "Control4",
+      nav: "/product/home_control/control4"
     },
     {
-      name: "Multi & whole home audio",
-      nav: "/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
+      name: "RTI",
+      nav: "/product/home_control/RTI"
     },
     {
-      name: "Golf Simulation",
-      nav: "/product/Entertainment_&_Lifestyle/golf-simulation"
-    },
-    {
-      name: "Gaming",
-      nav:"/product/Entertainment_&_Lifestyle/gaming"
-    },
-    {
-      name: "Speakers",
-      nav:"/product/Entertainment_&_Lifestyle/speakers"
-    },
-    {
-      name: "Relaxing Outdoors",
-      nav:"/product/Entertainment_&_Lifestyle/relaxing-outdoors"
-    },
+      name: "URC",
+      nav: "/product/home_control/URC"
+    }
   ];
   const prodList = [
     {
@@ -104,7 +92,7 @@ const Product = () => {
       <div className="wall-prod">
         <div>
           <h1>Products</h1>
-          <h4>Entertainment & Lifestyle</h4>
+          <h4>Home Product</h4>
         </div>
       </div>
       <div className="filters">
@@ -441,4 +429,4 @@ const Product = () => {
   );
 };
 
-export default Product;
+export default HomeProduct;

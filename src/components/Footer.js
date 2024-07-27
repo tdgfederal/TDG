@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "../assets/styles/Footer.css";
 import { GoArrowRight } from "react-icons/go";
 import logo from "../assets/images/footLogo.png";
@@ -10,6 +10,35 @@ import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
   const nav = useNavigate();
+  const [formData, setFormData] = useState({
+    email:""
+  })
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]:e.target.value
+    })
+  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await fetch(
+        "https://tdg-backend-n1sm.onrender.com/api/subscribe",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+      window.location.reload();
+    } catch (error) {
+      console.log(error);
+      alert("Failed! Try again.");
+    }
+  };
+
   return (
     <div>
       <div className="footer">
@@ -27,11 +56,14 @@ const Footer = () => {
             Sign up for exclusive offers &
           </h3>
           <h3 style={{ color: "white", textAlign: "center" }}>discounts</h3>
-          <form action="" className="footer-form">
+          <form action="" className="footer-form"  onSubmit={handleSubmit}>
             <input
               className="email-footer"
               type="email"
               placeholder="Your Email.."
+              name="email"
+              value={FormData.email}
+              onChange={handleChange}
             />
             <button className="footer-sub-btn">
               Subscribe <GoArrowRight />

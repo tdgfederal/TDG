@@ -78,6 +78,11 @@ const Navbar = () => {
                         style={{
                           fontWeight: "600",
                           textTransform: "uppercase",
+                          cursor:'pointer'
+                        }}
+                        onClick={() => {
+                          setSer(!ser);
+                          nav("/product/home_control");
                         }}
                       >
                         HOME CONTROL
@@ -197,6 +202,11 @@ const Navbar = () => {
                         style={{
                           fontWeight: "600",
                           textTransform: "uppercase",
+                          cursor: "pointer"
+                        }}
+                        onClick={() => {
+                          setSer(!ser);
+                          nav("/product/comfort");
                         }}
                       >
                         Comfort
@@ -227,7 +237,12 @@ const Navbar = () => {
                         style={{
                           fontWeight: "600",
                           textTransform: "uppercase",
+                          cursor:'pointer'
                         }}
+                        onClick={() => {
+                            setSer(!ser);
+                            nav("/product/Secuity_&_Surveillance");
+                          }}
                       >
                         Security & Surveillance
                       </p>
@@ -327,7 +342,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={""}
+                      to={"/product/home_control"}
                       style={{
                         fontWeight: "600",
                         textTransform: "uppercase",
@@ -435,7 +450,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={"/product/comfort/climate-control"}
+                      to={"/product/comfort"}
                       style={{
                         fontWeight: "600",
                         textTransform: "uppercase",
@@ -467,7 +482,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={"/product/Secuity_&_Surveillance/cameras"}
+                      to={"/product/Secuity_&_Surveillance"}
                       style={{
                         fontWeight: "600",
                         textTransform: "uppercase",
@@ -507,7 +522,7 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={"/product/Lighting/smart-lighting"}
+                      to={"/product/Lighting"}
                       style={{
                         fontWeight: "600",
                         textTransform: "uppercase",
@@ -548,11 +563,11 @@ const Navbar = () => {
                   BLOGS
                 </Link>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to={"/support"}>
                   Support
                 </Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to={"/career"}>
                   Career{" "}
