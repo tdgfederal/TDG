@@ -9,7 +9,9 @@
 .golf-sim , .rooms, .blogs{
   font-family: Helvetica;
 }
-
+.carousel-item{
+  height: 90vh;
+}
 .home-caro {
   font-family: Helvetica;
 }
@@ -25,6 +27,7 @@
   width: 190px;
   padding: 5px 8px;
   border-radius: 20px;
+  font-size: 0.9rem;
 }
 .btn-caro-2 {
   border: 1px solid black;
@@ -33,12 +36,26 @@
   width: 180px;
   padding: 5px 8px;
   border-radius: 20px;
+  font-size: 0.9rem;
 }
 .caro-text {
   margin: 30px;
 }
 .lr-btn {
   font-size: 1.6rem;
+}
+@media(max-width:896px){
+  .caro-text{
+    margin: 80px;
+  }
+  .carousel-item{
+    height: 100%;
+  }
+}
+@media(max-width:800px){
+  .caro-text{
+    margin: 30px 50px;
+  }
 }
 @media (max-width: 623px) {
   .btn-caro-1 {

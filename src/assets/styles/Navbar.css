@@ -29,6 +29,9 @@
 .ser-dropdown{
   display: none;
 }
+.nav-link{
+  font-size: 0.9rem;
+}
 @media(max-width:992px){
   .nav-ser-main{
     display: none;
