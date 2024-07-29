@@ -17,7 +17,7 @@ import w2 from "../../assets/images/w2.png";
 import w3 from "../../assets/images/w3.png";
 import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 const Savant = () => {
   const nav = useNavigate();
@@ -56,7 +56,7 @@ const Savant = () => {
     {
       img: pr4,
       txt: "URC",
-    }
+    },
   ];
   return (
     <div className="product-section">
@@ -68,25 +68,34 @@ const Savant = () => {
       </div>
       <div className="filters">
         {options.map((e, i) => (
-          <HashLink to={e.nav} style={{color: e.name === career ? "white" : "#282866", textDecoration:'none'}}>
-          <button
-            onClick={() => {setCareer(e.name); nav(e.nav)}}
-            key={i}
-            className="career-btn-filter py-2"
+          <HashLink
+            to={e.nav}
             style={{
-              background: e.name === career ? "#282866" : "white",
               color: e.name === career ? "white" : "#282866",
+              textDecoration: "none",
             }}
           >
-            {e.name}
-          </button>
+            <button
+              onClick={() => {
+                setCareer(e.name);
+                nav(e.nav);
+              }}
+              key={i}
+              className="career-btn-filter py-2"
+              style={{
+                background: e.name === career ? "#282866" : "white",
+                color: e.name === career ? "white" : "#282866",
+              }}
+            >
+              {e.name}
+            </button>
           </HashLink>
         ))}
       </div>
       <div className="prod-list">
         {prodList.map((e, i) => (
           <div className="prods-img" style={{ textAlign: "center" }} key={i}>
-            <img src={e.img} alt="" style={{height:"80px"}} />
+            <img src={e.img} alt="" style={{ height: "80px" }} />
             <div>{e.txt}</div>
           </div>
         ))}
@@ -184,7 +193,12 @@ const Savant = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
+                <button
+                  className="btn-caro-1-1"
+                  onClick={() => nav("/consultation")}
+                >
+                  REQUEST A QUOTE
+                </button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
@@ -254,7 +268,12 @@ const Savant = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
+                <button
+                  className="btn-caro-1-1"
+                  onClick={() => nav("/consultation")}
+                >
+                  REQUEST A QUOTE
+                </button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
@@ -324,7 +343,12 @@ const Savant = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
+                <button
+                  className="btn-caro-1-1"
+                  onClick={() => nav("/consultation")}
+                >
+                  REQUEST A QUOTE
+                </button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}

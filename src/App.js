@@ -38,7 +38,6 @@ import Keypads from "./pages/Lighting/Keypads";
 import Products from "./pages/Products";
 import CreateBlog from "./pages/CreateBlog";
 import Login from "./pages/Login";
-import { HashLink } from 'react-router-hash-link';
 
 function App() {
   const ScrollToTop = () => {
