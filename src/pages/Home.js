@@ -20,6 +20,7 @@ import f4 from "../assets/images/f4.png";
 import golf from "../assets/images/golf.png";
 import golfb from "../assets/images/golfb.png";
 import golfr from "../assets/images/golfr.png";
+import t1 from "../assets/images/t1.jpeg";
 import person from "../assets/images/person.png";
 import blog1 from "../assets/images/blog1.png";
 import blog2 from "../assets/images/blog2.png";
@@ -94,7 +95,7 @@ const Home = () => {
             ></button>
           </div>
           <div className="carousel-inner">
-            <div className="carousel-item active">
+            <div className="carousel-item carousel-itemm active">
               {/* <img src={caro} className="d-block w-100" alt="..." /> */}
               <video className="d-block w-100" autoplay muted>
                 <source src={c1} type="video/mp4" />
@@ -121,7 +122,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item carousel-itemm">
               <video className="d-block w-100" autoplay muted>
                 <source src={c2} type="video/mp4" />
               </video>
@@ -144,7 +145,7 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div className="carousel-item">
+            <div className="carousel-item carousel-itemm">
               <video className="d-block w-100" autoplay muted>
                 <source src={c3} type="video/mp4" />
               </video>
@@ -352,10 +353,7 @@ const Home = () => {
       <br />
       <div className="products-home">
         <div className="ph">
-          <div
-            className="tab"
-            style={{ height: "530px" }}
-          >
+          <div className="tab" style={{ height: "530px" }}>
             <div style={{ textAlign: "center" }}>
               <img className="tab-img" src={tab} alt="" />
               <h6 className="mt-3">Secuity System</h6>
@@ -369,10 +367,7 @@ const Home = () => {
               </button>
             </div>
           </div>
-          <div
-            className="cctv"
-            style={{ height: "500px" }}
-          >
+          <div className="cctv" style={{ height: "500px" }}>
             <div>
               <img className="cctv-img" src={cctv} alt="" />
               <div className="box-abs" style={{ textAlign: "center" }}>
@@ -549,7 +544,70 @@ const Home = () => {
         <br />
         <div id="carouselExampleCaptions2" className="carousel slide">
           <div className="carousel-inner">
-            <div className="carousel-item active">
+            <div className="carousel-item active" style={{ height: "auto" }}>
+              <p
+                style={{
+                  color: "#6B6866",
+                  width: "70%",
+                  margin: "auto",
+                  textAlign: "center",
+                }}
+              >
+                "I had TDG Smart Homes update my system, which works fine now. I
+                used to have low-end rumble driving me up the wall - and with
+                his improvements, I no longer have these issues. They installed
+                a new system with in-wall speakers and programmed the entire
+                unit to multiple locations. They also installed the speakers and
+                other units inside the drywall, and all this installation work
+                was done cleanly and looked fantastic. The sound and appearance
+                are wonderful. I wholeheartedly recommend the TDG team for all
+                your home automation and entertainment needs."
+              </p>
+              <br />
+              <div style={{ textAlign: "center" }}>
+                <img src={t1} height={120} style={{borderRadius:"50%"}} alt="" />
+              </div>
+              <p
+                className="mt-2"
+                style={{ color: "#6B6866", textAlign: "center" }}
+              >
+                Larry Eldridge
+              </p>
+            </div>
+            <div className="carousel-item" style={{ height: "auto" }}>
+              <p
+                style={{
+                  color: "#6B6866",
+                  width: "70%",
+                  margin: "auto",
+                  textAlign: "center",
+                }}
+              >
+                World-class service! I wanted to set up my basement into a real
+                man cave. I didn’t know where to begin; a friend referred me to
+                TDG Smart Homes. They were very professional, answered my
+                questions, and made recommendations tailored to my needs and
+                budget. I wanted in-wall speakers along with enough bass to
+                enjoy movies and sports. The team assessed my basement equipment
+                to see what I already had and what additional speakers,
+                receivers, and sub to give me the best sound. They completed
+                this project promptly and provided an unrivaled customer
+                experience. I recommend TDG and the team to anybody looking to
+                upgrade or start an audio/video project. I look forward to
+                working with them again when I move into my next house.
+              </p>
+              <br />
+              <div style={{ textAlign: "center" }}>
+                <img src={person} height={120} alt="" />
+              </div>
+              <p
+                className="mt-2"
+                style={{ color: "#6B6866", textAlign: "center" }}
+              >
+                Moussa O.
+              </p>
+            </div>
+            {/* <div className="carousel-item" style={{ height: "auto" }}>
               <p
                 style={{
                   color: "#6B6866",
@@ -572,55 +630,7 @@ const Home = () => {
               >
                 Sarah T.
               </p>
-            </div>
-            <div className="carousel-item">
-              <p
-                style={{
-                  color: "#6B6866",
-                  width: "70%",
-                  margin: "auto",
-                  textAlign: "center",
-                }}
-              >
-                "TDG Home made our dream home a reality! Their attention to
-                detail and commitment to quality craftsmanship exceeded our
-                expectations. We couldn't be happier with the result."{" "}
-              </p>
-              <br />
-              <div style={{ textAlign: "center" }}>
-                <img src={person} alt="" />
-              </div>
-              <p
-                className="mt-2"
-                style={{ color: "#6B6866", textAlign: "center" }}
-              >
-                Sarah T.
-              </p>
-            </div>
-            <div className="carousel-item">
-              <p
-                style={{
-                  color: "#6B6866",
-                  width: "70%",
-                  margin: "auto",
-                  textAlign: "center",
-                }}
-              >
-                "TDG Home made our dream home a reality! Their attention to
-                detail and commitment to quality craftsmanship exceeded our
-                expectations. We couldn't be happier with the result."{" "}
-              </p>
-              <br />
-              <div style={{ textAlign: "center" }}>
-                <img src={person} alt="" />
-              </div>
-              <p
-                className="mt-2"
-                style={{ color: "#6B6866", textAlign: "center" }}
-              >
-                Sarah T.
-              </p>
-            </div>
+            </div> */}
           </div>
           <button
             className="carousel-control-prev"

@@ -6,10 +6,10 @@ import pr3 from "../../assets/images/pr3.png";
 import pr4 from "../../assets/images/pr4.png";
 import pr5 from "../../assets/images/pr5.png";
 import pr6 from "../../assets/images/pr6.png";
-import g0 from "../../assets/images/g0.png";
-import g1 from "../../assets/images/g1.png";
-import g2 from "../../assets/images/g2.png";
-import g3 from "../../assets/images/g3.png";
+import g0 from "../../assets/images/ss1.jpeg";
+import g1 from "../../assets/images/ss2.jpeg";
+import g2 from "../../assets/images/ss3.jpeg";
+import g3 from "../../assets/images/ss4.jpeg";
 import bulb from "../../assets/images/bulb.png";
 import sun from "../../assets/images/sun.png";
 import rem from "../../assets/images/rem.png";
@@ -151,17 +151,87 @@ const SecurityProduct = () => {
           <div className="carousel-item active">
             <div className="row caro-lr-1">
               <div className="caro-left col-lg-6 d-flex justify-content-center">
-                <div className="img-trans">
+                <div className="img-trans img-trans-2">
                   <div>
-                    <img src={g0} height={400} alt="" />
+                    <img src={g0} height={350} style={{borderRadius:'12px'}} alt="" />
                   </div>
                   <div
                     className="d-flex"
                     style={{ gap: "20px", margin: "20px 0" }}
                   >
-                    <img src={g1} height={146} alt="" />
-                    <img src={g2} height={146} alt="" />
-                    <img src={g3} height={146} alt="" />
+                    <img src={g1} height={103.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g2} height={103.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g3} height={103.5} style={{borderRadius:'12px'}} alt="" />
+                  </div>
+                </div>
+              </div>
+              <div className="caro-right caro-right-text-2 col-lg-6">
+                <h4>Bowers & Wilkins</h4>
+                <p>
+                  Lorem Ipsum has been the industry's standard dummy text ever
+                  since the 1500s. Lorem Ipsum has been the industry's standard
+                  dummy text ever since the 1500s.
+                </p>
+                <div className="d-flex">
+                  <img className="mx-3" src={sun} height={40} alt="" />
+                  <div>
+                    <strong>Lorem Ipsum </strong>
+                    <p>
+                      Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <img
+                    className=""
+                    style={{ marginLeft: "20px", marginRight: "22px" }}
+                    src={bulb}
+                    height={40}
+                    alt=""
+                  />
+                  <div>
+                    <strong>Lorem Ipsum </strong>
+                    <p>
+                      Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+                </div>
+                <div className="d-flex">
+                  <img className="mx-3" src={rem} height={40} alt="" />
+                  <div>
+                    <strong>Lorem Ipsum </strong>
+                    <p>
+                      Lorem Ipsum has been the industry's standard dummy text
+                      ever since the 1500s. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s.
+                    </p>
+                  </div>
+                </div>
+                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
+                {/* <button className="btn-caro-2-1 mx-2">
+                  GET A QUOTE <GoArrowRight />
+                </button> */}
+              </div>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <div className="row caro-lr-1">
+              <div className="caro-left col-lg-6 d-flex justify-content-center">
+                <div className="img-trans img-trans-2">
+                  <div>
+                    <img src={g0} height={350} style={{borderRadius:'12px'}} alt="" />
+                  </div>
+                  <div
+                    className="d-flex"
+                    style={{ gap: "20px", margin: "20px 0" }}
+                  >
+                    <img src={g1} height={103.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g2} height={103.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g3} height={103.5} style={{borderRadius:'12px'}} alt="" />
                   </div>
                 </div>
               </div>
@@ -221,87 +291,17 @@ const SecurityProduct = () => {
           <div className="carousel-item">
             <div className="row caro-lr-1">
               <div className="caro-left col-lg-6 d-flex justify-content-center">
-                <div className="img-trans">
+                <div className="img-trans img-trans-2">
                   <div>
-                    <img src={g0} height={400} alt="" />
+                    <img src={g0} height={350} style={{borderRadius:'12px'}} alt="" />
                   </div>
                   <div
                     className="d-flex"
                     style={{ gap: "20px", margin: "20px 0" }}
                   >
-                    <img src={g1} height={146} alt="" />
-                    <img src={g2} height={146} alt="" />
-                    <img src={g3} height={146} alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="caro-right col-lg-6">
-                <h4>Bowers & Wilkins</h4>
-                <p>
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s.
-                </p>
-                <div className="d-flex">
-                  <img className="mx-3" src={sun} height={40} alt="" />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex">
-                  <img
-                    className=""
-                    style={{ marginLeft: "20px", marginRight: "22px" }}
-                    src={bulb}
-                    height={40}
-                    alt=""
-                  />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex">
-                  <img className="mx-3" src={rem} height={40} alt="" />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
-                {/* <button className="btn-caro-2-1 mx-2">
-                  GET A QUOTE <GoArrowRight />
-                </button> */}
-              </div>
-            </div>
-          </div>
-          <div className="carousel-item">
-            <div className="row caro-lr-1">
-              <div className="caro-left col-lg-6 d-flex justify-content-center">
-                <div className="img-trans">
-                  <div>
-                    <img src={g0} height={400} alt="" />
-                  </div>
-                  <div
-                    className="d-flex"
-                    style={{ gap: "20px", margin: "20px 0" }}
-                  >
-                    <img src={g1} height={146} alt="" />
-                    <img src={g2} height={146} alt="" />
-                    <img src={g3} height={146} alt="" />
+                    <img src={g1} height={103.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g2} height={103.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g3} height={103.5} style={{borderRadius:'12px'}} alt="" />
                   </div>
                 </div>
               </div>

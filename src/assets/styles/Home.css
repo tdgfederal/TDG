@@ -9,7 +9,7 @@
 .golf-sim , .rooms, .blogs{
   font-family: Helvetica;
 }
-.carousel-item{
+.carousel-itemm{
   height: 90vh;
 }
 .home-caro {
@@ -48,7 +48,7 @@
   .caro-text{
     margin: 80px;
   }
-  .carousel-item{
+  .carousel-itemm{
     height: 100%;
   }
 }
