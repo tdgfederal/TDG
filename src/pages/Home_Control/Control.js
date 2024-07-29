@@ -17,6 +17,7 @@ import w2 from "../../assets/images/w2.png";
 import w3 from "../../assets/images/w3.png";
 import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const Control = () => {
   const nav = useNavigate();
@@ -24,19 +25,19 @@ const Control = () => {
   const options = [
     {
       name: "Control4",
-      nav: "/product/home_control/control4",
+      nav: "/product/home_control/control4#product",
     },
     {
       name: "Savant",
-      nav: "/product/home_control/savant",
+      nav: "/product/home_control/savant#product",
     },
     {
       name: "RTI",
-      nav: "/product/home_control/RTI",
+      nav: "/product/home_control/RTI#product",
     },
     {
       name: "URC",
-      nav: "/product/home_control/URC",
+      nav: "/product/home_control/URC#product",
     },
   ];
   const prodList = [
@@ -70,20 +71,28 @@ const Control = () => {
       </div>
       <div className="filters">
         {options.map((e, i) => (
-          <button
-            onClick={() => {
-              setCareer(e.name);
-              nav(e.nav);
-            }}
-            key={i}
-            className="career-btn-filter py-2"
+          <HashLink
+            to={e.nav}
             style={{
-              background: e.name === career ? "#282866" : "white",
               color: e.name === career ? "white" : "#282866",
+              textDecoration: "none",
             }}
           >
-            {e.name}
-          </button>
+            <button
+              onClick={() => {
+                setCareer(e.name);
+                nav(e.nav);
+              }}
+              key={i}
+              className="career-btn-filter py-2"
+              style={{
+                background: e.name === career ? "#282866" : "white",
+                color: e.name === career ? "white" : "#282866",
+              }}
+            >
+              {e.name}
+            </button>
+          </HashLink>
         ))}
       </div>
       <div className="prod-list">
@@ -353,7 +362,7 @@ const Control = () => {
       </div>
       <br />
       <br />
-      <div className="caro-blogs">
+      <div className="caro-blogs" id="product">
         <p
           style={{ textAlign: "center", color: "#757575", fontSize: "1.1rem" }}
         >

@@ -17,6 +17,7 @@ import w2 from "../../assets/images/w2.png";
 import w3 from "../../assets/images/w3.png";
 import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const Savant = () => {
   const nav = useNavigate();
@@ -24,20 +25,20 @@ const Savant = () => {
   const options = [
     {
       name: "Control4",
-      nav: "/product/home_control/control4"
+      nav: "/product/home_control/control4#product",
     },
     {
       name: "Savant",
-      nav: "/product/home_control/savant"
+      nav: "/product/home_control/savant#product",
     },
     {
       name: "RTI",
-      nav: "/product/home_control/RTI"
+      nav: "/product/home_control/RTI#product",
     },
     {
       name: "URC",
-      nav: "/product/home_control/URC"
-    }
+      nav: "/product/home_control/URC#product",
+    },
   ];
   const prodList = [
     {
@@ -67,6 +68,7 @@ const Savant = () => {
       </div>
       <div className="filters">
         {options.map((e, i) => (
+          <HashLink to={e.nav} style={{color: e.name === career ? "white" : "#282866", textDecoration:'none'}}>
           <button
             onClick={() => {setCareer(e.name); nav(e.nav)}}
             key={i}
@@ -78,6 +80,7 @@ const Savant = () => {
           >
             {e.name}
           </button>
+          </HashLink>
         ))}
       </div>
       <div className="prod-list">
@@ -332,7 +335,7 @@ const Savant = () => {
       </div>
       <br />
       <br />
-      <div className="caro-blogs">
+      <div className="caro-blogs" id="product">
         <p
           style={{ textAlign: "center", color: "#757575", fontSize: "1.1rem" }}
         >

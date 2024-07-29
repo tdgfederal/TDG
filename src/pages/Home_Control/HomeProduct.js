@@ -19,6 +19,7 @@ import w2 from "../../assets/images/w2.png";
 import w3 from "../../assets/images/w3.png";
 import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const HomeProduct = () => {
   const nav = useNavigate();
@@ -26,20 +27,20 @@ const HomeProduct = () => {
   const options = [
     {
       name: "Control4",
-      nav: "/product/home_control/control4"
+      nav: "/product/home_control/control4#product",
     },
     {
       name: "Savant",
-      nav: "/product/home_control/savant"
+      nav: "/product/home_control/savant#product",
     },
     {
       name: "RTI",
-      nav: "/product/home_control/RTI"
+      nav: "/product/home_control/RTI#product",
     },
     {
       name: "URC",
-      nav: "/product/home_control/URC"
-    }
+      nav: "/product/home_control/URC#product",
+    },
   ];
   const prodList = [
     {
@@ -57,7 +58,7 @@ const HomeProduct = () => {
     {
       img: pr4,
       txt: "URC",
-    }
+    },
   ];
   return (
     <div className="product-section">
@@ -68,23 +69,34 @@ const HomeProduct = () => {
       </div>
       <div className="filters">
         {options.map((e, i) => (
-          <button
-            onClick={() => {setCareer(e.name); nav(e.nav)}}
-            key={i}
-            className="career-btn-filter py-2"
+          <HashLink
+            to={e.nav}
             style={{
-              background: e.name === career ? "#282866" : "white",
               color: e.name === career ? "white" : "#282866",
+              textDecoration: "none",
             }}
           >
-            {e.name}
-          </button>
+            <button
+              onClick={() => {
+                setCareer(e.name);
+                nav(e.nav);
+              }}
+              key={i}
+              className="career-btn-filter py-2"
+              style={{
+                background: e.name === career ? "#282866" : "white",
+                color: e.name === career ? "white" : "#282866",
+              }}
+            >
+              {e.name}
+            </button>
+          </HashLink>
         ))}
       </div>
       <div className="prod-list">
         {prodList.map((e, i) => (
           <div className="prods-img" style={{ textAlign: "center" }} key={i}>
-            <img src={e.img} alt="" style={{height:"80px"}} />
+            <img src={e.img} alt="" style={{ height: "80px" }} />
             <div>{e.txt}</div>
           </div>
         ))}
@@ -182,7 +194,12 @@ const HomeProduct = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
+                <button
+                  className="btn-caro-1-1"
+                  onClick={() => nav("/consultation")}
+                >
+                  REQUEST A QUOTE
+                </button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
@@ -252,7 +269,12 @@ const HomeProduct = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
+                <button
+                  className="btn-caro-1-1"
+                  onClick={() => nav("/consultation")}
+                >
+                  REQUEST A QUOTE
+                </button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
@@ -322,7 +344,12 @@ const HomeProduct = () => {
                     </p>
                   </div>
                 </div>
-                <button className="btn-caro-1-1" onClick={() => nav("/consultation")}>REQUEST A QUOTE</button>
+                <button
+                  className="btn-caro-1-1"
+                  onClick={() => nav("/consultation")}
+                >
+                  REQUEST A QUOTE
+                </button>
                 {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
