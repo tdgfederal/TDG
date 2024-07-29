@@ -22,15 +22,15 @@ import { useNavigate } from "react-router-dom";
 
 const HomeTheatre = () => {
   const nav = useNavigate();
-  const [career, setCareer] = useState("Home theaters");
+  const [career, setCareer] = useState("Movie theaters");
   const options = [
     {
-      name: "Home theaters",
-      nav: "/product/Entertainment_&_Lifestyle/home-theatre"
+      name: "Movie theaters",
+      nav: "/product/Entertainment_&_Lifestyle/movie-theatre"
     },
     {
-      name: "Multi & whole home audio",
-      nav: "/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
+      name: "Music",
+      nav: "/product/Entertainment_&_Lifestyle/music"
     },
     {
       name: "Golf Simulation",
@@ -41,12 +41,8 @@ const HomeTheatre = () => {
       nav:"/product/Entertainment_&_Lifestyle/gaming"
     },
     {
-      name: "Speakers",
-      nav:"/product/Entertainment_&_Lifestyle/speakers"
-    },
-    {
-      name: "Relaxing Outdoors",
-      nav:"/product/Entertainment_&_Lifestyle/relaxing-outdoors"
+      name: "Outdoor Solutions",
+      nav:"/product/Entertainment_&_Lifestyle/outdoor-solution"
     },
   ];
   const prodList = [
@@ -103,7 +99,7 @@ const HomeTheatre = () => {
     <div className="product-section">
       <div className="wall-prod">
         <div>
-          <h1>Home Theatre</h1>
+          <h1>Movie Theatre</h1>
           <h4>Entertainment & Lifestyle</h4>
         </div>
       </div>

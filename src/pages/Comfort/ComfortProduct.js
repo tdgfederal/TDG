@@ -87,8 +87,7 @@ const ComfortProduct = () => {
     <div className="product-section">
       <div className="wall-prod">
         <div>
-          <h1>Products</h1>
-          <h4>Comfort</h4>
+          <h1>Comfort</h1>
         </div>
       </div>
       <div className="filters">

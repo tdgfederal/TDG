@@ -82,19 +82,19 @@ const Contact = () => {
         </div>
       </div> */}
       <Support/>
-      <div className="map-form" style={{ marginTop: "-100px" }}>
-        <iframe
+      <div className="map-form" style={{ marginTop: "-100px"}}>
+        {/* <iframe
           className="embeded-map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.8270032758523!2d88.39659447475643!3d22.548152333866998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a02769db9e49f61%3A0xa2117593c10c8066!2sJW%20Marriott%20Hotel%20Kolkata!5e0!3m2!1sen!2sin!4v1719893410545!5m2!1sen!2sin"
           allowfullscreen=""
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+        ></iframe> */}
         <div>
-          <div className="about-signup">
+          <div className="about-signup" style={{width:"100%"}}>
             <br />
             <br />
-            <form className="form-about-su mt-3" onSubmit={handleSubmit}>
+            <form className="form-about-su mt-3" onSubmit={handleSubmit} style={{width:"100%"}}>
               <div className="flname">
                 <input
                   className="flname-text"

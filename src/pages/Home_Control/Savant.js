@@ -1,11 +1,9 @@
 import React, { useState } from "react";
 import "../../assets/styles/Product.css";
-import pr1 from "../../assets/images/pr1.png";
-import pr2 from "../../assets/images/pr2.png";
-import pr3 from "../../assets/images/pr3.png";
-import pr4 from "../../assets/images/pr4.png";
-import pr5 from "../../assets/images/pr5.png";
-import pr6 from "../../assets/images/pr6.png";
+import pr1 from "../../assets/images/h1.jpeg";
+import pr2 from "../../assets/images/h2.jpeg";
+import pr3 from "../../assets/images/h3.jpeg";
+import pr4 from "../../assets/images/h4.jpeg";
 import g0 from "../../assets/images/g0.png";
 import g1 from "../../assets/images/g1.png";
 import g2 from "../../assets/images/g2.png";
@@ -20,87 +18,51 @@ import w3 from "../../assets/images/w3.png";
 import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
 
-const Multi = () => {
+const Savant = () => {
   const nav = useNavigate();
-  const [career, setCareer] = useState("Music");
+  const [career, setCareer] = useState("Savant");
   const options = [
     {
-      name: "Movie theaters",
-      nav: "/product/Entertainment_&_Lifestyle/movie-theatre"
+      name: "Control4",
+      nav: "/product/home_control/control4"
     },
     {
-      name: "Music",
-      nav: "/product/Entertainment_&_Lifestyle/music"
+      name: "Savant",
+      nav: "/product/home_control/savant"
     },
     {
-      name: "Golf Simulation",
-      nav: "/product/Entertainment_&_Lifestyle/golf-simulation"
+      name: "RTI",
+      nav: "/product/home_control/RTI"
     },
     {
-      name: "Gaming",
-      nav:"/product/Entertainment_&_Lifestyle/gaming"
-    },
-    {
-      name: "Outdoor Solutions",
-      nav:"/product/Entertainment_&_Lifestyle/outdoor-solution"
-    },
+      name: "URC",
+      nav: "/product/home_control/URC"
+    }
   ];
   const prodList = [
     {
       img: pr1,
-      txt: "Bowers & Wilkins",
+      txt: "Control4",
     },
     {
       img: pr2,
-      txt: "Wisdom",
+      txt: "Savant",
     },
     {
       img: pr3,
-      txt: "Sonance",
+      txt: "RTI",
     },
     {
       img: pr4,
-      txt: "Totem",
-    },
-    {
-      img: pr5,
-      txt: "Leon",
-    },
-    {
-      img: pr6,
-      txt: "Triad",
-    },
-    {
-      img: pr1,
-      txt: "Bowers & Wilkins",
-    },
-    {
-      img: pr2,
-      txt: "Wisdom",
-    },
-    {
-      img: pr3,
-      txt: "Sonance",
-    },
-    {
-      img: pr4,
-      txt: "Totem",
-    },
-    {
-      img: pr5,
-      txt: "Leon",
-    },
-    {
-      img: pr6,
-      txt: "Triad",
-    },
+      txt: "URC",
+    }
   ];
   return (
     <div className="product-section">
       <div className="wall-prod">
         <div>
-          <h1>Music</h1>
-          <h4>Entertainment & Lifestyle</h4>
+          <h1>Savant</h1>
+          <h4>Home Control</h4>
         </div>
       </div>
       <div className="filters">
@@ -121,7 +83,7 @@ const Multi = () => {
       <div className="prod-list">
         {prodList.map((e, i) => (
           <div className="prods-img" style={{ textAlign: "center" }} key={i}>
-            <img src={e.img} alt="" />
+            <img src={e.img} alt="" style={{height:"80px"}} />
             <div>{e.txt}</div>
           </div>
         ))}
@@ -437,4 +399,4 @@ const Multi = () => {
   );
 };
 
-export default Multi;
+export default Savant;

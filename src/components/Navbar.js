@@ -100,6 +100,15 @@ const Navbar = () => {
                         <li
                           onClick={() => {
                             setSer(!ser);
+                            nav("/product/home_control/savant");
+                          }}
+                          style={{ cursor: "pointer" }}
+                        >
+                          Savant
+                        </li>
+                        <li
+                          onClick={() => {
+                            setSer(!ser);
                             nav("/product/home_control/RTI");
                           }}
                           style={{ cursor: "pointer" }}
@@ -136,23 +145,23 @@ const Navbar = () => {
                           onClick={() => {
                             setSer(!ser);
                             nav(
-                              "/product/Entertainment_&_Lifestyle/home-theatre"
+                              "/product/Entertainment_&_Lifestyle/movie-theatre"
                             );
                           }}
                           style={{ cursor: "pointer" }}
                         >
-                          Home theaters
+                          Movie theaters
                         </li>
                         <li
                           onClick={() => {
                             setSer(!ser);
                             nav(
-                              "/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
+                              "/product/Entertainment_&_Lifestyle/music"
                             );
                           }}
                           style={{ cursor: "pointer" }}
                         >
-                          Multi & whole home audio
+                          Music
                         </li>
                         <li
                           onClick={() => {
@@ -177,22 +186,13 @@ const Navbar = () => {
                         <li
                           onClick={() => {
                             setSer(!ser);
-                            nav("/product/Entertainment_&_Lifestyle/speakers");
-                          }}
-                          style={{ cursor: "pointer" }}
-                        >
-                          Speakers
-                        </li>
-                        <li
-                          onClick={() => {
-                            setSer(!ser);
                             nav(
-                              "/product/Entertainment_&_Lifestyle/relaxing-outdoors"
+                              "/product/Entertainment_&_Lifestyle/outdoor-solution"
                             );
                           }}
                           style={{ cursor: "pointer" }}
                         >
-                          Relaxing Outdoors
+                          Outdoor Solutions
                         </li>
                       </ul>
                     </div>
@@ -363,6 +363,14 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="dropdown-item"
+                      to={"/product/home_control/savant"}
+                    >
+                      Savant
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="dropdown-item"
                       to={"/product/home_control/RTI"}
                     >
                       RTI
@@ -395,19 +403,19 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={"/product/Entertainment_&_Lifestyle/home-theatre"}
+                      to={"/product/Entertainment_&_Lifestyle/movie-theatre"}
                     >
-                      Home theaters
+                      Movie theaters
                     </Link>
                   </li>
                   <li>
                     <Link
                       className="dropdown-item"
                       to={
-                        "/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
+                        "/product/Entertainment_&_Lifestyle/music"
                       }
                     >
-                      Multi & whole home audio
+                      Music
                     </Link>
                   </li>
                   <li>
@@ -429,19 +437,11 @@ const Navbar = () => {
                   <li>
                     <Link
                       className="dropdown-item"
-                      to={"/product/Entertainment_&_Lifestyle/speakers"}
-                    >
-                      Speakers
-                    </Link>
-                  </li>
-                  <li>
-                    <Link
-                      className="dropdown-item"
                       to={
-                        "/product/Entertainment_&_Lifestyle/relaxing-outdoors"
+                        "/product/Entertainment_&_Lifestyle/outdoor-solution"
                       }
                     >
-                      Relaxing Outdoors
+                      Outdoor Solution
                     </Link>
                   </li>
                   <li>

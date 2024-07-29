@@ -91,8 +91,7 @@ const LightProduct = () => {
     <div className="product-section">
       <div className="wall-prod">
         <div>
-          <h1>Products</h1>
-          <h4>Lighting</h4>
+          <h1>Lighting</h1>
         </div>
       </div>
       <div className="filters">

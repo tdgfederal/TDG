@@ -537,7 +537,7 @@ const Home = () => {
       <br />
       <br />
       <div className="home-caro">
-        <p style={{ textAlign: "center", color: "#282866" }}>TESTIMONIALS</p>
+        <p style={{ textAlign: "center", color: "#282866" }}>CUSTOMER FEEDBACK</p>
         <h3 style={{ textAlign: "center" }}>
           Here is what our satisfied clients say
         </h3>

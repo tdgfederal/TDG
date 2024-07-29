@@ -78,7 +78,7 @@ const Career = () => {
 
   return (
     <div className="career-section">
-      <div className="career-img d-flex justify-content-center align-items-center">
+      <div className="career-img d-flex justify-content-center align-items-center" style={{height:'90vh'}}>
         <div>
           <h1 className="mx-3">Join Our Team at TDG Smart</h1>
           <p className="mx-3 pt-2 pb-3">

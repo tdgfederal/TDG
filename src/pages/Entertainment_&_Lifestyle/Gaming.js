@@ -25,12 +25,12 @@ const Gaming = () => {
   const [career, setCareer] = useState("Gaming");
   const options = [
     {
-      name: "Home theaters",
-      nav: "/product/Entertainment_&_Lifestyle/home-theatre"
+      name: "Movie theaters",
+      nav: "/product/Entertainment_&_Lifestyle/movie-theatre"
     },
     {
-      name: "Multi & whole home audio",
-      nav: "/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
+      name: "Music",
+      nav: "/product/Entertainment_&_Lifestyle/music"
     },
     {
       name: "Golf Simulation",
@@ -41,12 +41,8 @@ const Gaming = () => {
       nav:"/product/Entertainment_&_Lifestyle/gaming"
     },
     {
-      name: "Speakers",
-      nav:"/product/Entertainment_&_Lifestyle/speakers"
-    },
-    {
-      name: "Relaxing Outdoors",
-      nav:"/product/Entertainment_&_Lifestyle/relaxing-outdoors"
+      name: "Outdoor Solutions",
+      nav:"/product/Entertainment_&_Lifestyle/outdoor-solution"
     },
   ];
   const prodList = [

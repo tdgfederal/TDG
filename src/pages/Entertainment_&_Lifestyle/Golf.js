@@ -15,28 +15,24 @@ const Golf = () => {
   const [career, setCareer] = useState("Golf Simulation");
   const options = [
     {
-      name: "Home theaters",
-      nav: "/product/Entertainment_&_Lifestyle/home-theatre"
+      name: "Movie theaters",
+      nav: "/product/Entertainment_&_Lifestyle/movie-theatre",
     },
     {
-      name: "Multi & whole home audio",
-      nav: "/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
+      name: "Music",
+      nav: "/product/Entertainment_&_Lifestyle/music",
     },
     {
       name: "Golf Simulation",
-      nav: "/product/Entertainment_&_Lifestyle/golf-simulation"
+      nav: "/product/Entertainment_&_Lifestyle/golf-simulation",
     },
     {
       name: "Gaming",
-      nav:"/product/Entertainment_&_Lifestyle/gaming"
+      nav: "/product/Entertainment_&_Lifestyle/gaming",
     },
     {
-      name: "Speakers",
-      nav:"/product/Entertainment_&_Lifestyle/speakers"
-    },
-    {
-      name: "Relaxing Outdoors",
-      nav:"/product/Entertainment_&_Lifestyle/relaxing-outdoors"
+      name: "Outdoor Solutions",
+      nav: "/product/Entertainment_&_Lifestyle/outdoor-solution",
     },
   ];
   // const options = [
@@ -64,16 +60,16 @@ const Golf = () => {
       <div className="wall-prod-1">
         <div>
           <h1>GOLF SIMULATION</h1>
-          <h5>
-            Lorem Ipsum has been the industry's standard dummy text ever since
-            the 1500s.
-          </h5>
+          <h5>Entertainment & Lifestyle</h5>
         </div>
       </div>
       <div className="filters">
         {options.map((e, i) => (
           <button
-            onClick={() => {setCareer(e.name); nav(e.nav)}}
+            onClick={() => {
+              setCareer(e.name);
+              nav(e.nav);
+            }}
             key={i}
             className="career-btn-filter py-2"
             style={{

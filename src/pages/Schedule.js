@@ -15,6 +15,7 @@ const Schedule = () => {
     // mode: "",
     reason: "",
     question: "",
+    service:"",
     hear: "",
     comment: "",
   });
@@ -278,6 +279,30 @@ const Schedule = () => {
                 <option value="Option1">Option1</option>
                 <option value="Option2">Option2</option>
                 <option value="Option3">Option3</option>
+              </select>
+            </div>
+            <div
+              className="d-flex"
+              style={{ gap: "5px", position: "relative", width: "100%" }}
+            >
+              <label className="required" style={{right:"20px"}}></label>
+              <select
+                onChange={(e) => {
+                  setC(true);
+                  handleChange(e);
+                }}
+                style={{ color: c ? "black" : "grey" }}
+                name="service"
+                required
+              >
+                <option value="" disabled selected>
+                  Services
+                </option>
+                <option value="Home Control">Home Control</option>
+                <option value="Entertainment & Lifestyle">Entertainment & Lifestyle</option>
+                <option value="Comfort">Comfort</option>
+                <option value="Secuity & Surveillance">Secuity & Surveillance</option>
+                <option value="Lighting">Lighting</option>
               </select>
             </div>
             {/* <div className="d-flex" style={{ gap: "5px" }}>

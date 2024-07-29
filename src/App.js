@@ -14,6 +14,7 @@ import JobPost from "./pages/JobPost";
 import Schedule from "./pages/Schedule";
 import HomeProduct from "./pages/Home_Control/HomeProduct";
 import Control from "./pages/Home_Control/Control";
+import Savant from "./pages/Home_Control/Savant";
 import RTI from "./pages/Home_Control/RTI";
 import URC from "./pages/Home_Control/URC";
 import Product from "./pages/Entertainment_&_Lifestyle/Product";
@@ -66,15 +67,16 @@ function App() {
           element={<Product />}
         />
         <Route path="/product/home_control" element={<HomeProduct />} />
+        <Route path="/product/home_control/savant" element={<Savant />} />
         <Route path="/product/home_control/control4" element={<Control />} />
         <Route path="/product/home_control/RTI" element={<RTI />} />
         <Route path="/product/home_control/URC" element={<URC />} />
         <Route
-          path="/product/Entertainment_&_Lifestyle/home-theatre"
+          path="/product/Entertainment_&_Lifestyle/movie-theatre"
           element={<HomeTheatre />}
         />
         <Route
-          path="/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
+          path="/product/Entertainment_&_Lifestyle/music"
           element={<Multi />}
         />
         <Route
@@ -85,12 +87,12 @@ function App() {
           path="/product/Entertainment_&_Lifestyle/gaming"
           element={<Gaming />}
         />
-        <Route
+        {/* <Route
           path="/product/Entertainment_&_Lifestyle/speakers"
           element={<Speakers />}
-        />
+        /> */}
         <Route
-          path="/product/Entertainment_&_Lifestyle/relaxing-outdoors"
+          path="/product/Entertainment_&_Lifestyle/outdoor-solution"
           element={<Relaxing />}
         />
         <Route path="/product/comfort" element={<ComfortProduct />} />
