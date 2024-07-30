@@ -100,7 +100,8 @@ const Savant = () => {
           </div>
         ))}
       </div>
-      <div id="carouselExampleIndicators" className="carousel slide">
+      <div id="product">
+      <div id="carouselExampleIndicators product" className="carousel slide">
         <div className="carousel-indicators">
           <button
             type="button"
@@ -356,10 +357,10 @@ const Savant = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div></div>
       <br />
       <br />
-      <div className="caro-blogs" id="product">
+      <div className="caro-blogs">
         <p
           style={{ textAlign: "center", color: "#757575", fontSize: "1.1rem" }}
         >

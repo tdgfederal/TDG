@@ -19,6 +19,7 @@ import w2 from "../../assets/images/w2.png";
 import w3 from "../../assets/images/w3.png";
 import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const ComfortProduct = () => {
   const nav = useNavigate();
@@ -26,11 +27,11 @@ const ComfortProduct = () => {
   const options = [
     {
       name: "Climate Control",
-      nav: "/product/comfort/climate-control"
+      nav: "/product/comfort/climate-control#product"
     },
     {
       name: "Motorization",
-      nav: "/product/comfort/motorization"
+      nav: "/product/comfort/motorization#product"
     }
   ];
   const prodList = [
@@ -92,17 +93,28 @@ const ComfortProduct = () => {
       </div>
       <div className="filters">
         {options.map((e, i) => (
-          <button
-            onClick={() => {setCareer(e.name); nav(e.nav)}}
-            key={i}
-            className="career-btn-filter py-2"
+          <HashLink
+            to={e.nav}
             style={{
-              background: e.name === career ? "#282866" : "white",
               color: e.name === career ? "white" : "#282866",
+              textDecoration: "none",
             }}
           >
-            {e.name}
-          </button>
+            <button
+              onClick={() => {
+                setCareer(e.name);
+                nav(e.nav);
+              }}
+              key={i}
+              className="career-btn-filter py-2"
+              style={{
+                background: e.name === career ? "#282866" : "white",
+                color: e.name === career ? "white" : "#282866",
+              }}
+            >
+              {e.name}
+            </button>
+          </HashLink>
         ))}
       </div>
       <div className="prod-list">

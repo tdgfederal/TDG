@@ -17,7 +17,7 @@ import w2 from "../../assets/images/w2.png";
 import w3 from "../../assets/images/w3.png";
 import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link';
+import { HashLink } from "react-router-hash-link";
 
 const Control = () => {
   const nav = useNavigate();
@@ -103,258 +103,263 @@ const Control = () => {
           </div>
         ))}
       </div>
-      <div id="carouselExampleIndicators" className="carousel slide">
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          >
-            <div className="dot-caro" style={{ color: "green" }}></div>
-          </button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          >
-            <div className="dot-caro" style={{ color: "green" }}></div>
-          </button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          >
-            <div className="dot-caro" style={{ color: "green" }}></div>
-          </button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <div className="row caro-lr-1">
-              <div className="caro-left col-lg-6 d-flex justify-content-center">
-                <div className="img-trans">
-                  <div>
-                    <img src={g0} height={400} alt="" />
+      <div id="product">
+        <div
+          id="carouselExampleIndicators"
+          className="carousel slide"
+        >
+          <div className="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="0"
+              className="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            >
+              <div className="dot-caro" style={{ color: "green" }}></div>
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            >
+              <div className="dot-caro" style={{ color: "green" }}></div>
+            </button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleIndicators"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            >
+              <div className="dot-caro" style={{ color: "green" }}></div>
+            </button>
+          </div>
+          <div className="carousel-inner">
+            <div className="carousel-item active">
+              <div className="row caro-lr-1">
+                <div className="caro-left col-lg-6 d-flex justify-content-center">
+                  <div className="img-trans">
+                    <div>
+                      <img src={g0} height={400} alt="" />
+                    </div>
+                    <div
+                      className="d-flex"
+                      style={{ gap: "20px", margin: "20px 0" }}
+                    >
+                      <img src={g1} height={146} alt="" />
+                      <img src={g2} height={146} alt="" />
+                      <img src={g3} height={146} alt="" />
+                    </div>
                   </div>
-                  <div
-                    className="d-flex"
-                    style={{ gap: "20px", margin: "20px 0" }}
+                </div>
+                <div className="caro-right col-lg-6">
+                  <h4>Bowers & Wilkins</h4>
+                  <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s.
+                  </p>
+                  <div className="d-flex">
+                    <img className="mx-3" src={sun} height={40} alt="" />
+                    <div>
+                      <strong>Lorem Ipsum </strong>
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex">
+                    <img
+                      className=""
+                      style={{ marginLeft: "20px", marginRight: "22px" }}
+                      src={bulb}
+                      height={40}
+                      alt=""
+                    />
+                    <div>
+                      <strong>Lorem Ipsum </strong>
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex">
+                    <img className="mx-3" src={rem} height={40} alt="" />
+                    <div>
+                      <strong>Lorem Ipsum </strong>
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    className="btn-caro-1-1"
+                    onClick={() => nav("/consultation")}
                   >
-                    <img src={g1} height={146} alt="" />
-                    <img src={g2} height={146} alt="" />
-                    <img src={g3} height={146} alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="caro-right col-lg-6">
-                <h4>Bowers & Wilkins</h4>
-                <p>
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s.
-                </p>
-                <div className="d-flex">
-                  <img className="mx-3" src={sun} height={40} alt="" />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex">
-                  <img
-                    className=""
-                    style={{ marginLeft: "20px", marginRight: "22px" }}
-                    src={bulb}
-                    height={40}
-                    alt=""
-                  />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex">
-                  <img className="mx-3" src={rem} height={40} alt="" />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <button
-                  className="btn-caro-1-1"
-                  onClick={() => nav("/consultation")}
-                >
-                  REQUEST A QUOTE
-                </button>
-                {/* <button className="btn-caro-2-1 mx-2">
+                    REQUEST A QUOTE
+                  </button>
+                  {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="carousel-item">
-            <div className="row caro-lr-1">
-              <div className="caro-left col-lg-6 d-flex justify-content-center">
-                <div className="img-trans">
-                  <div>
-                    <img src={g0} height={400} alt="" />
+            <div className="carousel-item">
+              <div className="row caro-lr-1">
+                <div className="caro-left col-lg-6 d-flex justify-content-center">
+                  <div className="img-trans">
+                    <div>
+                      <img src={g0} height={400} alt="" />
+                    </div>
+                    <div
+                      className="d-flex"
+                      style={{ gap: "20px", margin: "20px 0" }}
+                    >
+                      <img src={g1} height={146} alt="" />
+                      <img src={g2} height={146} alt="" />
+                      <img src={g3} height={146} alt="" />
+                    </div>
                   </div>
-                  <div
-                    className="d-flex"
-                    style={{ gap: "20px", margin: "20px 0" }}
+                </div>
+                <div className="caro-right col-lg-6">
+                  <h4>Bowers & Wilkins</h4>
+                  <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s.
+                  </p>
+                  <div className="d-flex">
+                    <img className="mx-3" src={sun} height={40} alt="" />
+                    <div>
+                      <strong>Lorem Ipsum </strong>
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex">
+                    <img
+                      className=""
+                      style={{ marginLeft: "20px", marginRight: "22px" }}
+                      src={bulb}
+                      height={40}
+                      alt=""
+                    />
+                    <div>
+                      <strong>Lorem Ipsum </strong>
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex">
+                    <img className="mx-3" src={rem} height={40} alt="" />
+                    <div>
+                      <strong>Lorem Ipsum </strong>
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    className="btn-caro-1-1"
+                    onClick={() => nav("/consultation")}
                   >
-                    <img src={g1} height={146} alt="" />
-                    <img src={g2} height={146} alt="" />
-                    <img src={g3} height={146} alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="caro-right col-lg-6">
-                <h4>Bowers & Wilkins</h4>
-                <p>
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s.
-                </p>
-                <div className="d-flex">
-                  <img className="mx-3" src={sun} height={40} alt="" />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex">
-                  <img
-                    className=""
-                    style={{ marginLeft: "20px", marginRight: "22px" }}
-                    src={bulb}
-                    height={40}
-                    alt=""
-                  />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex">
-                  <img className="mx-3" src={rem} height={40} alt="" />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <button
-                  className="btn-caro-1-1"
-                  onClick={() => nav("/consultation")}
-                >
-                  REQUEST A QUOTE
-                </button>
-                {/* <button className="btn-caro-2-1 mx-2">
+                    REQUEST A QUOTE
+                  </button>
+                  {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
+                </div>
               </div>
             </div>
-          </div>
-          <div className="carousel-item">
-            <div className="row caro-lr-1">
-              <div className="caro-left col-lg-6 d-flex justify-content-center">
-                <div className="img-trans">
-                  <div>
-                    <img src={g0} height={400} alt="" />
+            <div className="carousel-item">
+              <div className="row caro-lr-1">
+                <div className="caro-left col-lg-6 d-flex justify-content-center">
+                  <div className="img-trans">
+                    <div>
+                      <img src={g0} height={400} alt="" />
+                    </div>
+                    <div
+                      className="d-flex"
+                      style={{ gap: "20px", margin: "20px 0" }}
+                    >
+                      <img src={g1} height={146} alt="" />
+                      <img src={g2} height={146} alt="" />
+                      <img src={g3} height={146} alt="" />
+                    </div>
                   </div>
-                  <div
-                    className="d-flex"
-                    style={{ gap: "20px", margin: "20px 0" }}
+                </div>
+                <div className="caro-right col-lg-6">
+                  <h4>Bowers & Wilkins</h4>
+                  <p>
+                    Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s.
+                  </p>
+                  <div className="d-flex">
+                    <img className="mx-3" src={sun} height={40} alt="" />
+                    <div>
+                      <strong>Lorem Ipsum </strong>
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex">
+                    <img
+                      className=""
+                      style={{ marginLeft: "20px", marginRight: "22px" }}
+                      src={bulb}
+                      height={40}
+                      alt=""
+                    />
+                    <div>
+                      <strong>Lorem Ipsum </strong>
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="d-flex">
+                    <img className="mx-3" src={rem} height={40} alt="" />
+                    <div>
+                      <strong>Lorem Ipsum </strong>
+                      <p>
+                        Lorem Ipsum has been the industry's standard dummy text
+                        ever since the 1500s. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s.
+                      </p>
+                    </div>
+                  </div>
+                  <button
+                    className="btn-caro-1-1"
+                    onClick={() => nav("/consultation")}
                   >
-                    <img src={g1} height={146} alt="" />
-                    <img src={g2} height={146} alt="" />
-                    <img src={g3} height={146} alt="" />
-                  </div>
-                </div>
-              </div>
-              <div className="caro-right col-lg-6">
-                <h4>Bowers & Wilkins</h4>
-                <p>
-                  Lorem Ipsum has been the industry's standard dummy text ever
-                  since the 1500s. Lorem Ipsum has been the industry's standard
-                  dummy text ever since the 1500s.
-                </p>
-                <div className="d-flex">
-                  <img className="mx-3" src={sun} height={40} alt="" />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex">
-                  <img
-                    className=""
-                    style={{ marginLeft: "20px", marginRight: "22px" }}
-                    src={bulb}
-                    height={40}
-                    alt=""
-                  />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <div className="d-flex">
-                  <img className="mx-3" src={rem} height={40} alt="" />
-                  <div>
-                    <strong>Lorem Ipsum </strong>
-                    <p>
-                      Lorem Ipsum has been the industry's standard dummy text
-                      ever since the 1500s. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s.
-                    </p>
-                  </div>
-                </div>
-                <button
-                  className="btn-caro-1-1"
-                  onClick={() => nav("/consultation")}
-                >
-                  REQUEST A QUOTE
-                </button>
-                {/* <button className="btn-caro-2-1 mx-2">
+                    REQUEST A QUOTE
+                  </button>
+                  {/* <button className="btn-caro-2-1 mx-2">
                   GET A QUOTE <GoArrowRight />
                 </button> */}
+                </div>
               </div>
             </div>
           </div>
@@ -362,7 +367,7 @@ const Control = () => {
       </div>
       <br />
       <br />
-      <div className="caro-blogs" id="product">
+      <div className="caro-blogs">
         <p
           style={{ textAlign: "center", color: "#757575", fontSize: "1.1rem" }}
         >

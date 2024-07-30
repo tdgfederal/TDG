@@ -19,6 +19,7 @@ import w2 from "../../assets/images/w2.png";
 import w3 from "../../assets/images/w3.png";
 import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const SecurityProduct = () => {
   const nav = useNavigate();
@@ -26,15 +27,15 @@ const SecurityProduct = () => {
   const options = [
     {
       name: "Cameras",
-      nav: "/product/Secuity_&_Surveillance/cameras"
+      nav: "/product/Secuity_&_Surveillance/cameras#product"
     },
     {
       name: "Monitoring",
-      nav: "/product/Secuity_&_Surveillance/monitoring"
+      nav: "/product/Secuity_&_Surveillance/monitoring#product"
     },
     {
       name: "Entry Services",
-      nav: "/product/Secuity_&_Surveillance/entry-services"
+      nav: "/product/Secuity_&_Surveillance/entry-services#product"
     },
   ];
   const prodList = [
@@ -96,17 +97,28 @@ const SecurityProduct = () => {
       </div>
       <div className="filters">
         {options.map((e, i) => (
-          <button
-            onClick={() => {setCareer(e.name); nav(e.nav)}}
-            key={i}
-            className="career-btn-filter py-2"
+          <HashLink
+            to={e.nav}
             style={{
-              background: e.name === career ? "#282866" : "white",
               color: e.name === career ? "white" : "#282866",
+              textDecoration: "none",
             }}
           >
-            {e.name}
-          </button>
+            <button
+              onClick={() => {
+                setCareer(e.name);
+                nav(e.nav);
+              }}
+              key={i}
+              className="career-btn-filter py-2"
+              style={{
+                background: e.name === career ? "#282866" : "white",
+                color: e.name === career ? "white" : "#282866",
+              }}
+            >
+              {e.name}
+            </button>
+          </HashLink>
         ))}
       </div>
       <div className="prod-list">

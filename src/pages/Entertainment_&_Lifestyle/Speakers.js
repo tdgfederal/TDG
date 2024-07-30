@@ -19,34 +19,31 @@ import w2 from "../../assets/images/w2.png";
 import w3 from "../../assets/images/w3.png";
 import w4 from "../../assets/images/w4.png";
 import { useNavigate } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 const Speakers = () => {
   const nav = useNavigate();
   const [career, setCareer] = useState("Speakers");
   const options = [
     {
-      name: "Home theaters",
-      nav: "/product/Entertainment_&_Lifestyle/home-theatre"
+      name: "Movie theaters",
+      nav: "/product/Entertainment_&_Lifestyle/movie-theatre#product"
     },
     {
-      name: "Multi & whole home audio",
-      nav: "/product/Entertainment_&_Lifestyle/multi-and-whole-home-audio"
+      name: "Music",
+      nav: "/product/Entertainment_&_Lifestyle/music#product"
     },
     {
       name: "Golf Simulation",
-      nav: "/product/Entertainment_&_Lifestyle/golf-simulation"
+      nav: "/product/Entertainment_&_Lifestyle/golf-simulation#product"
     },
     {
       name: "Gaming",
-      nav:"/product/Entertainment_&_Lifestyle/gaming"
+      nav:"/product/Entertainment_&_Lifestyle/gaming#product"
     },
     {
-      name: "Speakers",
-      nav:"/product/Entertainment_&_Lifestyle/speakers"
-    },
-    {
-      name: "Relaxing Outdoors",
-      nav:"/product/Entertainment_&_Lifestyle/relaxing-outdoors"
+      name: "Outdoor Solutions",
+      nav:"/product/Entertainment_&_Lifestyle/outdoor-solution#product"
     },
   ];
   const prodList = [
@@ -109,17 +106,28 @@ const Speakers = () => {
       </div>
       <div className="filters">
         {options.map((e, i) => (
-          <button
-            onClick={() => {setCareer(e.name); nav(e.nav)}}
-            key={i}
-            className="career-btn-filter py-2"
+          <HashLink
+            to={e.nav}
             style={{
-              background: e.name === career ? "#282866" : "white",
               color: e.name === career ? "white" : "#282866",
+              textDecoration: "none",
             }}
           >
-            {e.name}
-          </button>
+            <button
+              onClick={() => {
+                setCareer(e.name);
+                nav(e.nav);
+              }}
+              key={i}
+              className="career-btn-filter py-2"
+              style={{
+                background: e.name === career ? "#282866" : "white",
+                color: e.name === career ? "white" : "#282866",
+              }}
+            >
+              {e.name}
+            </button>
+          </HashLink>
         ))}
       </div>
       <div className="prod-list">
@@ -129,7 +137,7 @@ const Speakers = () => {
             <div>{e.txt}</div>
           </div>
         ))}
-      </div>
+      </div><div id="product">
       <div id="carouselExampleIndicators" className="carousel slide">
         <div className="carousel-indicators">
           <button
@@ -371,7 +379,7 @@ const Speakers = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div></div>
       <br />
       <br />
       <div className="caro-blogs">
