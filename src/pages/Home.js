@@ -62,41 +62,41 @@ const Home = () => {
   //   };
   // }, []);
   useEffect(() => {
-    const carouselElement = document.getElementById('carouselExampleCaptions');
-    const videos = carouselElement.querySelectorAll('.carousel-item video');
+    const carouselElement = document.getElementById("carouselExampleCaptions");
+    const videos = carouselElement.querySelectorAll(".carousel-item video");
 
-    videos.forEach(video => {
+    videos.forEach((video) => {
       video.muted = true;
       video.playsInline = true;
     });
 
     const playVideo = (video) => {
-      video.play().catch(error => {
-        console.log('Error attempting to play video', error);
+      video.play().catch((error) => {
+        console.log("Error attempting to play video", error);
       });
     };
 
     const pauseAllVideos = () => {
-      videos.forEach(video => video.pause());
+      videos.forEach((video) => video.pause());
     };
 
     const handleSlide = (event) => {
       pauseAllVideos();
-      const nextVideo = event.relatedTarget.querySelector('video');
+      const nextVideo = event.relatedTarget.querySelector("video");
       if (nextVideo) {
         playVideo(nextVideo);
       }
     };
 
     const handleSlideEnd = (event) => {
-      const nextVideo = event.target.querySelector('video');
+      const nextVideo = event.target.querySelector("video");
       if (nextVideo) {
         playVideo(nextVideo);
       }
     };
 
-    carouselElement.addEventListener('slide.bs.carousel', handleSlide);
-    carouselElement.addEventListener('slid.bs.carousel', handleSlideEnd);
+    carouselElement.addEventListener("slide.bs.carousel", handleSlide);
+    carouselElement.addEventListener("slid.bs.carousel", handleSlideEnd);
 
     // Play the first video immediately
     if (videos.length > 0) {
@@ -104,15 +104,19 @@ const Home = () => {
     }
 
     return () => {
-      carouselElement.removeEventListener('slide.bs.carousel', handleSlide);
-      carouselElement.removeEventListener('slid.bs.carousel', handleSlideEnd);
+      carouselElement.removeEventListener("slide.bs.carousel", handleSlide);
+      carouselElement.removeEventListener("slid.bs.carousel", handleSlideEnd);
     };
   }, []);
 
   return (
     <div style={{ overflowX: "hidden" }}>
       <div className="home-caro">
-        <div id="carouselExampleCaptions" className="carousel slide" data-bs-ride="carousel">
+        <div
+          id="carouselExampleCaptions"
+          className="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div className="carousel-indicators">
             <button
               type="button"
@@ -142,7 +146,10 @@ const Home = () => {
             ></button>
           </div>
           <div className="carousel-inner">
-            <div className="carousel-item carousel-itemm active" data-bs-interval="9000">
+            <div
+              className="carousel-item carousel-itemm active"
+              data-bs-interval="9000"
+            >
               {/* <img src={caro} className="d-block w-100" alt="..." /> */}
               <video className="d-block w-100" autoplay muted>
                 <source src={c1} type="video/mp4" />
@@ -169,7 +176,10 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div className="carousel-item carousel-itemm" data-bs-interval="7000">
+            <div
+              className="carousel-item carousel-itemm"
+              data-bs-interval="7000"
+            >
               <video className="d-block w-100" autoplay muted>
                 <source src={c2} type="video/mp4" />
               </video>
@@ -192,7 +202,10 @@ const Home = () => {
                 </a>
               </div>
             </div>
-            <div className="carousel-item carousel-itemm" data-bs-interval="7000">
+            <div
+              className="carousel-item carousel-itemm"
+              data-bs-interval="7000"
+            >
               <video className="d-block w-100" autoplay muted>
                 <source src={c3} type="video/mp4" />
               </video>
@@ -340,11 +353,11 @@ const Home = () => {
       <br />
       <br />
       <div className="features-home">
-        <h6 style={{ color: "#757575", textAlign: "center" }}>
-          Smart Home Applications
-        </h6>
+        {/* <h6 style={{ color: "#757575", textAlign: "center" }}>
+          Smart Home Solutions
+        </h6> */}
         <h3 className="" style={{ textAlign: "center" }}>
-          Our Technology
+          Smart Home Solutions
         </h3>
         <br />
         <div className="logos-circle">
@@ -584,7 +597,9 @@ const Home = () => {
       <br />
       <br />
       <div className="home-caro">
-        <p style={{ textAlign: "center", color: "#282866" }}>CUSTOMER FEEDBACK</p>
+        <p style={{ textAlign: "center", color: "#282866" }}>
+          CUSTOMER FEEDBACK
+        </p>
         <h3 style={{ textAlign: "center" }}>
           Here is what our satisfied clients say
         </h3>
@@ -612,7 +627,12 @@ const Home = () => {
               </p>
               <br />
               <div style={{ textAlign: "center" }}>
-                <img src={t1} height={120} style={{borderRadius:"50%"}} alt="" />
+                <img
+                  src={t1}
+                  height={120}
+                  style={{ borderRadius: "50%" }}
+                  alt=""
+                />
               </div>
               <p
                 className="mt-2"
