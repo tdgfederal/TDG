@@ -164,7 +164,7 @@ const Footer = () => {
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
                   onClick={() => nav("/product/Secuity_&_Surveillance/cameras")}
                 >
-                  Secuity and Surveillance
+                  Security and Surveillance
                 </p>
                 <p
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
