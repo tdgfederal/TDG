@@ -301,15 +301,9 @@ const Home = () => {
                 className="pic1-text mt-3"
                 style={{ textAlign: "justify", color: "#4B4B4B" }}
               >
-                Personalize your life and bring your house to a whole advanced
-                level with our smart appliances. It could be the lights,
-                security, or even your home theater, and everything is
-                controlled by your fingertips. Advanced technology turns your
-                abode into a plush, seamlessly integrated, cooperatingly high on
-                functionality space. Go easy on down the road of convenience to
-                sophisticated living with devices designed for everyday
-                functionality. Experience the future of an American home through
-                our top-of-the-line smart solution
+               TDG will help you navigate every challenge in your current space, whether you are interested in adding lighting, building a movie room or theater, 
+               or adding cameras to your home. We aim to bring the art of the possible to life and help you design a smart, simple, but elegant solution to meet your needs.
+               We partner with the best brands to select time-tested products that are easy to maintain and deliver the value you pay for. 
               </p>
               <button className="wwd-btn" onClick={() => nav("/support")}>
                 WHAT WE DO <GoArrowRight style={{ fontSize: "1rem" }} />
@@ -333,14 +327,10 @@ const Home = () => {
                 className="pic2-text"
                 style={{ textAlign: "justify", color: "##4B4B4B" }}
               >
-                Want to catch the big game outside or get your listening room
-                ready for a crazy day unwinding? We've got you covered. Bring
-                your home to the next level with incomparable audio and video
-                solutions for fun family time, personal relaxation, or
-                everything in between. TDG provides the best smart home products
-                to take your free and "me" time to the next level of ease.
-                Experience top-of-the-line entertainment at home and change the
-                face of your living space today.
+                Are you looking to watch the big game outside or create a perfect setup for a relaxing day? We've got you covered. 
+Elevate your home with top-notch audio and video solutions for quality family time, personal relaxation, and everything in between.
+TDG offers the finest smart home products, ensuring that your leisure time is not just easier, but also of the highest quality and more enjoyable.
+Transform your living space and enjoy high-quality entertainment at home today.
               </p>
               <div className="pos-rel-pic">
                 <img src={pic3} alt="" height={275} />
@@ -522,11 +512,11 @@ const Home = () => {
                 fontSize: "0.9rem",
               }}
             >
-              Transform your outdoor spaces into vibrant hubs of music and
+              Transform your spaces into vibrant hubs of music and
               entertainment, or convert your spare rooms into a world-class
               indoor golf escape. Whether you seek to seamlessly integrate the
               outdoors with your indoor spaces or create indoor environments
-              that rival the outdoors, TDG cater to your vision. Our solutions
+              that rival the outdoors, TDG caters to your vision. Our solutions
               redefine home living by harmonizing advanced technology with
               unparalleled comfort, delivering an exceptional experience
               tailored to your lifestyle.
@@ -638,7 +628,7 @@ const Home = () => {
                 className="mt-2"
                 style={{ color: "#6B6866", textAlign: "center" }}
               >
-                Larry Eldridge
+                Larry Eldridge, Gainesville, Virginia
               </p>
             </div>
             <div className="carousel-item" style={{ height: "auto" }}>
@@ -671,10 +661,10 @@ const Home = () => {
                 className="mt-2"
                 style={{ color: "#6B6866", textAlign: "center" }}
               >
-                Moussa O.
+                Moussa O, Gaithersburg, Maryland.
               </p>
             </div>
-            {/* <div className="carousel-item" style={{ height: "auto" }}>
+<div className="carousel-item" style={{ height: "auto" }}>
               <p
                 style={{
                   color: "#6B6866",
@@ -683,23 +673,21 @@ const Home = () => {
                   textAlign: "center",
                 }}
               >
-                "TDG Home made our dream home a reality! Their attention to
-                detail and commitment to quality craftsmanship exceeded our
-                expectations. We couldn't be happier with the result."{" "}
+                Everything your team designed and implemented is working without issues. 
+                  Thank you so much!
               </p>
               <br />
               <div style={{ textAlign: "center" }}>
-                <img src={person} alt="" />
+                <img src={person} height={120} alt="" />
               </div>
               <p
                 className="mt-2"
                 style={{ color: "#6B6866", textAlign: "center" }}
               >
-                Sarah T.
+                David D, Haymarket, Virginia.
               </p>
-            </div> */}
-          </div>
-          <button
+            </div>
+            <button
             className="carousel-control-prev"
             type="button"
             data-bs-target="#carouselExampleCaptions2"
