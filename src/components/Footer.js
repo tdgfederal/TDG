@@ -50,7 +50,7 @@ const Footer = () => {
               color: "#BEBEFF",
             }}
           >
-            Newsletter SIGNUP
+            Subscribe to our newsletter
           </p>
           <h3 style={{ color: "white", textAlign: "center" }}>
             Sign up for exclusive offers &
@@ -86,9 +86,7 @@ const Footer = () => {
                   className="my-3"
                   style={{ color: "white", fontSize: "0.85rem" }}
                 >
-                  From initial design to installation and beyond, we offer a
-                  complete plan to make your home smarter, more convenient, and
-                  luxurious.
+                  TDG offers a complete home solution, creating enjoyable, secure, and convenient environments with our wide range of products and services.
                 </p>
               </div>
             </div>
@@ -173,69 +171,26 @@ const Footer = () => {
                   Lighting
                 </p>
               </div>
-              <div
-                className="col-lg-4 col-md-4 col-sm-6"
-                style={{ padding: "50px" }}
-              >
-                <p style={{ fontSize: "1.1rem" }}>Our Product</p>
-                <p
-                  style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() =>
-                    nav("/product/Entertainment_&_Lifestyle/golf-simulation")
-                  }
-                >
-                  Golf Simulation
-                </p>
-                <p
-                  style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() =>
-                    nav("/product/Entertainment_&_Lifestyle/speakers")
-                  }
-                >
-                  Speakers
-                </p>
-                <p
-                  style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() =>
-                    nav("/product/Entertainment_&_Lifestyle/relaxing-outdoors")
-                  }
-                >
-                  Relaxing Outdoors
-                </p>
-                <p
-                  style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() => nav("/product/home_control/control4")}
-                >
-                  Control4
-                </p>
-                <p
-                  style={{ fontSize: "0.85rem", cursor: "pointer" }}
-                  onClick={() => nav("/product/comfort/climate-control")}
-                >
-                  Climate Control
-                </p>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-4" style={{ padding: "50px" }}>
+              <div className="col-lg-4 col-md-4" style={{ padding: "50px" }}>
               <div>
                 <p style={{ fontSize: "1.1rem" }}>Contact</p>
                 <p style={{ fontSize: "0.85rem" }}>
-                  123 Lorem Ipsum, United States, Baker’s Street751002
+                  Serving DC, Maryland, and Virginia
                 </p>
                 <p style={{ fontSize: "0.85rem" }}>
                   <a
                     style={{ textDecoration: "none", color: "white" }}
-                    href="mailto:support@gmail.com"
+                    href="mailto:ddiallo@itecintegrator.com"
                   >
-                    support@gmail.com
+                    ddiallo@itecintegrator.com
                   </a>
                 </p>
                 <p style={{ fontSize: "0.85rem" }}>
                   <a
                     style={{ textDecoration: "none", color: "white" }}
-                    href="tel:+123 456 789"
+                    href="tel:+571-315-2073"
                   >
-                    +123 456 789
+                    +571-315-2073
                   </a>
                 </p>
                 <div
@@ -264,7 +219,7 @@ const Footer = () => {
           <p style={{ textAlign: "center" }}>
             copyright{" "}
             <span id="foot-bold" style={{ fontWeight: "600" }}>
-              @2023 TDG HOME.
+              @2023 THE DIALLO GROUP, LLC.
             </span>{" "}
             All rights reserved
           </p>
