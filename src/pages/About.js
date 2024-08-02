@@ -24,9 +24,9 @@ const About = () => {
           textTransform: "uppercase",
         }}
       >
-        <p>Bringing Innovation Home</p>
+      
         <h3>Elevate Your Lifestyle with TDG Smart</h3>
-        <p>Crafting Smart Solutions for Modern Living</p>
+    
       </div>
       <div className="side-by-side">
         <div className="side-by-side-left">
@@ -166,8 +166,8 @@ const About = () => {
       <br />
       <br />
       <div className="partners">
-        <p style={{ textAlign: "center", color: "#757575" }}>Our Partners</p>
-        <h3 style={{ textAlign: "center" }}>Lorem Ipsum is simply</h3>
+        <p style={{ textAlign: "center", color: "#757575" }}>Brand Products</p>
+        <h3 style={{ textAlign: "center" }}>Expertly crafted brands to support your projects</h3>
         <br />
         <div className="parts">
           <Link to={"https://www.denon.com/en-us/"} target="_blank"><div className="part-each">
@@ -193,7 +193,7 @@ const About = () => {
       <div className="about-signup">
         <h3 style={{ textAlign: "center" }}>Sign up to receive product</h3>
         <h3 style={{ textAlign: "center", marginTop: "-5px" }}>
-          update or discounts
+          updates or discounts
         </h3>
         <br />
         <div className="form-about-su">
