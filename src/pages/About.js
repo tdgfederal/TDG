@@ -24,9 +24,9 @@ const About = () => {
           textTransform: "uppercase",
         }}
       >
-        <p>Bringing Innovation Home</p>
+      
         <h3>Elevate Your Lifestyle with TDG Smart</h3>
-        <p>Crafting Smart Solutions for Modern Living</p>
+       
       </div>
       <div className="side-by-side">
         <div className="side-by-side-left">
@@ -38,15 +38,12 @@ const About = () => {
           </p>
           <h3>Company's Journey</h3>
           <p style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-            At TDG HOME, our journey began with a vision to revolutionize the
-            way people interact with their homes. Founded by a team of
-            passionate technologists and design enthusiasts, we set out to
-            create a seamless, integrated smart home experience that would
-            redefine the boundaries of comfort, convenience, and luxury. Drawing
-            inspiration from the ever-evolving landscape of technology, we have
-            dedicated ourselves to pushing the limits of what's possible,
-            pioneering innovative solutions that make everyday living truly
-            exceptional.
+              TDG's vision is to revolutionize how customers see and interact with their homes.
+              We are a team of passionate technologists, engineers, and design enthusiasts
+              helping customers create a seamless, integrated smart home experience that redefines
+              the boundaries of comfort, entertainment, convenience, and security. 
+              Drawing inspiration from the ever-evolving landscape of technology, we have dedicated ourselves
+              to pushing the limits of what's possible, pioneering innovative solutions that make everyday living truly exceptional.
           </p>
           {/* <p style={{ fontSize: "1rem" }}>Sharon Gunther</p>
           <p style={{ color: "#AD9A9A", fontSize: "0.95rem" }}>Fresh Design</p> */}
