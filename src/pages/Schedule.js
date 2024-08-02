@@ -61,8 +61,8 @@ const Schedule = () => {
             >
               X
             </div>
-            <h1>Form Submitted Successfully!</h1>
-            <p>Please book the meeting </p>
+            <h1>Thank you for the submission, we look forward to creating a simple and elegant home solution for you!</h1>
+            <p>Please Schedule your consultation call </p>
             <a href="https://calendly.com/ddiallo-itecintegrator">
               <button className="nav-button btn" type="submit">
                 GO TO CALENDLY{" "}
@@ -80,7 +80,7 @@ const Schedule = () => {
           </h3>
           <div className="job-desc my-3">
             <p style={{ fontWeight: "600" }}>
-              Welcome to Our Consultation Booking Page!
+              Welcome 
             </p>
             <p style={{ color: "white" }}>
               At TDG SMART, we understand the importance of personalized advice
@@ -136,7 +136,7 @@ const Schedule = () => {
             </ul>
           </div>
           <p>
-            Ready to get started? Fill out the form below to book your
+            Ready to get started? Fill out the form below to schedule your
             consultation now!
           </p>
         </div>
@@ -273,12 +273,13 @@ const Schedule = () => {
                 required
               >
                 <option value="" disabled selected>
-                  Specific questions or topics you would like to cover
+                  Select an option
                 </option>
                 <option value="Home Control">Home Control</option>
-                <option value="Entertainment & Lifestyle">Entertainment & Lifestyle</option>
-                <option value="Comfort">Comfort</option>
-                <option value="Secuity & Surveillance">Secuity & Surveillance</option>
+                <option value="Entertainment, Music, Speakers, theater, and electronics">Entertainment</option>
+                <option value="Lifestyle golf, game rooms, Podcasts">Lifestyle</option>
+                <option value="Comfort, thermostats, Blinds, Garage automation, Locks">Comfort</option>
+                <option value="Secuity & Surveillance, cameras, door locks">Secuity & Surveillance</option>
                 <option value="Lighting">Lighting</option>
               </select>
             </div>
@@ -286,7 +287,7 @@ const Schedule = () => {
               <label className="required"></label>
               <textarea
                 type="text"
-                placeholder="Specific questions or topics you would like to cover"
+                placeholder="Select an option"
                 style={{
                   width: "100%",
                   height: "50px",
@@ -312,17 +313,10 @@ const Schedule = () => {
                 name="hear"
                 required
               >
-                <option value="" disabled selected>
-                  How did you hear about us?
-                </option>
-                <option value="Linkedin">Linkedin</option>
-                <option value="Whatsapp">Whatsapp</option>
-                <option value="Advertisement">Advertisement</option>
-              </select>
-            </div>
+              </div>
             <textarea
               type="text"
-              placeholder="Any additional comments or requirements (optional)"
+              placeholder=" Please provide additional details on your request (optional)"
               style={{
                 width: "100%",
                 height: "50px",
