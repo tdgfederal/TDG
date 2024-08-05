@@ -76,8 +76,6 @@ const About = () => {
           </div>
           </div>
           <button className="wwd-btn" onClick={()=>nav("/consultation")}>REQUEST A QUOTE</button>
-        </div>
-      </div>
       <br />
       <br />
       <br />
