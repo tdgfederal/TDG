@@ -24,29 +24,20 @@ const About = () => {
           textTransform: "uppercase",
         }}
       >
-        <p>Bringing Innovation Home</p>
-        <h3>Elevate Your Lifestyle with TDG Smart</h3>
-        <p>Crafting Smart Solutions for Modern Living</p>
+      <h3>Smart & Elegant Solutions</h3>
       </div>
       <div className="side-by-side">
         <div className="side-by-side-left">
           <img src={sbs1} alt="" />
         </div>
         <div className="side-by-side-right">
-          <p style={{ color: "#282866", fontSize: "0.9rem" }}>
-            Company Background
-          </p>
-          <h3>Company's Journey</h3>
+          <h3>Our Mission</h3>
           <p style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-            At TDG HOME, our journey began with a vision to revolutionize the
-            way people interact with their homes. Founded by a team of
-            passionate technologists and design enthusiasts, we set out to
-            create a seamless, integrated smart home experience that would
-            redefine the boundaries of comfort, convenience, and luxury. Drawing
-            inspiration from the ever-evolving landscape of technology, we have
-            dedicated ourselves to pushing the limits of what's possible,
-            pioneering innovative solutions that make everyday living truly
-            exceptional.
+            We are committed to creating smart, elegant, and innovative solutions that enrich the lives of our customers.
+            Drawing inspiration from the ever-evolving landscape of technology, we have dedicated ourselves to pushing the limits of 
+            what's possible, pioneering innovative solutions that make everyday living truly exceptional. 
+            Our Smart and elegant solutions simplify your daily routines and provide the best entertainment, 
+            comfort, and security in any home space, creating an ideal environment for building long-lasting memories.
           </p>
           {/* <p style={{ fontSize: "1rem" }}>Sharon Gunther</p>
           <p style={{ color: "#AD9A9A", fontSize: "0.95rem" }}>Fresh Design</p> */}
@@ -57,16 +48,20 @@ const About = () => {
       <br />
       <div className="side-by-side">
         <div className="side-by-side-right">
-          <p style={{ color: "#282866", fontSize: "0.9rem" }}>Our Purpose</p>
-          <h3>Goals To Achieve</h3>
+          <h3>Our Objectives</h3>
           <div className="d-flex align-items-start my-3">
             <div>
               <img src={tick} alt="" height={25} />
             </div>
+          <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
+              We strive to develop intelligent, uncomplicated, and streamlined solutions for your household. 
+              Our team will thoroughly assess your needs and challenges during the discovery process and 
+              create designs to enhance your experience. 
+            </div>
             <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              Our purpose is to empower homeowners with the tools and
-              technologies they need to transform their living spaces into
-              intelligent, responsive environments.
+               With over 15 years of experience in the field, our team rigorously tests all high-quality smart products on the market
+              to ensure that we deliver smart, connected, and elegant solutions. Our solutions work seamlessly, 
+              allowing customers to easily operate and depend on them consistently. 
             </div>
           </div>
           <div className="d-flex align-items-start my-3">
@@ -74,90 +69,11 @@ const About = () => {
               <img src={tick} alt="" height={25} />
             </div>
             <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              Through our comprehensive smart home solutions, we strive to
-              enhance the quality of life, simplify daily tasks, and provide a
-              level of personalization and control that was once unimaginable.
+              We are customer-focused and committed to surpassing your goals. We actively listen to your needs, goals, and challenges 
+              and work closely with your family to bring your dreams to fruition. Witnessing your vision come to life is the ultimate reward for us.
             </div>
           </div>
-          <div className="d-flex align-items-start my-3">
-            <div>
-              <img src={tick} alt="" height={25} />
-            </div>
-            <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              By aligning our goals with the evolving needs and desires of our
-              customers, we are committed to delivering the ultimate smart home
-              experience, one that adapts and evolves alongside the
-              ever-changing demands of modern living.
-            </div>
           </div>
-          <div className="d-flex align-items-start my-3">
-            <div>
-              <img src={tick} alt="" height={25} />
-            </div>
-            <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              Our design team meticulously crafts elegant, user-friendly
-              interfaces that seamlessly integrate with your home's aesthetic,
-              ensuring that form and function work in perfect harmony.
-            </div>
-          </div>
-        </div>
-        <div className="side-by-side-left">
-          <img src={sbs2} alt="" />
-        </div>
-      </div>
-      <br />
-      <br />
-      <br />
-      <div className="side-by-side">
-        <div className="side-by-side-left-o">
-          <img src={sbs3} alt="" />
-        </div>
-        <div className="side-by-side-right">
-          <p style={{ color: "#282866", fontSize: "0.9rem" }}>Our Approach</p>
-          <h3>Steps To Follow</h3>
-          <div className="d-flex align-items-start my-3">
-            <div>
-              <img src={tick} alt="" height={25} />
-            </div>
-            <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              See your future with smart technology by TDG Home. From enhanced
-              safety to added efficiency, we familiarize you with the new wave
-              of change that transforms your home into being smarter and more
-              convenient.
-            </div>
-          </div>
-          <div className="d-flex align-items-start my-3">
-            <div>
-              <img src={tick} alt="" height={25} />
-            </div>
-            <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              Custom smart home solutions are designed with precision by TDG
-              Home. We work with you to design a plan that suits your needs and
-              your style while ensuring functionality and aesthetics in your new
-              smart environment.
-            </div>
-          </div>
-          <div className="d-flex align-items-start my-3">
-            <div>
-              <img src={tick} alt="" height={25} />
-            </div>
-            <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              Bring your vision about the smart home into a reality with our
-              experts at TDG Home. With the installation and setting up of your
-              smart systems, we make sure everything is working seamlessly so
-              you are left with no hassle in that enjoyment.
-            </div>
-          </div>
-          <div className="d-flex align-items-start my-3">
-            <div>
-              <img src={tick} alt="" height={25} />
-            </div>
-            <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              TDG Home provides dedicated support so you can enjoy a hassle-free
-              smart home. Our team is standing by to assist any question or
-              problem you have with your system, so it remains efficient and
-              worry-free.
-            </div>
           </div>
           <button className="wwd-btn" onClick={()=>nav("/consultation")}>REQUEST A QUOTE</button>
         </div>
