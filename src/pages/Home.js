@@ -333,17 +333,16 @@ const Home = () => {
                 className="pic2-text"
                 style={{ textAlign: "justify", color: "##4B4B4B" }}
               >
-                Want to catch the big game outside or get your listening room
-                ready for a crazy day unwinding? We've got you covered. Bring
-                your home to the next level with incomparable audio and video
-                solutions for fun family time, personal relaxation, or
-                everything in between. TDG provides the best smart home products
-                to take your free and "me" time to the next level of ease.
-                Experience top-of-the-line entertainment at home and change the
-                face of your living space today.
+                The big games will never be the same again. Transform your
+                parties and events with the best audio and video solutions,
+                ideal for quality family time, personal relaxation, and
+                everything in between. The expert team at TDG will design and
+                implement exactly what your family desires using your favorite
+                brands, ensuring that your leisure time is always the best and
+                that family and friends create memorable moments!
               </p>
               <div className="pos-rel-pic">
-                <img src={pic3} alt="" height={275} />
+                <img src={pic3} alt="" height={293} />
                 {/* <p className="pos-abs-pic">Lorem Ipsum is simply</p> */}
               </div>
             </div>
