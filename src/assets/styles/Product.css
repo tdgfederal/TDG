@@ -205,7 +205,7 @@
 .row-blog-prod{
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-wrap: wrap;
   margin-bottom: 50px;
   padding: 0 50px;

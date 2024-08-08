@@ -14,10 +14,10 @@ import bulb from "../../assets/images/bulb.png";
 import sun from "../../assets/images/sun.png";
 import rem from "../../assets/images/rem.png";
 import { GoArrowRight } from "react-icons/go";
-import w1 from "../../assets/images/w1.png";
-import w2 from "../../assets/images/w2.png";
-import w3 from "../../assets/images/w3.png";
-import w4 from "../../assets/images/w4.png";
+import w1 from "../../assets/images/ol4.jpg";
+import w2 from "../../assets/images/ol5.jpg";
+import w3 from "../../assets/images/ol6.jpg";
+import w4 from "../../assets/images/ol7.jpg";
 import { useNavigate } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -409,7 +409,7 @@ const Relaxing = () => {
         <br />
         <div className="row-blog-prod">
           <div className="mx-auto" style={{ textAlign: "center" }}>
-            <img src={w1} height={300} alt="" />
+            <img src={w1} height={300} width={280} alt="" />
             <div
               className="my-3"
               style={{ fontSize: "0.9rem", fontWeight: "600" }}
@@ -422,7 +422,7 @@ const Relaxing = () => {
             </div>
           </div>
           <div className="mx-auto" style={{ textAlign: "center" }}>
-            <img src={w2} height={300} alt="" />
+            <img src={w2} height={300} width={280} alt="" />
             <div
               className="my-3"
               style={{ fontSize: "0.9rem", fontWeight: "600" }}
@@ -435,7 +435,7 @@ const Relaxing = () => {
             </div>
           </div>
           <div className="mx-auto" style={{ textAlign: "center" }}>
-            <img src={w3} height={300} alt="" />
+            <img src={w3} height={300} width={280} alt="" />
             <div
               className="my-3"
               style={{ fontSize: "0.9rem", fontWeight: "600" }}
@@ -448,7 +448,7 @@ const Relaxing = () => {
             </div>
           </div>
           <div className="mx-auto" style={{ textAlign: "center" }}>
-            <img src={w4} height={300} alt="" />
+            <img src={w4} height={300} width={280} alt="" />
             <div
               className="my-3"
               style={{ fontSize: "0.9rem", fontWeight: "600" }}
