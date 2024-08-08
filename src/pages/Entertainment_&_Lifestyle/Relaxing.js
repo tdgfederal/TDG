@@ -6,10 +6,10 @@ import pr3 from "../../assets/images/pr3.png";
 import pr4 from "../../assets/images/pr4.png";
 import pr5 from "../../assets/images/pr5.png";
 import pr6 from "../../assets/images/pr6.png";
-import g0 from "../../assets/images/g0.png";
-import g1 from "../../assets/images/g1.png";
-import g2 from "../../assets/images/g2.png";
-import g3 from "../../assets/images/g3.png";
+import g0 from "../../assets/images/ol0.jpeg";
+import g1 from "../../assets/images/ol1.jpg";
+import g2 from "../../assets/images/ol2.jpg";
+import g3 from "../../assets/images/ol3.jpg";
 import bulb from "../../assets/images/bulb.png";
 import sun from "../../assets/images/sun.png";
 import rem from "../../assets/images/rem.png";
@@ -172,18 +172,18 @@ const Relaxing = () => {
             <div className="carousel-item active">
               <div className="row caro-lr-1">
                 <div className="caro-left col-lg-6 d-flex justify-content-center">
-                  <div className="img-trans">
-                    <div>
-                      <img src={g0} height={400} alt="" />
-                    </div>
-                    <div
-                      className="d-flex"
-                      style={{ gap: "20px", margin: "20px 0" }}
-                    >
-                      <img src={g1} height={146} alt="" />
-                      <img src={g2} height={146} alt="" />
-                      <img src={g3} height={146} alt="" />
-                    </div>
+                  <div className="img-trans img-trans-2">
+                  <div>
+                    <img src={g0} height={350} style={{borderRadius:'12px'}} alt="" />
+                  </div>
+                  <div
+                    className="d-flex"
+                    style={{ gap: "20px", margin: "20px 0" }}
+                  >
+                    <img src={g1} height={114.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g2} height={114.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g3} height={114.5} style={{borderRadius:'12px'}} alt="" />
+                  </div>
                   </div>
                 </div>
                 <div className="caro-right col-lg-6">
@@ -247,18 +247,18 @@ const Relaxing = () => {
             <div className="carousel-item">
               <div className="row caro-lr-1">
                 <div className="caro-left col-lg-6 d-flex justify-content-center">
-                  <div className="img-trans">
-                    <div>
-                      <img src={g0} height={400} alt="" />
-                    </div>
-                    <div
-                      className="d-flex"
-                      style={{ gap: "20px", margin: "20px 0" }}
-                    >
-                      <img src={g1} height={146} alt="" />
-                      <img src={g2} height={146} alt="" />
-                      <img src={g3} height={146} alt="" />
-                    </div>
+                <div className="img-trans img-trans-2">
+                  <div>
+                    <img src={g0} height={350} style={{borderRadius:'12px'}} alt="" />
+                  </div>
+                  <div
+                    className="d-flex"
+                    style={{ gap: "20px", margin: "20px 0" }}
+                  >
+                    <img src={g1} height={114.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g2} height={114.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g3} height={114.5} style={{borderRadius:'12px'}} alt="" />
+                  </div>
                   </div>
                 </div>
                 <div className="caro-right col-lg-6">
@@ -322,18 +322,18 @@ const Relaxing = () => {
             <div className="carousel-item">
               <div className="row caro-lr-1">
                 <div className="caro-left col-lg-6 d-flex justify-content-center">
-                  <div className="img-trans">
-                    <div>
-                      <img src={g0} height={400} alt="" />
-                    </div>
-                    <div
-                      className="d-flex"
-                      style={{ gap: "20px", margin: "20px 0" }}
-                    >
-                      <img src={g1} height={146} alt="" />
-                      <img src={g2} height={146} alt="" />
-                      <img src={g3} height={146} alt="" />
-                    </div>
+                <div className="img-trans img-trans-2">
+                  <div>
+                    <img src={g0} height={350} style={{borderRadius:'12px'}} alt="" />
+                  </div>
+                  <div
+                    className="d-flex"
+                    style={{ gap: "20px", margin: "20px 0" }}
+                  >
+                    <img src={g1} height={114.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g2} height={114.5} style={{borderRadius:'12px'}} alt="" />
+                    <img src={g3} height={114.5} style={{borderRadius:'12px'}} alt="" />
+                  </div>
                   </div>
                 </div>
                 <div className="caro-right col-lg-6">

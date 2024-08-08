@@ -5,7 +5,7 @@ import { GoArrowRight } from "react-icons/go";
 import { GoArrowLeft } from "react-icons/go";
 import pic1 from "../assets/images/pic1.png";
 import pic2 from "../assets/images/pic2.png";
-import pic3 from "../assets/images/pic3.png";
+import pic3 from "../assets/images/pic3.jpeg";
 import l1 from "../assets/images/l1.png";
 import l2 from "../assets/images/l2.png";
 import l3 from "../assets/images/l3.png";
@@ -342,7 +342,7 @@ const Home = () => {
                 that family and friends create memorable moments!
               </p>
               <div className="pos-rel-pic">
-                <img src={pic3} alt="" height={293} />
+                <img src={pic3} alt="" height={293} style={{width:"100%"}}/>
                 {/* <p className="pos-abs-pic">Lorem Ipsum is simply</p> */}
               </div>
             </div>

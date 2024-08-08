@@ -251,17 +251,19 @@ const About = () => {
           <img src={sbs3} alt="" />
         </div>
         <div className="side-by-side-right">
-          <p style={{ color: "#282866", fontSize: "0.9rem" }}>Our Approach</p>
+          {/* <p style={{ color: "#282866", fontSize: "0.9rem" }}>Our Approach</p> */}
           <h3>Steps To Follow</h3>
           <div className="d-flex align-items-start my-3">
             <div>
               <img src={tick} alt="" height={25} />
             </div>
             <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              See your future with smart technology by TDG Home. From enhanced
-              safety to added efficiency, we familiarize you with the new wave
-              of change that transforms your home into being smarter and more
-              convenient.
+              Our discovery process is not just about getting to know you, but
+              about understanding your unique needs. We introduce our company
+              and its members, and explain our business approach. This session,
+              which may include a product demo, ensures we leave with a clear
+              understanding of your requirements, ready to implement the right
+              system for you.
             </div>
           </div>
           <div className="d-flex align-items-start my-3">
@@ -269,10 +271,10 @@ const About = () => {
               <img src={tick} alt="" height={25} />
             </div>
             <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              Custom smart home solutions are designed with precision by TDG
-              Home. We work with you to design a plan that suits your needs and
-              your style while ensuring functionality and aesthetics in your new
-              smart environment.
+              In the design phase, we don't just put together ideas, products,
+              and designs. We collaborate with you, sharing our proposals and
+              seeking your feedback. This unique approach allows us to finalize
+              a solution that meets your needs and expectations.
             </div>
           </div>
           <div className="d-flex align-items-start my-3">
@@ -280,10 +282,13 @@ const About = () => {
               <img src={tick} alt="" height={25} />
             </div>
             <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              Bring your vision about the smart home into a reality with our
-              experts at TDG Home. With the installation and setting up of your
-              smart systems, we make sure everything is working seamlessly so
-              you are left with no hassle in that enjoyment.
+              The installation process is exciting. The team arrives with all
+              your equipment and devices pre-tested and configured and will work
+              to assemble everything. Once the setup is up and running, the
+              quality check will be completed before the solution is shared with
+              you. The team will then schedule your three check-in sessions to
+              educate you on any part of the system, answer any questions, and
+              address any issues.
             </div>
           </div>
           <div className="d-flex align-items-start my-3">
@@ -291,10 +296,10 @@ const About = () => {
               <img src={tick} alt="" height={25} />
             </div>
             <div className="mx-3 mt-1" style={{ color: "rgba(0, 0, 0, 0.75)" }}>
-              TDG Home provides dedicated support so you can enjoy a hassle-free
-              smart home. Our team is standing by to assist any question or
-              problem you have with your system, so it remains efficient and
-              worry-free.
+              Our maintenance team offers plans to cover your investment and
+              ensure periodic system reviews for software upgrades, tuning, and
+              issues. Our comprehensive plans include full remote support, so
+              you don't have to wait for someone to arrive.
             </div>
           </div>
           <button className="wwd-btn" onClick={() => nav("/consultation")}>
