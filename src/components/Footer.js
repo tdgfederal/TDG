@@ -220,22 +220,22 @@ const Footer = () => {
               <div>
                 <p style={{ fontSize: "1.1rem" }}>Contact</p>
                 <p style={{ fontSize: "0.85rem" }}>
-                  123 Lorem Ipsum, United States, Baker’s Street751002
+                  Serving the DMV area - Virginia, Maryland & DC
                 </p>
                 <p style={{ fontSize: "0.85rem" }}>
                   <a
                     style={{ textDecoration: "none", color: "white" }}
-                    href="mailto:support@gmail.com"
+                    href="mailto: ddiallo@itecintegrator.com"
                   >
-                    support@gmail.com
+                    Email - ddiallo@itecintegrator.com
                   </a>
                 </p>
                 <p style={{ fontSize: "0.85rem" }}>
                   <a
                     style={{ textDecoration: "none", color: "white" }}
-                    href="tel:+123 456 789"
+                    href="tel:571-315-2073"
                   >
-                    +123 456 789
+                    +571-315-2073
                   </a>
                 </p>
                 <div
