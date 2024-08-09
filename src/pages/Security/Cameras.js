@@ -93,7 +93,7 @@ const Cameras = () => {
       <div className="wall-prod">
         <div>
           <h1>Cameras</h1>
-          <h4>Secuity & Surveillance</h4>
+          <h4>Security & Surveillance</h4>
         </div>
       </div>
       <div className="filters">
@@ -178,7 +178,7 @@ const Cameras = () => {
                 </div>
               </div>
               <div className="caro-right col-lg-6">
-                <h4>Bowers & Wilkins</h4>
+                <h4>Explore Security & Surveillance Services</h4>
                 <p>
                   Lorem Ipsum has been the industry's standard dummy text ever
                   since the 1500s. Lorem Ipsum has been the industry's standard
