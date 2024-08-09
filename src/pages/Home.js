@@ -447,11 +447,8 @@ const Home = () => {
       <br />
       <br />
       <div className="pic4-flex">
-        <h6 style={{ color: "#757575", textAlign: "center" }}>
-          Lorem Ipsum is simply
-        </h6>
-        <h3 className="" style={{ textAlign: "center" }}>
-          Lorem Ipsum is simply
+                <h3 className="" style={{ textAlign: "center" }}>
+          Customize every element of your home!
         </h3>
         <br />
         <div className="row pic4-pad" style={{ margin: "0" }}>
