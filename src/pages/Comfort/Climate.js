@@ -232,6 +232,9 @@ const Climate = () => {
                 </div>
               </div>
             </div>
+            </div>
+            </div>
+            </div>
             
       <div className="caro-blogs">
         <p
