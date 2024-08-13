@@ -37,39 +37,39 @@ const Climate = () => {
   const prodList = [
     {
       img: pr1,
-      txt: "Bowers & Wilkins",
+      txt: "",
     },
     {
       img: pr2,
-      txt: "Wisdom",
+      txt: "",
     },
     {
       img: pr3,
-      txt: "Sonance",
+      txt: "",
     },
     {
       img: pr4,
-      txt: "Totem",
+      txt: "",
     },
     {
       img: pr5,
-      txt: "Leon",
+      txt: "",
     },
     {
       img: pr6,
-      txt: "Triad",
+      txt: "",
     },
     {
       img: pr1,
-      txt: "Bowers & Wilkins",
+      txt: "",
     },
     {
       img: pr2,
-      txt: "Wisdom",
+      txt: "",
     },
     {
       img: pr3,
-      txt: "Sonance",
+      txt: "",
     },
     {
       img: pr4,
@@ -77,11 +77,11 @@ const Climate = () => {
     },
     {
       img: pr5,
-      txt: "Leon",
+      txt: "",
     },
     {
       img: pr6,
-      txt: "Triad",
+      txt: "",
     },
   ];
   return (
@@ -232,166 +232,12 @@ const Climate = () => {
                 </div>
               </div>
             </div>
-            <div className="carousel-item">
-              <div className="row caro-lr-1">
-                <div className="caro-left col-lg-6 d-flex justify-content-center">
-                  <div className="img-trans">
-                    <div>
-                      <img src={g0} height={400} alt="" />
-                    </div>
-                    <div
-                      className="d-flex"
-                      style={{ gap: "20px", margin: "20px 0" }}
-                    >
-                      <img src={g1} height={146} alt="" />
-                      <img src={g2} height={146} alt="" />
-                      <img src={g3} height={146} alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className="caro-right col-lg-6">
-                  <h4>Bowers & Wilkins</h4>
-                  <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s.
-                  </p>
-                  <div className="d-flex">
-                    <img className="mx-3" src={sun} height={40} alt="" />
-                    <div>
-                      <strong>Lorem Ipsum </strong>
-                      <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <img
-                      className=""
-                      style={{ marginLeft: "20px", marginRight: "22px" }}
-                      src={bulb}
-                      height={40}
-                      alt=""
-                    />
-                    <div>
-                      <strong>Lorem Ipsum </strong>
-                      <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <img className="mx-3" src={rem} height={40} alt="" />
-                    <div>
-                      <strong>Lorem Ipsum </strong>
-                      <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s.
-                      </p>
-                    </div>
-                  </div>
-                  <button
-                    className="btn-caro-1-1"
-                    onClick={() => nav("/consultation")}
-                  >
-                    REQUEST A QUOTE
-                  </button>
-                  {/* <button className="btn-caro-2-1 mx-2">
-                  GET A QUOTE <GoArrowRight />
-                </button> */}
-                </div>
-              </div>
-            </div>
-            <div className="carousel-item">
-              <div className="row caro-lr-1">
-                <div className="caro-left col-lg-6 d-flex justify-content-center">
-                  <div className="img-trans">
-                    <div>
-                      <img src={g0} height={400} alt="" />
-                    </div>
-                    <div
-                      className="d-flex"
-                      style={{ gap: "20px", margin: "20px 0" }}
-                    >
-                      <img src={g1} height={146} alt="" />
-                      <img src={g2} height={146} alt="" />
-                      <img src={g3} height={146} alt="" />
-                    </div>
-                  </div>
-                </div>
-                <div className="caro-right col-lg-6">
-                  <h4>Bowers & Wilkins</h4>
-                  <p>
-                    Lorem Ipsum has been the industry's standard dummy text ever
-                    since the 1500s. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s.
-                  </p>
-                  <div className="d-flex">
-                    <img className="mx-3" src={sun} height={40} alt="" />
-                    <div>
-                      <strong>Lorem Ipsum </strong>
-                      <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <img
-                      className=""
-                      style={{ marginLeft: "20px", marginRight: "22px" }}
-                      src={bulb}
-                      height={40}
-                      alt=""
-                    />
-                    <div>
-                      <strong>Lorem Ipsum </strong>
-                      <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="d-flex">
-                    <img className="mx-3" src={rem} height={40} alt="" />
-                    <div>
-                      <strong>Lorem Ipsum </strong>
-                      <p>
-                        Lorem Ipsum has been the industry's standard dummy text
-                        ever since the 1500s. Lorem Ipsum has been the
-                        industry's standard dummy text ever since the 1500s.
-                      </p>
-                    </div>
-                  </div>
-                  <button
-                    className="btn-caro-1-1"
-                    onClick={() => nav("/consultation")}
-                  >
-                    REQUEST A QUOTE
-                  </button>
-                  {/* <button className="btn-caro-2-1 mx-2">
-                  GET A QUOTE <GoArrowRight />
-                </button> */}
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <br />
-      <br />
+            
       <div className="caro-blogs">
         <p
           style={{ textAlign: "center", color: "#757575", fontSize: "1.1rem" }}
         >
-          Our Products
+       Sample Brand Products
         </p>
         <h4 style={{ textAlign: "center" }}>Speakers</h4>
         <br />
@@ -405,8 +251,7 @@ const Climate = () => {
               Loudspeakers
             </div>
             <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
-              Bring your sound to a new level of excellence with our premium
-              loudspeakers here at TDG Home.
+              Experience Immersive Sound with Impeccably Solutioned Systems.
             </div>
           </div>
           <div className="mx-auto" style={{ textAlign: "center" }}>
@@ -418,8 +263,8 @@ const Climate = () => {
               Subwoofers
             </div>
             <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
-              Feel the bass as never felt before with TDG Home's
-              high-performance subwoofers.
+              More than ever, you can have your design include the right subwoofer for
+              performance and value.
             </div>
           </div>
           <div className="mx-auto" style={{ textAlign: "center" }}>
@@ -431,8 +276,8 @@ const Climate = () => {
               Home Theater
             </div>
             <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
-              Bring your living room into the world of cinema with home theater
-              systems from TDG Home.
+              With a curated list of the best and reliable brands, movies teathers
+                are within rich! Experience high quality movie nights at home!
             </div>
           </div>
           <div className="mx-auto" style={{ textAlign: "center" }}>
@@ -444,8 +289,8 @@ const Climate = () => {
               In-Wall & In-Ceiling
             </div>
             <div style={{ fontSize: "0.9rem", width: "300px", margin: "auto" }}>
-              TDG Home in-wall and in-ceiling speakers provide sleek,
-              unobtrusive audio to every corner of your room.
+              There is a broad range of In-Wall, In Room, and In-Ceiling speaker
+                applications you can choose from! 
             </div>
           </div>
         </div>
