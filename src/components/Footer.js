@@ -86,9 +86,8 @@ const Footer = () => {
                   className="my-3"
                   style={{ color: "white", fontSize: "0.85rem" }}
                 >
-                  From initial design to installation and beyond, we offer a
-                  complete plan to make your home smarter, more convenient, and
-                  luxurious.
+                  We offer a complete plan to make your home smarter, covering everything
+                  from design to installation, with no intermediary or outsourcing.
                 </p>
               </div>
             </div>
@@ -164,7 +163,7 @@ const Footer = () => {
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
                   onClick={() => nav("/product/Secuity_&_Surveillance/cameras")}
                 >
-                  Secuity and Surveillance
+                  Security and Surveillance
                 </p>
                 <p
                   style={{ fontSize: "0.85rem", cursor: "pointer" }}
@@ -264,7 +263,7 @@ const Footer = () => {
           <p style={{ textAlign: "center" }}>
             copyright{" "}
             <span id="foot-bold" style={{ fontWeight: "600" }}>
-              @2023 TDG HOME.
+              @2023 "Smart & Elegant", a TDG company.
             </span>{" "}
             All rights reserved
           </p>
