@@ -155,10 +155,9 @@ const Home = () => {
                 <source src={c1} type="video/mp4" />
               </video>
               <div className="carousel-caption caro-text">
-                <h5>Elevate Your Living: Smart Homes, Smarter Life</h5>
+                <h5>Immersive Home Theaters</h5>
                 <p>
-                  Experience the Future of Living with Our Cutting-Edge Smart
-                  Systems and Lifestyle Solutions
+                 Experience the magic of theater in the comfort of your own home!
                 </p>
                 <button
                   className="btn-caro-1"
@@ -184,10 +183,9 @@ const Home = () => {
                 <source src={c2} type="video/mp4" />
               </video>
               <div className="carousel-caption caro-text">
-                <h5>Smart Homes, Crafted for You</h5>
+                <h5>Golf Simulation Expertly Designed & Installed</h5>
                 <p>
-                  Experience the Future of Living with Our Cutting-Edge Smart
-                  Systems and Lifestyle Solutions
+                 Hone your golf skills without having to leave your home!
                 </p>
                 <button className="btn-caro-1">
                   REQUEST A QUOTE <GoArrowRight />
@@ -255,31 +253,30 @@ const Home = () => {
         <div className="text-4">
           <div className="row my-5" style={{ margin: "0" }}>
             <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-              <h5>Cutting-Edge Technology</h5>
+              <h5>Discover Curated Smart Products!</h5>
               <p style={{ color: "#A7A9AB" }}>
-                We provide the latest smart home appliances to enhance your
-                living experience.
+                Discover a curated collection of smart products that have been tested and carefully chosen for you.
               </p>
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-              <h5>Expert Installation</h5>
+              <h5>Experienced Team!</h5>
               <p style={{ color: "#A7A9AB" }}>
-                Our talented integrators, designers, engineers, and programmers
-                ensure flawless installation and integration.
+                Our Team's reliable expertise ensures sophisticated, effortless design and smooth installation and integration.
               </p>
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-              <h5>Customized Solutions</h5>
+              <h5>Smart and Elegant Solutions!</h5>
               <p style={{ color: "#A7A9AB" }}>
-                We tailor smart home systems to fit your unique lifestyle, from
-                smart kitchens to automated home theaters.
+                Receive a smart, elegant, uncomplicated system that suits your lifestyle and needs, 
+                ensuring that the system is personalized and operates reliably!
               </p>
             </div>
             <div className="col-lg-3 col-md-4 col-sm-6 px-5 mx-auto">
-              <h5>Ongoing Support</h5>
+              <h5>Ongoing Engagement & Support</h5>
               <p style={{ color: "#A7A9AB" }}>
-                We offer continuous support and maintenance to keep your systems
-                up-to-date and functioning seamlessly.
+                We are committed to offering continual support even after the setup. 
+                You will always have access to an account manager for ongoing assistance, 
+                upkeep, and the integration of system improvements and expansions.
               </p>
             </div>
           </div>
@@ -301,15 +298,10 @@ const Home = () => {
                 className="pic1-text mt-3"
                 style={{ textAlign: "justify", color: "#4B4B4B" }}
               >
-                Personalize your life and bring your house to a whole advanced
-                level with our smart appliances. It could be the lights,
-                security, or even your home theater, and everything is
-                controlled by your fingertips. Advanced technology turns your
-                abode into a plush, seamlessly integrated, cooperatingly high on
-                functionality space. Go easy on down the road of convenience to
-                sophisticated living with devices designed for everyday
-                functionality. Experience the future of an American home through
-                our top-of-the-line smart solution
+                Enhance your home with our complete smart services! Personalize your living space with smart devices 
+                that can manage everything from lighting and security to your home theater, all from one convenient platform. 
+                Our carefully selected smart products, combined with our expertise, provide smooth integration
+                of devices and services, enhancing the functionality and convenience of your daily life.
               </p>
               <button className="wwd-btn" onClick={() => nav("/support")}>
                 WHAT WE DO <GoArrowRight style={{ fontSize: "1rem" }} />
@@ -415,7 +407,7 @@ const Home = () => {
           <div className="tab" style={{ height: "530px" }}>
             <div style={{ textAlign: "center" }}>
               <img className="tab-img" src={tab} alt="" />
-              <h6 className="mt-3">Secuity System</h6>
+              <h6 className="mt-3">Security System</h6>
               <button
                 className="wwd-btn"
                 style={{ color: "black" }}
