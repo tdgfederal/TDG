@@ -415,7 +415,7 @@ const Home = () => {
           <div className="tab" style={{ height: "530px" }}>
             <div style={{ textAlign: "center" }}>
               <img className="tab-img" src={tab} alt="" />
-              <h6 className="mt-3">Secuity System</h6>
+              <h6 className="mt-3">Security System</h6>
               <button
                 className="wwd-btn"
                 style={{ color: "black" }}
@@ -458,8 +458,8 @@ const Home = () => {
           >
             <div style={{ textAlign: "center" }}>
               <img src={f1} height={270} alt="" />
-              <p className="mt-3">Lorem Ipsum</p>
-              <p style={{ marginTop: "-15px" }}>Lorem Ipsum is simply</p>
+              <p className="mt-3">Customized Lighting Access</p>
+              <p style={{ marginTop: "-15px" }}>"Reduce energy expenses and lower emissions with a control system!</p>
             </div>
           </div>
           <div
@@ -468,8 +468,8 @@ const Home = () => {
           >
             <div style={{ textAlign: "center" }}>
               <img src={f2} height={270} alt="" />
-              <p className="mt-3">Lorem Ipsum</p>
-              <p style={{ marginTop: "-15px" }}>Lorem Ipsum is simply</p>
+              <p className="mt-3">Enhanced Security</p>
+              <p style={{ marginTop: "-15px" }}>Gain complete visibility & Control of your home.</p>
             </div>
           </div>
           <div
@@ -478,8 +478,8 @@ const Home = () => {
           >
             <div style={{ textAlign: "center" }}>
               <img src={f3} height={270} alt="" />
-              <p className="mt-3">Lorem Ipsum</p>
-              <p style={{ marginTop: "-15px" }}>Lorem Ipsum is simply</p>
+              <p className="mt-3">Comfort Planned </p>
+              <p style={{ marginTop: "-15px" }}>Set your home comfort level easily using just one app!</p>
             </div>
           </div>
           <div
@@ -488,8 +488,8 @@ const Home = () => {
           >
             <div style={{ textAlign: "center" }}>
               <img src={f4} height={270} alt="" />
-              <p className="mt-3">Lorem Ipsum</p>
-              <p style={{ marginTop: "-15px" }}>Lorem Ipsum is simply</p>
+              <p className="mt-3">Happy Home</p>
+              <p style={{ marginTop: "-15px" }}>Transform your home to a happy & fun place</p>
             </div>
           </div>
         </div>
@@ -554,15 +554,9 @@ const Home = () => {
                     className="mt-3"
                     style={{ color: "#969696", fontSize: "0.9rem" }}
                   >
-                    An indoor golf simulator simply brings the golf course right
-                    into your living room. You'll have a virtual golf course
-                    indoors where you can practice, no matter the weather, and
-                    play anytime. It's very entertaining to have effectively
-                    lifelike graphics and ball-tracking abilities, which will
-                    help you develop your swing as you have fun playing with
-                    friends and family. This way, you will get a feel of the
-                    excitement attached to golf without having to move out from
-                    your home very convenient.
+                   Transform your favorite space into a golfing paradise with an indoor golf simulator. Experience the thrill of a virtual golf course, 
+                     perfect for improving your skills and enjoying rounds with family and friends, rain or shine. 
+                     Appreciate the lifelike graphics and ball-tracking features that will enhance your swing. Embrace the excitement of golf from the comfort of your home.
                   </p>
                   {/* <button
                     className="wwd-btn"
@@ -597,7 +591,7 @@ const Home = () => {
           CUSTOMER FEEDBACK
         </p>
         <h3 style={{ textAlign: "center" }}>
-          Here is what our satisfied clients say
+          Customer Feedback!
         </h3>
         <br />
         <div id="carouselExampleCaptions2" className="carousel slide">
@@ -611,15 +605,9 @@ const Home = () => {
                   textAlign: "center",
                 }}
               >
-                "I had TDG Smart Homes update my system, which works fine now. I
-                used to have low-end rumble driving me up the wall - and with
-                his improvements, I no longer have these issues. They installed
-                a new system with in-wall speakers and programmed the entire
-                unit to multiple locations. They also installed the speakers and
-                other units inside the drywall, and all this installation work
-                was done cleanly and looked fantastic. The sound and appearance
-                are wonderful. I wholeheartedly recommend the TDG team for all
-                your home automation and entertainment needs."
+               "I had the guys update my system, which now works perfectly. They installed a new Control4 system with in-wall speakers and programmed 
+                the entire unit for multiple locations. The sound and appearance are wonderful. I can control the lighting, the music from my app.
+                I recommend the Smart & Elegant team for all your home automation and entertainment needs."
               </p>
               <br />
               <div style={{ textAlign: "center" }}>
@@ -646,22 +634,17 @@ const Home = () => {
                   textAlign: "center",
                 }}
               >
-                World-class service! I wanted to set up my basement into a real
-                man cave. I didn’t know where to begin; a friend referred me to
-                TDG Smart Homes. They were very professional, answered my
-                questions, and made recommendations tailored to my needs and
-                budget. I wanted in-wall speakers along with enough bass to
-                enjoy movies and sports. The team assessed my basement equipment
-                to see what I already had and what additional speakers,
-                receivers, and sub to give me the best sound. They completed
-                this project promptly and provided an unrivaled customer
-                experience. I recommend TDG and the team to anybody looking to
-                upgrade or start an audio/video project. I look forward to
-                working with them again when I move into my next house.
+               I renovated my basement into a man cave with the assistance of 
+               the "Smart & Elegant" team. The team assessed my equipment and provided additional speakers, receivers,
+              and a subwoofer for optimal sound quality. They offered many speaker options from brands like Episode, 
+              Triad, Bose, KEF, and more. After a demonstration, we chose the KEF speakers. 
+              The team delivered professional service, suggested customized solutions within my budget, and installed 
+              in-wall KEF speakers with a fantastic bass system. The project was completed on time and properly,
+                 and I highly recommend Smart & Elegant for anyone looking to enhance their audio/video setup.
               </p>
               <br />
               <div style={{ textAlign: "center" }}>
-                <img src={person} height={120} alt="" />
+                
               </div>
               <p
                 className="mt-2"
@@ -679,9 +662,10 @@ const Home = () => {
                   textAlign: "center",
                 }}
               >
-                "TDG Home made our dream home a reality! Their attention to
+                "Smart & Elegant" made our dream home a reality! Their attention to
                 detail and commitment to quality craftsmanship exceeded our
-                expectations. We couldn't be happier with the result."{" "}
+                expectations. Being able to control our lights, music and garage doors from the app is life changing!
+                We couldn't be happier with the result."{" "}
               </p>
               <br />
               <div style={{ textAlign: "center" }}>
