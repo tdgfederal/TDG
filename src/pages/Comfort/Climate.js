@@ -175,7 +175,7 @@ const Climate = () => {
                   </div>
                 </div>
                 <div className="caro-right col-lg-6">
-                  <h4>Bowers & Wilkins</h4>
+                  <h4>Home Comfort Solutions</h4>
                   <p>
                     Lorem Ipsum has been the industry's standard dummy text ever
                     since the 1500s. Lorem Ipsum has been the industry's
